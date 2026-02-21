@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Breaches | Cyber Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="accent-strip"></div>
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="header-left">
+        <button class="icon-btn search-btn" aria-label="Search" onclick="document.querySelector('.search-overlay').classList.toggle('open')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <a href="../index.html" class="site-logo">
+          <span class="logo-text"><span class="logo-accent">C</span>yber Intelligence</span>
+        </a>
+        <div class="site-tagline">In-depth cybersecurity analysis &amp; breaking news</div>
+      </div>
+      <div class="header-right">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="icon-btn dark-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="../categories/news.html" class="nav-link">News</a>
+      </div>
+      <div class="nav-item">
+        <a href="../categories/analysis.html" class="nav-link">Analysis</a>
+      </div>
+      <div class="nav-item">
+        <a href="../categories/expert-opinions.html" class="nav-link">Expert Opinions</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Resources</a>
+        <div class="dropdown-menu"><a href="#">Conferences</a>
+<a href="#">Glossary of Terms</a>
+<a href="#">Awards</a>
+<a href="#">Ecosystem Map</a>
+</div>
+      </div>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav .nav-inner').classList.toggle('open')">&#9776;</button>
+  </nav>
+  <div class="trending-bar">
+    <div class="trending-inner">
+      <span class="trending-label">Trending</span>
+      <div class="trending-tags"><a href="../categories/ransomware.html" class="trend-tag">Ransomware</a>
+<a href="../categories/ai-threats.html" class="trend-tag">AI Threats</a>
+<a href="../categories/zero-day.html" class="trend-tag">Zero-Day</a>
+<a href="../categories/data-breach.html" class="trend-tag">Data Breach</a>
+<a href="../categories/apt.html" class="trend-tag">APT</a>
+<a href="../categories/critical-infrastructure.html" class="trend-tag">Critical Infrastructure</a>
+<a href="../categories/supply-chain.html" class="trend-tag">Supply Chain</a>
+<a href="../categories/cloud-security.html" class="trend-tag">Cloud Security</a>
+<a href="../categories/cyber-espionage.html" class="trend-tag">Cyber Espionage</a>
+<a href="../categories/malware.html" class="trend-tag">Malware</a>
+<a href="../categories/phishing.html" class="trend-tag">Phishing</a>
+<a href="../categories/healthcare.html" class="trend-tag">Healthcare</a>
+<a href="../categories/finance.html" class="trend-tag">Finance</a>
+<a href="../categories/geopolitics.html" class="trend-tag">Geopolitics</a>
+<a href="../categories/hacktivism.html" class="trend-tag">Hacktivism</a>
+</div>
+    </div>
+  </div>
+  <div class="search-overlay">
+    <div class="search-box">
+      <input type="text" placeholder="Search articles..." id="searchInput" onkeyup="filterArticles(this.value)">
+      <button class="icon-btn" onclick="document.querySelector('.search-overlay').classList.remove('open')">&#10005;</button>
+    </div>
+  </div>
+</header>
+<main class="cat-page">
+  <div class="cat-header">
+    <div class="cat-header-inner">
+      <span class="cat-label-sm">Category</span>
+      <h1>Data Breaches</h1>
+      <p class="cat-count-text">93 articles</p>
+    </div>
+  </div>
+  <div class="cat-body">
+    <div class="grid"><article class="card">
+      <a href="../articles/cisa-and-fbi-release-iocs-associated-with-androxgh0st-malware-january-17th.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>CISA and FBI Release IOCs Associated with Androxgh0st Malware – January 17th</h3>
+          <p class="card-excerpt">94% of Organizations Experienced Email Security Incidents in 2023 Egress revealed in a report that 94% of cybersecurity leaders disclosed that their organizatio</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/discord-called-a-hotbed-of-malware-activity-october-17th.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Discord called a ‘hotbed’ of malware activity – October 17th</h3>
+          <p class="card-excerpt">Discord called a &amp;#8216;hotbed&amp;#8217; of malware activity Discord continues to be used by threat actors to launch malware attacks. Researchers have warned the o</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cyber-attack-raises-sim-swapping-fears.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Cyber-attack raises SIM-swapping fears</h3>
+          <p class="card-excerpt">Telecoms operator Orange Belgium has revealed that a cyber-attack in July resulted in the theft of data from 850,000 customer accounts. The telecoms operator ha</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/16-billion-passwords-breached-june-20th.html">
+        <div class="card-thumb"><img src="../images/padlocks.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">16 Billion Passwords Breached The Cybernews research team discovered a record-breaking breach of over 16 billion passwords worldwide, including Facebook, Google</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>June 20, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/critical-qualcomm-zero-days-exploited-in-targeted-android-attacks-june-2nd.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">🔓 Critical Qualcomm Zero-Days Exploited in Targeted Android Attacks Qualcomm has patched three zero-day vulnerabilities in its Adreno GPU drivers, which were ac</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - June 2nd - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>June 02, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-increasingly-used-to-deliver-malware.html">
+        <div class="card-thumb"><img src="../images/circuit-board.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI increasingly used to deliver malware</h3>
+          <p class="card-excerpt">Many organizations’ ongoing enthusiasm for incorporating artificial intelligence (AI) is leaving them open to sophisticated and carefully planned cyber-attacks.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>AI increasingly used to deliver malware - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>May 30, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/deepfake-news-lures-new-victims.html">
+        <div class="card-thumb"><img src="../images/digital-globe.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfake news lures new victims</h3>
+          <p class="card-excerpt">Deepfake videos of TV news presenters are being used to dupe gullible viewers into logging onto illegal gambling sites where malware is then downloaded onto the</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 23, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/advanced-persistent-threats-rise-by-74-in-2024-report-march-6th.html">
+        <div class="card-thumb"><img src="../images/code-screen.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">PHP-CGI RCE Flaw Exploited in Attacks on Japan&amp;#8217;s Tech, Telecom, and E-Commerce Sectors Cyber attackers are actively exploiting a vulnerability in PHP-CGI </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>March 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/fbi-unplugs-chinese-hackers.html">
+        <div class="card-thumb"><img src="../images/security-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>FBI unplugs Chinese hackers</h3>
+          <p class="card-excerpt">The US Justice Department and FBI have completed a law enforcement operation to delete Chinese malware from approximately 4,258 U.S.-based computers and network</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">F</span>
+              <span>FBI unplugs Chinese hackers - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 15, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/chinas-telecom-hack-most-serious-in-us-history.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>China’s Historical US Telecom Hack</h3>
+          <p class="card-excerpt">US Senator Mark Warner has called the Salt Typhoon hack, conducted by a group that has been linked to Chinese intelligence, “the most serious telecoms hack in o</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>China\u2019s Historical US Telecom Hack - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>November 29, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybercriminals-pose-as-law-enforcement-agencies.html">
+        <div class="card-thumb"><img src="../images/digital-globe.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Cybercriminals pose as police agencies</h3>
+          <p class="card-excerpt">The US Federal Bureau of Investigation (FBI) has issued an urgent warning to business and law enforcement agencies that cybercriminals are using genuine stolen </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>November 12, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/deepfakes-set-to-deceive-at-def-con.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfakes set to deceive at DEF CON</h3>
+          <p class="card-excerpt">It looks as if deepfakes will be the hot topic at the big international hacker conference DEF CON in Las Vegas next week, just as they took center stage at Info</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 07, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybercriminals-capitalize-on-crowdstrike-outage.html">
+        <div class="card-thumb"><img src="../images/phone-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Hackers Exploit CrowdStrike Outage</h3>
+          <p class="card-excerpt">Organized cybercriminal gangs have lost little time in attempting to cash in on the ongoing CrowdStrike/Windows outage currently affecting banks, airlines and b</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>July 23, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/healthcare-attack-exposes-200000-los-angeles-patient-records.html">
+        <div class="card-thumb"><img src="../images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Attack Exposes 200K LA Patient Records</h3>
+          <p class="card-excerpt">The Los Angeles County Department of Public Health has been breached by a cyber-attack that has compromised the personal information of over 200,000 private ind</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>June 19, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/game-over-for-european-criminal-botnet-networks.html">
+        <div class="card-thumb"><img src="../images/office-security.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Ending for EU criminal botnet networks</h3>
+          <p class="card-excerpt">An international operation coordinated by Europol has resulted in several arrests and the takedown of numerous cybercriminal networks. The operation focused on </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>June 03, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/indian-elections-targeted-by-cyber-attacks.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Indian elections hit by cyberattacks</h3>
+          <p class="card-excerpt">India’s current elections have become a prime target for malicious cyber activity on the part of foreign threat actors and independent hacktivist groups. With t</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 27, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/chinese-hackers-using-orb-networks-to-evade-detection-may-23rd.html">
+        <div class="card-thumb"><img src="../images/computer-monitor.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Chinese Hackers Using ORB Networks to Evade Detection Mandiant revealed that Chinese-linked state-backed hackers rely on operational relay box (ORBs) network pr</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 23, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/critical-infrastructure-at-risk-from-modem-flaws.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Critical infra at risk from modem flaws</h3>
+          <p class="card-excerpt">“Critical flaws” have been identified in modems deployed in millions of devices worldwide. Cybersecurity firm Kaspersky has issued a report warning companies of</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>Critical infra at risk from modem flaws - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>May 14, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/boeing-discloses-200m-ransomware-attempt-may-13th.html">
+        <div class="card-thumb"><img src="../images/padlocks.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Boeing Discloses $200M Ransomware Attempt Boeing made a significant disclosure: The LockBit ransomware group targeted the company, which demanded a staggering $</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 13, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/fbi-warns-of-fresh-north-korean-hacking-tactic.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>FBI warns of new NoKor hacking tactic</h3>
+          <p class="card-excerpt">The US Federal Bureau of Investigation (FBI) has issued a joint advisory warning of a new tactic being used by North Korean intelligence-gathering cyber group K</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 07, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/beware-weaponized-google-ads.html">
+        <div class="card-thumb"><img src="../images/circuit-board.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Beware weaponized Google Ads</h3>
+          <p class="card-excerpt">Cybercriminals are exploiting a previously unseen backdoor to substitute ‘malvertizing’, weaponized bogus ads to push them to the top of Google searches. The at</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 22, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/change-healthcare-hit-by-another-potential-cyber-attack-april-9th.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Change Healthcare Hit by Another Potential Cyber Attack Arriving just a month after a paid ransom was demanded following the massive data breach in February 202</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 09, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cyber-consultant-claims-universities-are-more-vulnerable-to-cyber-attacks-april-8th.html">
+        <div class="card-thumb"><img src="../images/computer-monitor.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Cyber Consultant Claims Universities are More Vulnerable to Cyber Attacks Highlighting the severity of the University of Winnipeg data breach, Cybersecurity con</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 08, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/chinese-earth-krahang-group-compromised-70-organizations-march-20th.html">
+        <div class="card-thumb"><img src="../images/code-screen.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Pokemon Reset Account Passwords Due to Breach Attempts The Pokemon Company announced that it detected a large number of breach attempts on its users and reset t</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>March 20, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/googles-improvements-to-chromes-safe-browsing-mode-march-18th.html">
+        <div class="card-thumb"><img src="../images/office-security.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Google&amp;#8217;s Improvements to Chrome&amp;#8217;s &amp;#8216;Safe Browsing&amp;#8217; Mode Google announced major security-focused revamps to Chrome&amp;#8217;s &amp;#8216;Safe Bro</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - March 18th - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>March 18, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cisa-systems-shut-down-due-to-third-party-breach-march-11th.html">
+        <div class="card-thumb"><img src="../images/cyber-spy.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">68% of Organizations Face Additional Risks Due to Cybersecurity Skills Shortages A Fortinet report disclosed that 68% of organizations are facing risks brought </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>March 11, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/doppleganger-mob-set-to-spike-us-and-uk-elections.html">
+        <div class="card-thumb"><img src="../images/padlocks.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Doppelganger Gang to Disrupt Elections</h3>
+          <p class="card-excerpt">Russian hacktivists named Doppelgänger have been interfering in Germany’s elections with a view to influence the outcome of upcoming European elections, accordi</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 23, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/i-soon-leak-offers-glimpse-into-chinese-hacking-campaigns-february-22nd.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Biden&amp;#8217;s Executive Order to Boost US Port Security The Biden-Harris administration announced that they will issue an Executive Order to boost the cybersecu</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - February 22nd - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>February 22, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ios-trojan-steals-facial-recognition-data-february-16th.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Cyberattack Shuts Down 5 Battery Manufacturing Plants VARTA AG, a German battery manufacturing company announced 5 of its production plants halting operations d</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 16, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/chinese-malware-breaches-dutch-defense-department-february-7th.html">
+        <div class="card-thumb"><img src="../images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Chinese Malware Breaches Dutch Defense Department Specialists from the Netherlands&amp;#8217; Military Intelligence and Security Service (MIVD) and the General Inte</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - February 7th - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>February 07, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/government-vulnerabilities-grow-by-151-january-26th.html">
+        <div class="card-thumb"><img src="../images/office-security.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Government Vulnerabilities Grow by 151% According to a Bugcrowd report, no other sector saw as much vulnerability growth as the government sector, which saw a 1</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 26, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/26-billion-stolen-record-database-discovered-january-24th.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">26 Billion Stolen Record Database Discovered Security Discovery researchers and the Cybernews team discovered the largest data leak ever recorded, containing 26</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 24, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/iran-targets-western-journalists.html">
+        <div class="card-thumb"><img src="../images/cyber-spy.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Iran targets Western journalists</h3>
+          <p class="card-excerpt">Hackers with close ties to the intelligence arm of Iran’s military, the Islamic Revolutionary Guard, are now personally targeting journalists, professors, and r</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">I</span>
+              <span>Iran targets Western journalists - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 23, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybersecurity-experts-question-cyber-scam-warning-effectiveness-january-19th.html">
+        <div class="card-thumb"><img src="../images/computer-monitor.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Rapid SCADA Vulnerabilities Leaves Industrial Systems at Risk The Cybersecurity Infrastructure and Security Agency (CISA) released an advisory directed to indus</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 19, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/geopolitical-tensions-fuel-botnet-boom.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Geopolitical tensions fuel botnet boom</h3>
+          <p class="card-excerpt">Recent weeks have seen an exponential rise in malicious botnets performing reconnaissance scanning to scout out victims. According to researchers at cybersecuri</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">G</span>
+              <span>Geopolitical tensions fuel botnet boom - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 17, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/77-of-ceos-believe-ai-more-risk-than-reward-in-cyber-january-16th.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">77% of CEOs Believe AI More Risk Than Reward in Cyber Despite the hype of AI in cybersecurity, a PwC survey revealed that 77% of CEOs still believe AI increases</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - January 16th - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 16, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/hacktivists-target-environmental-services.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>‘Hacktivists’ Target Climate Services</h3>
+          <p class="card-excerpt">Politically-motivated hacking, known as ‘hacktivism’, is now on the rise across large sections of the globe. Politically motivated groups are increasingly attac</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 16, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/fnf-hack-exposes-1-3m-customer-details.html">
+        <div class="card-thumb"><img src="../images/padlocks.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>FNF hack exposes 1.3m customer details</h3>
+          <p class="card-excerpt">US real estate financial services fat cat, Fidelity National Financial (FNF), has revealed details of a cybersecurity breach that occurred in November, exposing</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">F</span>
+              <span>FNF hack exposes 1.3m customer details - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 15, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cisa-warns-google-chrome-users-of-open-source-vulnerabilities-january-4th.html">
+        <div class="card-thumb"><img src="../images/security-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Aqua Security Raises $195M in Series E Funding Cybersecurity &amp;#8220;unicorn&amp;#8221; (startup valued over $1B), Aqua Security successfully raised an additional $6</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 04, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/financial-sector-sees-most-cyberattacks-in-2023-december-20th.html">
+        <div class="card-thumb"><img src="../images/digital-globe.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Financial Sector Sees Most Cyberattacks in 2023 Based on a Netwrix survey, the financial sector in 2023 experienced the most cyberattacks among any other sector</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - December 20th - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>December 20, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/fraudulent-linkedin-profiles-targeting-saudi-workers-for-corporate-data-leaks-december-12th.html">
+        <div class="card-thumb"><img src="../images/network-cables.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Fraudulent LinkedIn Profiles Targeting Saudi Workers for Corporate Data Leaks Revealed in a presentation at last month&amp;#8217;s Black Hat Middle East and Africa </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>December 12, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ge-military-project-hack-sparks-national-security-concerns-november-30th.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>GE Hack is a National Security Concern</h3>
+          <p class="card-excerpt">GE Military Project Hack Sparks National Security Concerns General Electric (GE) recognized the data theft from threat actor IntelBroker pertaining to a project</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>November 30, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/chip-war-with-china-heats-up.html">
+        <div class="card-thumb"><img src="../images/cyber-spy.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Chip war with China heats up</h3>
+          <p class="card-excerpt">&amp;nbsp; As the Biden administration prepares to impose further limits on China’s access to leading-edge chip technology, news has broken over the weekend that Ch</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>Chip war with China heats up - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>November 28, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/it-security-responsible-for-14-of-cyber-breaches.html">
+        <div class="card-thumb"><img src="../images/computer-monitor.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>IT security liable for 14% of breaches</h3>
+          <p class="card-excerpt">A staggering 14 percent of cyber incidents are due to senior IT security staff errors, compounded by a further 15% of errors caused by other IT staff. According</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>November 24, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybersecurity-executive-admits-to-hospital-hacking-for-business-gain-november-20th.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Securolytics COO Hacked into Hospitals</h3>
+          <p class="card-excerpt">Cybersecurity Executive Admits to Hospital Hacking for Business Gain In a startling revelation, Vikas Singla, the former COO of cybersecurity firm Securolytics,</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>November 20, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/googles-vulnerability-rewards-program-vrp-expansion-october-27th.html">
+        <div class="card-thumb"><img src="../images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Google&#x27;s Risk Reward Program Expansion</h3>
+          <p class="card-excerpt">Panel To Advise on International AI Governance, Appointed by UN U.N. Secretary-General António Guterres on Thursday, announced the appointment of a 39-member gl</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">G</span>
+              <span>Google&#x27;s Risk Reward Program Expansion - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>October 27, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/blackcat-turns-to-munchkin-to-advance-hacker-operations-october-23rd.html">
+        <div class="card-thumb"><img src="../images/network-cables.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>BlackCat&#x27;s Latest &#x27;Munchkin&#x27; RaaS Tool</h3>
+          <p class="card-excerpt">International investigation results in Paris arrest A ransomware hacker identified as a member of the Ragnar Locker hacker group has been arrested in Paris as p</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 23, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/hamas-hijacks-dead-hostages-smartphones-for-cyber-strikes.html">
+        <div class="card-thumb"><img src="../images/code-screen.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Victims&#x27; Phones Used for Hamas Hacks</h3>
+          <p class="card-excerpt">Terrorist group Hamas, which was responsible for the recent atrocities committed in Israel, is reported to be using the smartphones of dead and captured Israeli</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 20, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/4609-2.html">
+        <div class="card-thumb"><img src="../images/digital-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>About SpyNote&#x27;s Stealthy Malware</h3>
+          <p class="card-excerpt">Stealthy malware with â€˜spyâ€™ abilities makes headlines A stealthy malware known as SpyNote has made headlines because of its ability to steal data, record ca</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 19, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/google-responds-to-increase-in-malware-related-money-theft-october-13th.html">
+        <div class="card-thumb"><img src="../images/shield-icon.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Google Responds to Malware Linked Theft</h3>
+          <p class="card-excerpt">&amp;#8216;Stayin&amp;#8217; Alive&amp;#8217; campaign targets Asian telecommunication services A new malware campaign, called &amp;#8216;Stayin&amp;#8217; Alive&amp;#8217;, has been d</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">G</span>
+              <span>Google Responds to Malware Linked Theft - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>October 13, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ancestry-data-sold-by-threat-actors-online-october-10th.html">
+        <div class="card-thumb"><img src="../images/cyber-spy.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Ancestry data sold by threat actors</h3>
+          <p class="card-excerpt">Malware threat actors target buyers of used goods Over 20 people in Singapore have reportedly fallen prey to malware scams in September using the sale of second</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 10, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/bunnyloader-is-up-for-sale-in-the-cyber-underground-market-october-3rd.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>BunnyLoader Malware Sold On Deep Web</h3>
+          <p class="card-excerpt">BunnyLoader is up for sale in the cyber underground market A new malware threat, identified as BunnyLoader, is being sold in the cyber underground market. This </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 03, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/htx-falls-victim-to-crypto-thieves-september-27th.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cryptocurrency</span>
+          <h3>HTX Loses $8M to Crypto Thieves</h3>
+          <p class="card-excerpt">Fake Bitwarden site used as a platform for new RAT malware The RAT (remote access trojan) variant of malware is continuing to evolve, with a new strain ZenRAT t</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>HTX Loses $8M to Crypto Thieves - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>September 27, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/hack-costs-mixin-network-200m-september-26th.html">
+        <div class="card-thumb"><img src="../images/padlocks.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cryptocurrency</span>
+          <h3>Hack Costs Mixin Network $200M</h3>
+          <p class="card-excerpt">New Xenomorph campaign targets crypto wallets Cybersecurity company, ThreatFabric discovered a new campaign targeting US financial institutions and cryptocurren</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>September 26, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/darkgate-again-threatens-online-computer-systems-september-15th.html">
+        <div class="card-thumb"><img src="../images/security-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>DarkGate Malware Attacks Once Again</h3>
+          <p class="card-excerpt">DarkGate again threatens online computer systems A new phishing attack campaign using DarkGate Loader malware has been identified, with Microsoft Teams users be</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">D</span>
+              <span>DarkGate Malware Attacks Once Again - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>September 15, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/53-million-in-cryptocurrency-stolen-by-hackers-september-14th.html">
+        <div class="card-thumb"><img src="../images/phone-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cryptocurrency</span>
+          <h3>$53M in Crypto Stolen by Threat Actors</h3>
+          <p class="card-excerpt">MGM and Caesars Entertainment come under attack MGM and Caesars Entertainment have announced hacking attacks by threat actor Scattered Spider.Â The group is com</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>September 14, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/another-celebrity-account-hack-leaves-fans-reeling-september-1st.html">
+        <div class="card-thumb"><img src="../images/network-cables.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Another Hacked Celeb Account Shocks Fans</h3>
+          <p class="card-excerpt">Trojanized apps identified in Google Play Store list Trojanized Telegram and Signal apps are being used to spread BadBazaar spyware, which can, among other thin</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>September 03, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/chinese-cyber-espionage-campaign-exposed.html">
+        <div class="card-thumb"><img src="../images/code-screen.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Chinese Cyber-Espionage Attacks Exposed</h3>
+          <p class="card-excerpt">The China-backed hacking group referred to as RedHotel has been linked to attacks in 17 countries during a three-year espionage campaign. According to cybersecu</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>September 01, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/biggest-malware-culprits-of-2023-august-29th.html">
+        <div class="card-thumb"><img src="../images/office-security.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Top Malware Culprits of 2023 Identified</h3>
+          <p class="card-excerpt">New updated KmsdBot now targets Internet of Things (IoT) An updated version of KmsdBot now includes support for Telnet scanning and more CPU architectures, maki</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Top Malware Culprits of 2023 Identified - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>August 29, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/grip-raises-41m-duolingo-suffers-data-leak.html">
+        <div class="card-thumb"><img src="../images/shield-icon.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Duolingo Suffers Data Leak</h3>
+          <p class="card-excerpt">Duolingo data could translate to a cyber criminal gold mine Popular language learning app Duolingo saw a bug exploited that resulted in a compilation of account</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">D</span>
+              <span>Duolingo Suffers Data Leak- Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>August 22, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/16-year-old-arrested-in-malware-crackdown-august-17th.html">
+        <div class="card-thumb"><img src="../images/cyber-spy.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Cybersecurity Sector Sees Major Lay-Offs</h3>
+          <p class="card-excerpt">16-year-old among those arrested malware attack arrests The Singapore Police Force (SPF) has made 10 arrests connected with recent malware attacks that resulted</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 17, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/interpol-victory-highlights-the-value-of-cooperation-august-10th.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Teachers targeted while popular malware resurfaces</h3>
+          <p class="card-excerpt">Interpol forces unite to bring phishing platform down A phishing-as-a-service (PaaS) platform called 16shop, responsible for over 150,000 phishing domains, has </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 11, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ciso-scapegoats-suffer-super-stress-levels.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>CISO scapegoats suffer super stress levels</h3>
+          <p class="card-excerpt">Company information security officers (CISOs) find themselves saddled with ultimate responsibility for any digital security breach taking place anywhere in the </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 07, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/decoy-dog-malware-upgraded-to-include-new-features.html">
+        <div class="card-thumb"><img src="../images/phone-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>22 Million Sought Vacations, Instead Their Data is at Risk</h3>
+          <p class="card-excerpt">22 Million Account Details at Risk Cybersecurity researcher Sam Curry and his team discovered threatening security vulnerabilities in Points.com, a major provid</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">2</span>
+              <span>22 Million Sought Vacations, Instead Their Data is at Risk \u2013 August 4th - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>August 04, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/hacker-claims-to-have-stolen-sensitive-medical-records-from-egypts-ministry-of-health.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Bangladeshi ‘Hacktivists’ Threaten Critical Infrastructure</h3>
+          <p class="card-excerpt">Bangladeshi &amp;#8216;Hacktivists&amp;#8217; Threaten Critical Infrastructure Recent reports have announced threats to critical infrastructure in India, Israel, and Au</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 03, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/27000-private-data-stolen-from-stanford-ransomware-attack-march-12th.html">
+        <div class="card-thumb"><img src="../images/circuit-board.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>27,000 Private Data Stolen from Stanford Ransomware Attack – March 12th</h3>
+          <p class="card-excerpt">BianLian&amp;#8217;s Extortion-Focused Shift GuidePoint&amp;#8217;s Research and Intelligence Team (GRIT) observed a recent shift in threat actor group, BianLian to foc</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/3-9-billion-passwords-exposed-in-infostealer-malware-surge-february-26th.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>3.9 Billion Passwords Exposed in Infostealer Malware Surge – February 26th</h3>
+          <p class="card-excerpt">Nearly 3K Ivanti Connect Secure Instances at Risk Approximately 2,850 Ivanti Connect Secure VPN instances remain vulnerable to CVE-2025-22467, a critical stack </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/60000-emails-seized-in-us-state-department-breach-september-28th.html">
+        <div class="card-thumb"><img src="../images/network-cables.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>60,000 emails seized in US State Department breach – September 28th</h3>
+          <p class="card-excerpt">HiddenGh0st malware targets MS-SQL servers Researchers have identified HiddenGh0st malware, a malware popular with Chinese threat actors, as posing an increasin</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/6226-2.html">
+        <div class="card-thumb"><img src="../images/code-screen.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>UK backs AI and intelligence modernization – June 12th</h3>
+          <p class="card-excerpt">UK backs AI and intelligence modernization The UK government has announced its plans to invest in digital and artificial intelligence (AI) in public services, i</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/7-3-million-lost-through-android-phone-hacks-september-21st.html">
+        <div class="card-thumb"><img src="../images/digital-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>$7.3-million lost through Android phone hacks – September 21st</h3>
+          <p class="card-excerpt">$7.3-million lost through Android phone hacks Singaporean police have warned Android phone users of a new malware variant that is capable of resetting Android p</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/android-malware-posing-as-whatsapp-instagram-and-snapchat-may-15th.html">
+        <div class="card-thumb"><img src="../images/cyber-spy.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Android Malware Posing as WhatsApp, Instagram, and Snapchat – May 15th</h3>
+          <p class="card-excerpt">43% of organizations struggle with cybersecurity compliance Infosecurity Europe uncovered that 44% of organizations face difficulties with compliance with cyber</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/asias-power-grid-target-by-threat-actors-september-13th.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Asiaâ€™s power grid target by threat actors – September 13th</h3>
+          <p class="card-excerpt">â€˜Booby-trappedâ€™ app cons users to allow for remote control Visitors to a download site, freedownloadmanager.org, might have fallen victim to a malicious mal</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/beware-of-death-by-a-billion-bots.html">
+        <div class="card-thumb"><img src="../images/padlocks.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Beware of Death by a Billion Bots</h3>
+          <p class="card-excerpt">US corporations lose an average of 4.3 percent of their online revenues to malicious ‘bots,’ malware designed to resemble human communications. Malware attacks </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/bhi-energy-comes-clean-about-devastating-data-breach-october-24th.html">
+        <div class="card-thumb"><img src="../images/system-hacking.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>BHI Energy comes clean about devastating data breach – October 24th</h3>
+          <p class="card-excerpt">BHI Energy comes clean about devastating data breach US energy firm BHI Energy has shared details about an Akira ransomware gang attack that breached its networ</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/brazilian-it-worker-arrested-over-100-million-theft-july-8th.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Brazilian IT worker arrested over $100 million theft – July 8th</h3>
+          <p class="card-excerpt">Brazilian IT worker arrested over $100 million theft Brazilian IT worker João Roque has been arrested in connection with a $100 million theft through payment sy</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/bucket-shop-bargains-for-cybercriminals.html">
+        <div class="card-thumb"><img src="../images/circuit-board.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Bucket shop bargains for cybercriminals</h3>
+          <p class="card-excerpt">Researchers have revealed current vulnerabilities in Amazon’s data storage services, the knock-on effect of which could potentially result in the biggest supply</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/budworm-group-targets-middle-eastern-telco-company-september-29th.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Budworm Group Targets Middle Eastern Telco Company – September 29th</h3>
+          <p class="card-excerpt">Budworm takes a backdoor into Middle Eastern and Asian organizations Chinese hacker group Budworm has been using cyber-espionage malware to target a telecommuni</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/china-ramps-up-cyber-attacks-on-the-us.html">
+        <div class="card-thumb"><img src="../images/code-screen.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>China ramps up cyber-attacks on the US</h3>
+          <p class="card-excerpt">The latest US security breach attributed to systematic attempts by China to compromise US institutions and critical infrastructure has impacted the US Treasury.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cisa-warns-of-volt-typhoon-group-targeting-critical-infrastructure-march-21st.html">
+        <div class="card-thumb"><img src="../images/office-security.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>CISA Warns of “Volt Typhoon” Group Targeting Critical Infrastructure – March 21st</h3>
+          <p class="card-excerpt">GitHub Launches AI Tool to Fix Code Vulnerabilities GitHub announced the launch of its new &amp;#8220;code scanning autofix,&amp;#8221; an AI-powered tool that automati</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybercriminals-are-now-grooming-us-and-uk-teens.html">
+        <div class="card-thumb"><img src="../images/system-hacking.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Cybercriminals are now grooming US and UK teens</h3>
+          <p class="card-excerpt">Organized cybercriminal groups of all kinds have added a new line of defense to hide behind. This time, it is young teenagers in countries such as the UK and th</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/disgruntled-ex-disney-employee-highlights-insider-threat.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Disgruntled ex-Disney employee highlights insider threat</h3>
+          <p class="card-excerpt">The Walt Disney Company, which has long had a history of troubled labor relations, recently found itself the victim of a disgruntled former employee. According </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/employment-screening-provider-data-breach-affects-3-3m-individuals-february-28th.html">
+        <div class="card-thumb"><img src="../images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Employment Screening Provider Data Breach Affects 3.3M Individuals – February 28th</h3>
+          <p class="card-excerpt">Employment Screening Provider Data Breach Affects 3.3M Individuals DISA Global Solutions, Inc., a provider of employment screening services, confirmed a data br</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/epa-issues-warning-for-us-drinking-water-systems-may-21st.html">
+        <div class="card-thumb"><img src="../images/digital-globe.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>EPA Issues Warning for US Drinking Water Systems – May 21st</h3>
+          <p class="card-excerpt">EPA Issues Warning for US Drinking Water Systems On Monday, May 20th, the Environmental Protection Agency (EPA) issued a warning, urging water utility systems i</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/exfiltrated-info-automatically-spread-on-discord-bot-channel-january-23rd.html">
+        <div class="card-thumb"><img src="../images/office-security.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Exfiltrated Info Automatically Spread on Discord Bot Channel – January 23rd</h3>
+          <p class="card-excerpt">Apple iOS Patches Zero-Day Vulnerabilities After The Cupertino company uncovered three iOS WebKit vulnerabilities, Apple patched these issues with fresh iOS 17.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/experts-warn-of-new-polyglot-malware-september-4th.html">
+        <div class="card-thumb"><img src="../images/shield-icon.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Experts warn of new ‘polyglot’ malware – September 4th</h3>
+          <p class="card-excerpt">Experts warn of new &amp;#8216;polyglot&amp;#8217; malware Cybersecurity experts have warned about a new malicious Microsoft Word file, dubbed MalDoc in PDF. The malwar</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/facebook-marketplace-user-data-for-sale-february-14th.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Facebook Marketplace User Data For Sale – February 14th</h3>
+          <p class="card-excerpt">Facebook Marketplace User Data For Sale A cyber-criminal known as &amp;#8220;algoatson&amp;#8221; placed the data of over 200,000 Facebook Marketplace users for sale on</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/fbi-nails-qakbot-offender-august-30th.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>FBI nails Qakbot offender – August 30th</h3>
+          <p class="card-excerpt">Critical vulnerability exploited by FIN8 threat actors Citrix NetScaler ADC and NetScaler Gateway are vulnerable to opportunistic attacks by a ransomware group </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/fbi-takes-down-breachforums-again.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>FBI takes down BreachForums -again!</h3>
+          <p class="card-excerpt">The US Federal Bureau of Investigation (FBI) is investigating the criminal hacking forum BreachForums after taking down its website last week. This follows the </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/finland-police-accuse-chinese-apt31-group-of-2020-parliament-attack-march-29th.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Finland Police Accuse Chinese APT31 Group of 2020 Parliament Attack – March 29th</h3>
+          <p class="card-excerpt">Cisco Patches 14 iOS Vulnerabilities Cisco released security updates that patched 14 Cisco iOS vulnerabilities that could have caused Denial-of-Service (DoS) bu</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/gta-v-source-code-leaked-on-telegram-channel-december-26th.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>‘GTA V’ Source Code Leaked on Telegram Channel – December 26th</h3>
+          <p class="card-excerpt">Security Camera Hackers Sell Footage in Telegram Group A Vietnamese security researcher named Minh Hung uncovered a Vietnamese-language Telegram group selling h</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/healthcare-cyber-attacks-now-a-national-security-threat.html">
+        <div class="card-thumb"><img src="../images/digital-globe.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Healthcare cyber-attacks now “a national security threat”</h3>
+          <p class="card-excerpt">Search engine giant&amp;#8217;s Google Threat Intelligence Group reports that cybercriminal and state-backed cyber-attacks on the healthcare sector in countries suc</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/hpe-investigating-hacker-breach-claims-january-21st.html">
+        <div class="card-thumb"><img src="../images/network-cables.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>HPE Investigating Hacker Breach Claims – January 21st</h3>
+          <p class="card-excerpt">HPE Investigating Hacker Breach Claims Following claims from the IntelBroker group on BreachForums of having access to large amounts of Hewlett Packard Enterpri</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/british-library-breach-highlights-new-threat.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>British Library Breach Highlights New Threat</h3>
+          <p class="card-excerpt"></p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+</div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><span class="logo-accent">C</span>yber Intelligence</div>
+      <p class="footer-tagline">In-depth analysis, breaking news, and expert interviews covering the cybersecurity landscape. Trusted by professionals worldwide.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <a href="../categories/news.html">News</a>
+      <a href="../categories/analysis.html">Analysis</a>
+      <a href="../categories/expert-opinions.html">Expert Opinions</a>
+      <a href="../categories/ransomware.html">Ransomware</a>
+      <a href="../categories/cybercrime.html">Cybercrime</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Conferences</a>
+      <a href="#">Glossary of Terms</a>
+      <a href="#">Awards</a>
+      <a href="#">Ecosystem Map</a>
+    </div>
+    <div class="footer-col">
+      <h4>Stay Informed</h4>
+      <p class="footer-newsletter-text">Get the latest cybersecurity insights delivered to your inbox.</p>
+      <form class="footer-newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" aria-label="Email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-contact">
+        <a href="../about.html">About</a>
+        <a href="mailto:info@cyberintel.media">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>&copy; 2026 Cyber Intelligence Media. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+<script>
+// Dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('ci-dark', document.body.classList.contains('dark') ? '1' : '0');
+}
+if (localStorage.getItem('ci-dark') === '1') document.body.classList.add('dark');
+
+// Search filter (simple client-side)
+function filterArticles(q) {
+  if (!q) return;
+  q = q.toLowerCase();
+  document.querySelectorAll('.card').forEach(function(c) {
+    var t = c.textContent.toLowerCase();
+    c.style.display = t.includes(q) ? '' : 'none';
+  });
+}
+
+// ── Scroll-triggered card animations ──
+(function() {
+  var cards = document.querySelectorAll('.card');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var delay = Array.prototype.indexOf.call(
+          entry.target.parentNode.children, entry.target
+        ) % 3 * 100;
+        setTimeout(function() {
+          entry.target.classList.add('animate-in');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Hero entrance animation ──
+(function() {
+  var hero = document.querySelector('.hero-animate');
+  if (!hero) return;
+  var children = hero.children;
+  for (var i = 0; i < children.length; i++) {
+    (function(el, idx) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      setTimeout(function() {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, 200 + idx * 150);
+    })(children[i], i);
+  }
+})();
+
+// ── Category filter tabs ──
+(function() {
+  var tabs = document.querySelectorAll('.filter-tab');
+  if (!tabs.length) return;
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var cat = tab.getAttribute('data-cat');
+      var cards = document.querySelectorAll('#card-grid .card');
+      cards.forEach(function(c) {
+        if (cat === 'all') {
+          c.style.display = '';
+        } else {
+          var cats = (c.getAttribute('data-category') || '').toLowerCase();
+          c.style.display = cats.includes(cat.toLowerCase()) ? '' : 'none';
+        }
+      });
+      // Reset load-more visibility after filter
+      var btn = document.getElementById('loadMoreBtn');
+      if (btn) btn.style.display = '';
+    });
+  });
+})();
+
+// ── Load More button ──
+(function() {
+  var btn = document.getElementById('loadMoreBtn');
+  if (!btn) return;
+  var grid = document.getElementById('card-grid');
+  if (!grid) return;
+  var allCards = grid.querySelectorAll('.card');
+  var batchSize = 12;
+  var shown = batchSize;
+  // Hide cards beyond initial batch
+  for (var i = 0; i < allCards.length; i++) {
+    if (i >= batchSize) allCards[i].classList.add('hidden-card');
+  }
+  if (allCards.length <= batchSize) btn.style.display = 'none';
+  btn.addEventListener('click', function() {
+    var next = shown + batchSize;
+    for (var i = shown; i < next && i < allCards.length; i++) {
+      allCards[i].classList.remove('hidden-card');
+    }
+    shown = next;
+    if (shown >= allCards.length) btn.style.display = 'none';
+  });
+})();
+
+// ── Sidebar animated counters ──
+(function() {
+  var counters = document.querySelectorAll('.stat-counter');
+  if (!counters.length) return;
+  var animated = false;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        counters.forEach(function(counter) {
+          var target = parseInt(counter.getAttribute('data-target'), 10);
+          var numEl = counter.querySelector('.counter-num');
+          var start = 0;
+          var duration = 1500;
+          var startTime = null;
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            numEl.textContent = Math.floor(eased * target);
+            if (progress < 1) requestAnimationFrame(step);
+            else numEl.textContent = target;
+          }
+          requestAnimationFrame(step);
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  counters.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Reading progress bar (article pages) ──
+(function() {
+  var bar = document.getElementById('readingProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = pct + '%';
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersecurity News &amp; Analysis | Cyber Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="accent-strip"></div>
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="header-left">
+        <button class="icon-btn search-btn" aria-label="Search" onclick="document.querySelector('.search-overlay').classList.toggle('open')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <a href="./index.html" class="site-logo">
+          <span class="logo-text"><span class="logo-accent">C</span>yber Intelligence</span>
+        </a>
+        <div class="site-tagline">In-depth cybersecurity analysis &amp; breaking news</div>
+      </div>
+      <div class="header-right">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="icon-btn dark-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="./categories/news.html" class="nav-link">News</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/analysis.html" class="nav-link">Analysis</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/expert-opinions.html" class="nav-link">Expert Opinions</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Resources</a>
+        <div class="dropdown-menu"><a href="#">Conferences</a>
+<a href="#">Glossary of Terms</a>
+<a href="#">Awards</a>
+<a href="#">Ecosystem Map</a>
+</div>
+      </div>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav .nav-inner').classList.toggle('open')">&#9776;</button>
+  </nav>
+  <div class="trending-bar">
+    <div class="trending-inner">
+      <span class="trending-label">Trending</span>
+      <div class="trending-tags"><a href="./categories/ransomware.html" class="trend-tag">Ransomware</a>
+<a href="./categories/ai-threats.html" class="trend-tag">AI Threats</a>
+<a href="./categories/zero-day.html" class="trend-tag">Zero-Day</a>
+<a href="./categories/data-breach.html" class="trend-tag">Data Breach</a>
+<a href="./categories/apt.html" class="trend-tag">APT</a>
+<a href="./categories/critical-infrastructure.html" class="trend-tag">Critical Infrastructure</a>
+<a href="./categories/supply-chain.html" class="trend-tag">Supply Chain</a>
+<a href="./categories/cloud-security.html" class="trend-tag">Cloud Security</a>
+<a href="./categories/cyber-espionage.html" class="trend-tag">Cyber Espionage</a>
+<a href="./categories/malware.html" class="trend-tag">Malware</a>
+<a href="./categories/phishing.html" class="trend-tag">Phishing</a>
+<a href="./categories/healthcare.html" class="trend-tag">Healthcare</a>
+<a href="./categories/finance.html" class="trend-tag">Finance</a>
+<a href="./categories/geopolitics.html" class="trend-tag">Geopolitics</a>
+<a href="./categories/hacktivism.html" class="trend-tag">Hacktivism</a>
+</div>
+    </div>
+  </div>
+  <div class="search-overlay">
+    <div class="search-box">
+      <input type="text" placeholder="Search articles..." id="searchInput" onkeyup="filterArticles(this.value)">
+      <button class="icon-btn" onclick="document.querySelector('.search-overlay').classList.remove('open')">&#10005;</button>
+    </div>
+  </div>
+</header>
+<section class="hero-feature" style="background-image:url('./images/ai-robot.jpg')">
+  <div class="hero-overlay">
+    <div class="hero-content hero-animate">
+      <span class="hero-cat-badge">AI</span>
+      <h1><a href="articles/11-romantic-ai-chatbots-fail-security-tests-february-15th.html">11 Romantic AI Chatbots Fail Security Tests – February 15th</a></h1>
+      <p class="hero-excerpt">11 Romantic AI Chatbots Fail Security Tests The Mozilla Foundation released research that unveils that all 11 romantic AI chatbots tested, failed security and privacy tests. All 11 chatbots feature data privacy concerns, pulling much more data than is needed f</p>
+      <div class="hero-meta">
+        <span class="author-avatar">E</span>
+        <span class="hero-author">Editorial Team</span>
+        <span class="sep">&middot;</span>
+        <span>October 06, 2025</span>
+        <span class="sep">&middot;</span><span>1 min read</span>
+      </div>
+    </div>
+  </div>
+</section>
+<main class="home">
+  <div class="home-layout">
+    <section class="main-content">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-accent"></span>Latest Articles</h2>
+      </div>
+      <div class="filter-tabs"><button class="filter-tab active" data-cat="all">All</button><button class="filter-tab" data-cat="News">News</button><button class="filter-tab" data-cat="Data Breaches">Data Breaches</button><button class="filter-tab" data-cat="Cybercrime">Cybercrime</button><button class="filter-tab" data-cat="Geopolitics">Geopolitics</button><button class="filter-tab" data-cat="AI">AI</button><button class="filter-tab" data-cat="Ransomware">Ransomware</button><button class="filter-tab" data-cat="Policy &amp; Regulation">Policy &amp; Regulation</button><button class="filter-tab" data-cat="Industry">Industry</button></div>
+      <div class="grid" id="card-grid"><article class="card" data-category="AI News">
+      <a href="articles/2025-forecast-to-be-boom-year-for-cybersecurity.html">
+        <div class="card-thumb"><img src="./images/cyber-spy.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>2025 forecast to be boom year for cybersecurity</h3>
+          <p class="card-excerpt">California-based cybersecurity goliath Palo Alto Networks has issued a bullish revenue forecast based on a perceived rising global demand for artificial intelli</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/ai-gives-the-game-away.html">
+        <div class="card-thumb"><img src="./images/computer-monitor.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI gives the game away</h3>
+          <p class="card-excerpt">The latest threat for companies using large language (LLM) AI software to replace human staff is the software’s innate gullibility. LLM software can be likened </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="News">
+      <a href="articles/blocked-ip-addresses-increase-by-116-february-9th.html">
+        <div class="card-thumb"><img src="./images/robot-pointing.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">News</span>
+          <h3>Blocked IP Addresses Increase by 116% – February 9th</h3>
+          <p class="card-excerpt">Blocked IP Addresses Increase by 116% According to a report by Qrator Labs, blocked IP addresses associated with malicious activity increased by 116% in Q3 2023</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime Data Breaches News">
+      <a href="articles/cisa-and-fbi-release-iocs-associated-with-androxgh0st-malware-january-17th.html">
+        <div class="card-thumb"><img src="./images/hacker-laptop.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>CISA and FBI Release IOCs Associated with Androxgh0st Malware – January 17th</h3>
+          <p class="card-excerpt">94% of Organizations Experienced Email Security Incidents in 2023 Egress revealed in a report that 94% of cybersecurity leaders disclosed that their organizatio</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Industry News">
+      <a href="articles/cybersecurity-market-to-reach-478b-by-2030-november-13th.html">
+        <div class="card-thumb"><img src="./images/computer-monitor.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Industry</span>
+          <h3>Cybersecurity Market To Reach $478B by 2030 – November 13th</h3>
+          <p class="card-excerpt">Cybersecurity Market To Reach $478B by 2030 Despite recent talk of a tech slowdown that reaches cyber, Allied Market Research reported that the market is poised</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI Cybercrime News">
+      <a href="articles/darcula-can-suck-the-blood-out-of-any-brand.html">
+        <div class="card-thumb"><img src="./images/cyber-spy.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Darcula can suck the blood out of any brand</h3>
+          <p class="card-excerpt">Cybercrime just got easier. A new artificial intelligence off-the-shelf phishing kit named darcula now enables even inexperienced cyber criminals to impersonate</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches News">
+      <a href="articles/discord-called-a-hotbed-of-malware-activity-october-17th.html">
+        <div class="card-thumb"><img src="./images/hacking-code.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Discord called a ‘hotbed’ of malware activity – October 17th</h3>
+          <p class="card-excerpt">Discord called a &amp;#8216;hotbed&amp;#8217; of malware activity Discord continues to be used by threat actors to launch malware attacks. Researchers have warned the o</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime Insider Threats News">
+      <a href="articles/enterprises-face-a-steep-rise-in-insider-threats.html">
+        <div class="card-thumb"><img src="./images/padlocks.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Enterprises face a steep rise in insider threats</h3>
+          <p class="card-excerpt">As we predicted earlier this year, harsh economic conditions across Western democracies are acting as a catalyst for cybercrime &amp;#8211; particularly those cyber</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News Ransomware">
+      <a href="articles/ai-powered-ransomware-fuels-cybercrime.html">
+        <div class="card-thumb"><img src="./images/robot-pointing.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI-powered ransomware fuels cybercrime</h3>
+          <p class="card-excerpt">Artificial intelligence (AI) services are enabling unscrupulous online blackmailers to create fake but highly realistic sexually explicit photographs and videos</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 28, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches Insider Threats News">
+      <a href="articles/cyber-attack-raises-sim-swapping-fears.html">
+        <div class="card-thumb"><img src="./images/robot-white.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Cyber-attack raises SIM-swapping fears</h3>
+          <p class="card-excerpt">Telecoms operator Orange Belgium has revealed that a cyber-attack in July resulted in the theft of data from 850,000 customer accounts. The telecoms operator ha</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Expert Opinions">
+      <a href="articles/building-a-new-generation-of-ethical-hackers.html">
+        <div class="card-thumb"><img src="./images/hacker-laptop.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Expert Opinions</span>
+          <h3>Building a new generation of ethical hackers</h3>
+          <p class="card-excerpt">Artificial Intelligence (AI) is learning to think like a human. But the critical question now being asked in IT circles is: “What kind of human?” Claude, Opus 4</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 05, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/cybersecurity-threats-on-the-rise-in-asia-pacific-july-21st.html">
+        <div class="card-thumb"><img src="./images/hacking-code.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Cybersecurity Threats on the Rise in Asia Pacific Cybersecurity incidents in Asia Pacific have increased by 29 percent this year and 134 percent in the last fou</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>July 21, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics News">
+      <a href="articles/germany-seeks-cybersecurity-partnership-with-israel-july-2nd.html">
+        <div class="card-thumb"><img src="./images/system-hacking.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Germany Seeks Cybersecurity Partnership with Israel Germany seeks to strengthen its cybersecurity collaboration with Israel in light of the recent escalation be</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - July 2nd- Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>July 02, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Cybercrime News">
+      <a href="articles/cybercrime-kills.html">
+        <div class="card-thumb"><img src="./images/security-lock.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Cybercrime Kills</h3>
+          <p class="card-excerpt">A patient’s death following a cyber-attack on the UK health sector by ransomware group Qilin has now been reported. The death has been confirmed by King&amp;#8217;s</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>Cybercrime Kills - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>June 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches Industry News">
+      <a href="articles/16-billion-passwords-breached-june-20th.html">
+        <div class="card-thumb"><img src="./images/padlocks.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">16 Billion Passwords Breached The Cybernews research team discovered a record-breaking breach of over 16 billion passwords worldwide, including Facebook, Google</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>June 20, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/criminal-use-of-ai-enters-new-and-dangerous-phase.html">
+        <div class="card-thumb"><img src="./images/robot-white.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Criminal use of AI enters new and dangerous phase</h3>
+          <p class="card-excerpt">Sextortion, a popular form of online blackmail, is on the rise. Security researchers, ESET reports a 178% increase in sextortion emails between the first half o</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>June 17, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics News">
+      <a href="articles/geopolitical-tensions-are-changing-the-cybersecurity-landscape.html">
+        <div class="card-thumb"><img src="./images/phone-lock.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Geopolitical Tensions are Changing the Cybersecurity Landscape Political tensions are prompting nations to re-strategize cybersecurity. Countries that once soug</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>June 13, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cryptocurrency News North Korea">
+      <a href="articles/bogus-it-workers-are-defrauding-us-businesses.html">
+        <div class="card-thumb"><img src="./images/hacker-laptop.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cryptocurrency</span>
+          <h3>Bogus IT workers are defrauding US businesses</h3>
+          <p class="card-excerpt">Cybercriminals have just added what may be the most dangerous weapon yet to their arsenal of illegal software, a Dark Web version of legitimate artificial intel</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>Alexis Hess</span>
+              <span class="sep">&middot;</span>
+              <span>June 13, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Industry News">
+      <a href="articles/cyera-secures-540-million-in-funding-june-11th.html">
+        <div class="card-thumb"><img src="./images/computer-monitor.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Industry</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Cyera secures $540 million in funding Cybersecurity firm Cyera has raised $540 million in a Series E funding round, bringing its total to over $1.3 billion. Cye</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - June 11th - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>June 11, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches News">
+      <a href="articles/critical-qualcomm-zero-days-exploited-in-targeted-android-attacks-june-2nd.html">
+        <div class="card-thumb"><img src="./images/server-room.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">🔓 Critical Qualcomm Zero-Days Exploited in Targeted Android Attacks Qualcomm has patched three zero-day vulnerabilities in its Adreno GPU drivers, which were ac</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - June 2nd - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>June 02, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI Data Breaches News">
+      <a href="articles/ai-increasingly-used-to-deliver-malware.html">
+        <div class="card-thumb"><img src="./images/circuit-board.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI increasingly used to deliver malware</h3>
+          <p class="card-excerpt">Many organizations’ ongoing enthusiasm for incorporating artificial intelligence (AI) is leaving them open to sophisticated and carefully planned cyber-attacks.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>AI increasingly used to deliver malware - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>May 30, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/ai-system-blackmails-its-creator.html">
+        <div class="card-thumb"><img src="./images/ai-robot.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI system blackmails its creator</h3>
+          <p class="card-excerpt">Artificial Intelligence (AI) is learning to think like a human. But the critical question now being asked in IT circles is: “What kind of human?” Claude, Opus 4</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="News">
+      <a href="articles/cyberattacks-hit-uk-retailers-hard.html">
+        <div class="card-thumb"><img src="./images/fingerprint-scan.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">News</span>
+          <h3>Cyberattacks hit UK retailers hard</h3>
+          <p class="card-excerpt">The UK retailers, Marks &amp;amp; Spencer, Harrods and the Co-Op, who have been hit by a flurry of cyber-attacks over the last two weeks, have immediately experienc</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>Cyberattacks hit UK retailers hard</span>
+              <span class="sep">&middot;</span>
+              <span>May 02, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/ai-driven-cybersecurity-dominates-rsa-in-san-francisco.html">
+        <div class="card-thumb"><img src="./images/dark-hoodie.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI cyber dominates RSA San Francisco</h3>
+          <p class="card-excerpt">Artificial Intelligence (AI)-driven cybersecurity is set to dominate RSA, the world’s largest cybersecurity event, which kicked off yesterday in San Francisco a</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 30, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI Data Breaches News">
+      <a href="articles/deepfake-news-lures-new-victims.html">
+        <div class="card-thumb"><img src="./images/digital-globe.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfake news lures new victims</h3>
+          <p class="card-excerpt">Deepfake videos of TV news presenters are being used to dupe gullible viewers into logging onto illegal gambling sites where malware is then downloaded onto the</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 23, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="News">
+      <a href="articles/cybersecurity-has-become-an-ongoing-war.html">
+        <div class="card-thumb"><img src="./images/network-cables.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">News</span>
+          <h3>Cybersecurity has become an ongoing war</h3>
+          <p class="card-excerpt">Nikesh Arora, Palo Alto Networks&amp;#8217; CEO In an exclusive interview with Cyber Intelligence, Palo Alto Networks CEO Nikesh Arora explains the growing importan</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>Cybersecurity has become an ongoing war - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>April 15, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches News">
+      <a href="articles/advanced-persistent-threats-rise-by-74-in-2024-report-march-6th.html">
+        <div class="card-thumb"><img src="./images/code-screen.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">PHP-CGI RCE Flaw Exploited in Attacks on Japan&amp;#8217;s Tech, Telecom, and E-Commerce Sectors Cyber attackers are actively exploiting a vulnerability in PHP-CGI </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>March 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Healthcare News">
+      <a href="articles/60-of-cybersecurity-professionals-considering-job-change-march-5th.html">
+        <div class="card-thumb"><img src="./images/digital-lock.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Healthcare</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Healthcare Cybersecurity Budgets Expected to Increase in 2025 After years of financial constraints, healthcare cybersecurity is finally getting a boost. A new H</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>March 05, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics News">
+      <a href="articles/cyber-truce-with-russia-opens-up-us-for-cyber-attacks.html">
+        <div class="card-thumb"><img src="./images/system-hacking.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Russian Cyber Truce Places US at Risk</h3>
+          <p class="card-excerpt">US Defense Secretary Pete Hegseth’s shock directive to US Cyber Command to pause offensive cyber-operations against Russia may have unforeseen consequences for </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>March 04, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Policy &amp; Regulation News">
+      <a href="articles/dragonforce-ransomware-hits-saudi-firm-6tb-of-data-leaked-february-27th.html">
+        <div class="card-thumb"><img src="./images/office-security.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">CISA Names Karen Evans as Executive Assistant Director for Cybersecurity The Cybersecurity and Infrastructure Security Agency (CISA) has appointed Karen Evans a</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="News">
+      <a href="articles/companies-must-identify-the-value-of-their-data.html">
+        <div class="card-thumb"><img src="./images/shield-icon.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">News</span>
+          <h3>Companies Must Recognize Data&#x27;s Value</h3>
+          <p class="card-excerpt">Most organizations have no clear idea of the value of the data they hold on themselves and their customers. According to technology research and consulting firm</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 24, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Healthcare News">
+      <a href="articles/dark-unicorns-target-us-healthcare.html">
+        <div class="card-thumb"><img src="./images/ai-robot.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>‘Dark Unicorns’ target US healthcare</h3>
+          <p class="card-excerpt">Ransomware attacks on the healthcare sector have risen by a third in 2024 with the US the prime target. Cybersecurity company Black Kite reports 374 incidents i</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">\</span>
+              <span>\u2018Dark Unicorns\u2019 target US healthcare - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>February 12, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime News">
+      <a href="articles/identifying-fraudsters-on-the-internet.html">
+        <div class="card-thumb"><img src="./images/cyber-spy.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Identifying fraudsters on the internet</h3>
+          <p class="card-excerpt">Patrick Harding, Chief Product Architect at Ping Identity In an exclusive interview with Cyber Intelligence, Patrick Harding, chief product architect at digital</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">I</span>
+              <span>Identifying fraudsters on the internet - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>February 07, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime Policy &amp; Regulation News">
+      <a href="articles/cybercrime-forums-span-national-boundaries.html">
+        <div class="card-thumb"><img src="./images/computer-monitor.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Cybercrime Forums Cross-Borders</h3>
+          <p class="card-excerpt">The bust of the illegal Cracked and Nulled crime forums evidences the global nature of cybercrime and the impossibility of seeing it as a threat that has no reg</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 03, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Cybercrime News">
+      <a href="articles/hellcat-is-new-breed-of-cybercriminal.html">
+        <div class="card-thumb"><img src="./images/robot-pointing.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>‘Hellcat’ is new breed of cybercriminal</h3>
+          <p class="card-excerpt">A ransomware gang, Hellcat, that emerged in 2024 is being seen as representative of a new type of threat actor using off-the-shelf malware and innovative extort</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 30, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI Geopolitics News">
+      <a href="articles/chinese-ai-offering-rattles-big-tech-investors.html">
+        <div class="card-thumb"><img src="./images/hacker-laptop.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Chinese AI rattles Big Tech investors</h3>
+          <p class="card-excerpt">The start of this week saw roughly $1 trillion wiped off leading US tech stocks, following the launch of Deepseek, a Chinese rival to AI offerings such as Micro</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>Chinese AI rattles Big Tech investors - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 28, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI Cybercrime News">
+      <a href="articles/genai-speeds-up-cybercrime.html">
+        <div class="card-thumb"><img src="./images/hacking-code.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>GenAI speeds up cybercrime</h3>
+          <p class="card-excerpt">While Silicon Valley is finding that artificial intelligence (AI) is proving a tough sell to businesses and consumers, cybercriminals worldwide have lost little</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime Cryptocurrency News">
+      <a href="articles/fbi-takes-down-crypto-laundering-scam.html">
+        <div class="card-thumb"><img src="./images/padlocks.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>FBI Takes Down Crypto-Laundering Scam</h3>
+          <p class="card-excerpt">The line between cybercrime and plain old-fashioned fraud has become yet more blurred following the sentencing of international virtual currency vendor Anurag P</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 24, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Healthcare News">
+      <a href="articles/healthcare-attacks-will-not-slow-down-in-2025-january-22nd.html">
+        <div class="card-thumb"><img src="./images/robot-white.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Healthcare</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Healthcare Attacks will not Slow Down in 2025 According to a report by Netwrix, 84% of organizations in the healthcare sector faced a cyber attack in 2024 and p</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 22, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Policy &amp; Regulation News">
+      <a href="articles/fresh-focus-on-cyber-attacks-for-cisa.html">
+        <div class="card-thumb"><img src="./images/system-hacking.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Policy &amp; Regulation</span>
+          <h3>Fresh Focus on Cyber-Attacks for CISA</h3>
+          <p class="card-excerpt">One of the greatest challenges now facing President Trump’s new administration is to protect the US’s critical infrastructure and its economy from the rapidly g</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 21, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics Data Breaches News">
+      <a href="articles/fbi-unplugs-chinese-hackers.html">
+        <div class="card-thumb"><img src="./images/security-lock.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>FBI unplugs Chinese hackers</h3>
+          <p class="card-excerpt">The US Justice Department and FBI have completed a law enforcement operation to delete Chinese malware from approximately 4,258 U.S.-based computers and network</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">F</span>
+              <span>FBI unplugs Chinese hackers - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 15, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware AI News">
+      <a href="articles/ai-enables-ransomware-boom.html">
+        <div class="card-thumb"><img src="./images/phone-lock.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>AI enables ransomware boom</h3>
+          <p class="card-excerpt">A new ransomware group, named Funksec, is the latest example of relatively inexperienced cybercriminals using AI to develop weaponized malware. The group claims</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>AI enables ransomware boom - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 14, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime News">
+      <a href="articles/fake-job-offer-scams-gather-pace.html">
+        <div class="card-thumb"><img src="./images/server-room.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Fake job offer scams gather pace</h3>
+          <p class="card-excerpt">The New Year has begun with further news of a particularly cynical fraud campaign aimed at jobseekers. Lucrative-seeming fake job offers are being sent by email</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 13, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Cryptocurrency News">
+      <a href="articles/inc-ransom-hits-three-uk-health-orgs-december-4th.html">
+        <div class="card-thumb"><img src="./images/security-lock.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Germans Arrest ‘Crimenetwork’ Gang German authorities have made arrests linked to drug-selling platform Crimenetwork, seizing over $1 million in crypto assets. </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>December 04, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Healthcare Policy &amp; Regulation News">
+      <a href="articles/how-can-companies-deal-with-data-overload.html">
+        <div class="card-thumb"><img src="./images/circuit-board.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Healthcare</span>
+          <h3>How Companies Deal with Data Overload?</h3>
+          <p class="card-excerpt">Dr. Sanjaya Kumar, MD, CEO of SureShield, Inc. Sanjaya Kumar, MD, is the CEO of cybersecurity company SureShield, Inc. Dr. Kumar has more than 25 years of healt</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>December 04, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics Data Breaches News">
+      <a href="articles/chinas-telecom-hack-most-serious-in-us-history.html">
+        <div class="card-thumb"><img src="./images/fingerprint-scan.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>China’s Historical US Telecom Hack</h3>
+          <p class="card-excerpt">US Senator Mark Warner has called the Salt Typhoon hack, conducted by a group that has been linked to Chinese intelligence, “the most serious telecoms hack in o</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>China\u2019s Historical US Telecom Hack - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>November 29, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/generative-ai-the-current-state-of-play.html">
+        <div class="card-thumb"><img src="./images/dark-hoodie.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>GenAI</h3>
+          <p class="card-excerpt">Mike Finley, the Co-Founder and CTO of AnswerRocket In an exclusive interview with Cyber Intelligence, Mike Finley, the Co-Founder and CTO of AnswerRocket, a bu</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>November 14, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime Data Breaches News">
+      <a href="articles/cybercriminals-pose-as-law-enforcement-agencies.html">
+        <div class="card-thumb"><img src="./images/digital-globe.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Cybercriminals pose as police agencies</h3>
+          <p class="card-excerpt">The US Federal Bureau of Investigation (FBI) has issued an urgent warning to business and law enforcement agencies that cybercriminals are using genuine stolen </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>November 12, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+</div>
+      <div class="load-more-wrap">
+        <button class="load-more-btn" id="loadMoreBtn">Load More Articles</button>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <div class="widget">
+        <h3 class="widget-title">Categories</h3>
+        <ul class="cat-list"><li><a href="categories/news.html">News</a><span class="cat-count">298</span></li>
+<li><a href="categories/data-breaches.html">Data Breaches</a><span class="cat-count">93</span></li>
+<li><a href="categories/cybercrime.html">Cybercrime</a><span class="cat-count">80</span></li>
+<li><a href="categories/geopolitics.html">Geopolitics</a><span class="cat-count">59</span></li>
+<li><a href="categories/ai.html">AI</a><span class="cat-count">50</span></li>
+<li><a href="categories/ransomware.html">Ransomware</a><span class="cat-count">38</span></li>
+<li><a href="categories/policy-and-regulation.html">Policy &amp; Regulation</a><span class="cat-count">28</span></li>
+<li><a href="categories/industry.html">Industry</a><span class="cat-count">18</span></li>
+<li><a href="categories/cryptocurrency.html">Cryptocurrency</a><span class="cat-count">13</span></li>
+<li><a href="categories/healthcare.html">Healthcare</a><span class="cat-count">11</span></li>
+<li><a href="categories/insider-threats.html">Insider Threats</a><span class="cat-count">7</span></li>
+<li><a href="categories/workforce.html">Workforce</a><span class="cat-count">7</span></li>
+<li><a href="categories/sextortion.html">Sextortion</a><span class="cat-count">2</span></li>
+<li><a href="categories/expert-opinions.html">Expert Opinions</a><span class="cat-count">1</span></li>
+<li><a href="categories/north-korea.html">North Korea</a><span class="cat-count">1</span></li>
+</ul>
+      </div>
+      <div class="widget">
+        <h3 class="widget-title">Recent</h3>
+        <ul class="recent-list"><li class="recent-item">
+          <a href="articles/11-romantic-ai-chatbots-fail-security-tests-february-15th.html">
+            <span class="recent-title">11 Romantic AI Chatbots Fail Security Tests – February 15th</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/2025-forecast-to-be-boom-year-for-cybersecurity.html">
+            <span class="recent-title">2025 forecast to be boom year for cybersecurity</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/ai-gives-the-game-away.html">
+            <span class="recent-title">AI gives the game away</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/blocked-ip-addresses-increase-by-116-february-9th.html">
+            <span class="recent-title">Blocked IP Addresses Increase by 116% – February 9th</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/cisa-and-fbi-release-iocs-associated-with-androxgh0st-malware-january-17th.html">
+            <span class="recent-title">CISA and FBI Release IOCs Associated with Androxgh0st Malware – January 17th</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+</ul>
+      </div>
+    </aside>
+  </div>
+  <section class="browse-all-cta">
+    <div class="cta-inner">
+      <h2>Explore All Articles</h2>
+      <p>Explore our full archive by category</p>
+      <div class="cta-cat-grid"><a href="categories/news.html" class="cta-cat-link">News <span>(298)</span></a>
+<a href="categories/data-breaches.html" class="cta-cat-link">Data Breaches <span>(93)</span></a>
+<a href="categories/cybercrime.html" class="cta-cat-link">Cybercrime <span>(80)</span></a>
+<a href="categories/geopolitics.html" class="cta-cat-link">Geopolitics <span>(59)</span></a>
+<a href="categories/ai.html" class="cta-cat-link">AI <span>(50)</span></a>
+<a href="categories/ransomware.html" class="cta-cat-link">Ransomware <span>(38)</span></a>
+<a href="categories/policy-and-regulation.html" class="cta-cat-link">Policy &amp; Regulation <span>(28)</span></a>
+<a href="categories/industry.html" class="cta-cat-link">Industry <span>(18)</span></a>
+<a href="categories/cryptocurrency.html" class="cta-cat-link">Cryptocurrency <span>(13)</span></a>
+<a href="categories/healthcare.html" class="cta-cat-link">Healthcare <span>(11)</span></a>
+<a href="categories/insider-threats.html" class="cta-cat-link">Insider Threats <span>(7)</span></a>
+<a href="categories/workforce.html" class="cta-cat-link">Workforce <span>(7)</span></a>
+</div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><span class="logo-accent">C</span>yber Intelligence</div>
+      <p class="footer-tagline">In-depth analysis, breaking news, and expert interviews covering the cybersecurity landscape. Trusted by professionals worldwide.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <a href="./categories/news.html">News</a>
+      <a href="./categories/analysis.html">Analysis</a>
+      <a href="./categories/expert-opinions.html">Expert Opinions</a>
+      <a href="./categories/ransomware.html">Ransomware</a>
+      <a href="./categories/cybercrime.html">Cybercrime</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Conferences</a>
+      <a href="#">Glossary of Terms</a>
+      <a href="#">Awards</a>
+      <a href="#">Ecosystem Map</a>
+    </div>
+    <div class="footer-col">
+      <h4>Stay Informed</h4>
+      <p class="footer-newsletter-text">Get the latest cybersecurity insights delivered to your inbox.</p>
+      <form class="footer-newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" aria-label="Email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-contact">
+        <a href="./about.html">About</a>
+        <a href="mailto:info@cyberintel.media">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>&copy; 2026 Cyber Intelligence Media. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+<script>
+// Dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('ci-dark', document.body.classList.contains('dark') ? '1' : '0');
+}
+if (localStorage.getItem('ci-dark') === '1') document.body.classList.add('dark');
+
+// Search filter (simple client-side)
+function filterArticles(q) {
+  if (!q) return;
+  q = q.toLowerCase();
+  document.querySelectorAll('.card').forEach(function(c) {
+    var t = c.textContent.toLowerCase();
+    c.style.display = t.includes(q) ? '' : 'none';
+  });
+}
+
+// ── Scroll-triggered card animations ──
+(function() {
+  var cards = document.querySelectorAll('.card');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var delay = Array.prototype.indexOf.call(
+          entry.target.parentNode.children, entry.target
+        ) % 3 * 100;
+        setTimeout(function() {
+          entry.target.classList.add('animate-in');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Hero entrance animation ──
+(function() {
+  var hero = document.querySelector('.hero-animate');
+  if (!hero) return;
+  var children = hero.children;
+  for (var i = 0; i < children.length; i++) {
+    (function(el, idx) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      setTimeout(function() {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, 200 + idx * 150);
+    })(children[i], i);
+  }
+})();
+
+// ── Category filter tabs ──
+(function() {
+  var tabs = document.querySelectorAll('.filter-tab');
+  if (!tabs.length) return;
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var cat = tab.getAttribute('data-cat');
+      var cards = document.querySelectorAll('#card-grid .card');
+      cards.forEach(function(c) {
+        if (cat === 'all') {
+          c.style.display = '';
+        } else {
+          var cats = (c.getAttribute('data-category') || '').toLowerCase();
+          c.style.display = cats.includes(cat.toLowerCase()) ? '' : 'none';
+        }
+      });
+      // Reset load-more visibility after filter
+      var btn = document.getElementById('loadMoreBtn');
+      if (btn) btn.style.display = '';
+    });
+  });
+})();
+
+// ── Load More button ──
+(function() {
+  var btn = document.getElementById('loadMoreBtn');
+  if (!btn) return;
+  var grid = document.getElementById('card-grid');
+  if (!grid) return;
+  var allCards = grid.querySelectorAll('.card');
+  var batchSize = 12;
+  var shown = batchSize;
+  // Hide cards beyond initial batch
+  for (var i = 0; i < allCards.length; i++) {
+    if (i >= batchSize) allCards[i].classList.add('hidden-card');
+  }
+  if (allCards.length <= batchSize) btn.style.display = 'none';
+  btn.addEventListener('click', function() {
+    var next = shown + batchSize;
+    for (var i = shown; i < next && i < allCards.length; i++) {
+      allCards[i].classList.remove('hidden-card');
+    }
+    shown = next;
+    if (shown >= allCards.length) btn.style.display = 'none';
+  });
+})();
+
+// ── Sidebar animated counters ──
+(function() {
+  var counters = document.querySelectorAll('.stat-counter');
+  if (!counters.length) return;
+  var animated = false;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        counters.forEach(function(counter) {
+          var target = parseInt(counter.getAttribute('data-target'), 10);
+          var numEl = counter.querySelector('.counter-num');
+          var start = 0;
+          var duration = 1500;
+          var startTime = null;
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            numEl.textContent = Math.floor(eased * target);
+            if (progress < 1) requestAnimationFrame(step);
+            else numEl.textContent = target;
+          }
+          requestAnimationFrame(step);
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  counters.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Reading progress bar (article pages) ──
+(function() {
+  var bar = document.getElementById('readingProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = pct + '%';
+  });
+})();
+</script>
+</body>
+</html>

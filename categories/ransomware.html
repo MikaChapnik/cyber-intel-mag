@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ransomware | Cyber Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="accent-strip"></div>
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="header-left">
+        <button class="icon-btn search-btn" aria-label="Search" onclick="document.querySelector('.search-overlay').classList.toggle('open')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <a href="../index.html" class="site-logo">
+          <span class="logo-text"><span class="logo-accent">C</span>yber Intelligence</span>
+        </a>
+        <div class="site-tagline">In-depth cybersecurity analysis &amp; breaking news</div>
+      </div>
+      <div class="header-right">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="icon-btn dark-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="../categories/news.html" class="nav-link">News</a>
+      </div>
+      <div class="nav-item">
+        <a href="../categories/analysis.html" class="nav-link">Analysis</a>
+      </div>
+      <div class="nav-item">
+        <a href="../categories/expert-opinions.html" class="nav-link">Expert Opinions</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Resources</a>
+        <div class="dropdown-menu"><a href="#">Conferences</a>
+<a href="#">Glossary of Terms</a>
+<a href="#">Awards</a>
+<a href="#">Ecosystem Map</a>
+</div>
+      </div>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav .nav-inner').classList.toggle('open')">&#9776;</button>
+  </nav>
+  <div class="trending-bar">
+    <div class="trending-inner">
+      <span class="trending-label">Trending</span>
+      <div class="trending-tags"><a href="../categories/ransomware.html" class="trend-tag">Ransomware</a>
+<a href="../categories/ai-threats.html" class="trend-tag">AI Threats</a>
+<a href="../categories/zero-day.html" class="trend-tag">Zero-Day</a>
+<a href="../categories/data-breach.html" class="trend-tag">Data Breach</a>
+<a href="../categories/apt.html" class="trend-tag">APT</a>
+<a href="../categories/critical-infrastructure.html" class="trend-tag">Critical Infrastructure</a>
+<a href="../categories/supply-chain.html" class="trend-tag">Supply Chain</a>
+<a href="../categories/cloud-security.html" class="trend-tag">Cloud Security</a>
+<a href="../categories/cyber-espionage.html" class="trend-tag">Cyber Espionage</a>
+<a href="../categories/malware.html" class="trend-tag">Malware</a>
+<a href="../categories/phishing.html" class="trend-tag">Phishing</a>
+<a href="../categories/healthcare.html" class="trend-tag">Healthcare</a>
+<a href="../categories/finance.html" class="trend-tag">Finance</a>
+<a href="../categories/geopolitics.html" class="trend-tag">Geopolitics</a>
+<a href="../categories/hacktivism.html" class="trend-tag">Hacktivism</a>
+</div>
+    </div>
+  </div>
+  <div class="search-overlay">
+    <div class="search-box">
+      <input type="text" placeholder="Search articles..." id="searchInput" onkeyup="filterArticles(this.value)">
+      <button class="icon-btn" onclick="document.querySelector('.search-overlay').classList.remove('open')">&#10005;</button>
+    </div>
+  </div>
+</header>
+<main class="cat-page">
+  <div class="cat-header">
+    <div class="cat-header-inner">
+      <span class="cat-label-sm">Category</span>
+      <h1>Ransomware</h1>
+      <p class="cat-count-text">38 articles</p>
+    </div>
+  </div>
+  <div class="cat-body">
+    <div class="grid"><article class="card">
+      <a href="../articles/ai-powered-ransomware-fuels-cybercrime.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI-powered ransomware fuels cybercrime</h3>
+          <p class="card-excerpt">Artificial intelligence (AI) services are enabling unscrupulous online blackmailers to create fake but highly realistic sexually explicit photographs and videos</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 28, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybercrime-kills.html">
+        <div class="card-thumb"><img src="../images/security-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Cybercrime Kills</h3>
+          <p class="card-excerpt">A patient’s death following a cyber-attack on the UK health sector by ransomware group Qilin has now been reported. The death has been confirmed by King&amp;#8217;s</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>Cybercrime Kills - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>June 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/dragonforce-ransomware-hits-saudi-firm-6tb-of-data-leaked-february-27th.html">
+        <div class="card-thumb"><img src="../images/office-security.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">CISA Names Karen Evans as Executive Assistant Director for Cybersecurity The Cybersecurity and Infrastructure Security Agency (CISA) has appointed Karen Evans a</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/dark-unicorns-target-us-healthcare.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>‘Dark Unicorns’ target US healthcare</h3>
+          <p class="card-excerpt">Ransomware attacks on the healthcare sector have risen by a third in 2024 with the US the prime target. Cybersecurity company Black Kite reports 374 incidents i</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">\</span>
+              <span>\u2018Dark Unicorns\u2019 target US healthcare - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>February 12, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/hellcat-is-new-breed-of-cybercriminal.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>‘Hellcat’ is new breed of cybercriminal</h3>
+          <p class="card-excerpt">A ransomware gang, Hellcat, that emerged in 2024 is being seen as representative of a new type of threat actor using off-the-shelf malware and innovative extort</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 30, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-enables-ransomware-boom.html">
+        <div class="card-thumb"><img src="../images/phone-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>AI enables ransomware boom</h3>
+          <p class="card-excerpt">A new ransomware group, named Funksec, is the latest example of relatively inexperienced cybercriminals using AI to develop weaponized malware. The group claims</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>AI enables ransomware boom - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 14, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/inc-ransom-hits-three-uk-health-orgs-december-4th.html">
+        <div class="card-thumb"><img src="../images/security-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Germans Arrest ‘Crimenetwork’ Gang German authorities have made arrests linked to drug-selling platform Crimenetwork, seizing over $1 million in crypto assets. </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>December 04, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ex-it-worker-arrested-for-ransomware-attack.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Ex-IT lead arrested for ransomware hit</h3>
+          <p class="card-excerpt">The US New Jersey District Court has arrested a man accused of conducting a ransomware attack on a former employer, highlighting the growing “insider threat” or</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 30, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/exclusive-expanding-ai-data-centers-have-become-tempting-targets.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>AI Data Centers as Cybercrime Hot Spot</h3>
+          <p class="card-excerpt">Big Tech’s rapidly-expanding server farms are becoming increasingly tempting targets for ransomware gangs. In their Gadarene rush to be first with AI-based serv</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>July 09, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/boeing-discloses-200m-ransomware-attempt-may-13th.html">
+        <div class="card-thumb"><img src="../images/padlocks.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Boeing Discloses $200M Ransomware Attempt Boeing made a significant disclosure: The LockBit ransomware group targeted the company, which demanded a staggering $</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 13, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/change-healthcare-hit-by-another-potential-cyber-attack-april-9th.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Change Healthcare Hit by Another Potential Cyber Attack Arriving just a month after a paid ransom was demanded following the massive data breach in February 202</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 09, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/inc-ransom-group-threatens-to-release-nhs-data-march-28th.html">
+        <div class="card-thumb"><img src="../images/network-cables.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">&amp;#8216;INC Ransom&amp;#8217; Group Threatens to Release NHS Data The &amp;#8216;INC Ransom&amp;#8217; ransomware group publicly threatened to release three terabytes of NHS</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>March 28, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/googles-gemini-ai-restricted-to-answer-global-election-questions-march-13th.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Over 75% of Cyber Incidents Impacted Small Businesses in 2023 A Sophos report revealed that over 75% of small businesses were impacted by cyber incidents in 202</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>March 13, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/blackcat-gives-go-ahead-for-healthcare-attacks.html">
+        <div class="card-thumb"><img src="../images/computer-monitor.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>BlackCat Allows Healthcare Cyberattacks</h3>
+          <p class="card-excerpt">Following actions taken against the infamous BlackCat ransomware group in December by the US Federal Bureau of Investigation (FBI), the cybercriminal gang has w</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">B</span>
+              <span>BlackCat Allows Healthcare Cyberattacks - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>March 05, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/geopolitical-crises-fuel-cyber-attacks-in-the-us.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Geopolitically-Fueled US Cyberattacks</h3>
+          <p class="card-excerpt">As geopolitical tensions and conflicts rise across the globe, so are cyber-attacks on critical Western infrastructure, particularly industrial facilities runnin</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">G</span>
+              <span>Geopolitically-Fueled US Cyberattacks - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>March 01, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/international-law-enforcement-seizes-lockbits-website-february-20th.html">
+        <div class="card-thumb"><img src="../images/security-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">International Law Enforcement Seizes LockBit&amp;#8217;s Website U.S. and U.K. authorities announced the seizure of the LockBit ransomware gang&amp;#8217;s extortion we</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 20, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/critical-infrastructure-under-increased-attack.html">
+        <div class="card-thumb"><img src="../images/network-cables.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Increasing Critical Infrastructure Risk</h3>
+          <p class="card-excerpt">France-based Schneider Electric became the latest utility company to succumb to a ransomware attack on January 17, when some of its business divisions serving s</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">I</span>
+              <span>Increasing Critical Infrastructure Risk - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>February 04, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cyber-gangs-to-launch-media-offensive-in-2024.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Cyber-Gangs&#x27; 2024 Media Offensive</h3>
+          <p class="card-excerpt">Cybercrime, which has become a multi-trillion-dollar industry over recent decades, became increasingly sophisticated during 2023, with criminal groups now adopt</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 02, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/62-of-top-ransomware-groups-activated-remote-attacks-in-2023-december-27th.html">
+        <div class="card-thumb"><img src="../images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">62% of Top Ransomware Groups Activated Remote Attacks in 2023 According to Sophos&amp;#8217; latest report, 62% of the most active ransomware groups in the world de</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>December 27, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/convicted-russian-pleads-guilty-to-ransomware-attacks-december-5th.html">
+        <div class="card-thumb"><img src="../images/digital-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Russian Pleads Guilty to Cyber Attacks</h3>
+          <p class="card-excerpt">IBM Consulting and Palo Alto Networks Announce Partnership Expansion In a press release published on December 4th, IBM Consulting and Palo Alto Networks announc</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>December 05, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/fbi-targets-casino-cybercrime.html">
+        <div class="card-thumb"><img src="../images/system-hacking.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>FBI targets casino cybercrime</h3>
+          <p class="card-excerpt">This week, the cyber division of the US Federal Bureau of Investigation (FBI) issued a Private Industry Notification warning that ransomware gangs are now explo</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">F</span>
+              <span>FBI targets casino cybercrime - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>November 10, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/blackcat-turns-to-munchkin-to-advance-hacker-operations-october-23rd.html">
+        <div class="card-thumb"><img src="../images/network-cables.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>BlackCat&#x27;s Latest &#x27;Munchkin&#x27; RaaS Tool</h3>
+          <p class="card-excerpt">International investigation results in Paris arrest A ransomware hacker identified as a member of the Ragnar Locker hacker group has been arrested in Paris as p</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 23, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/dark-web-ads-are-seeing-a-massive-surge-september-25th.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Dark Web Ads Are Seeing A Massive Surge</h3>
+          <p class="card-excerpt">RANSOMEDVC claims &amp;#8216;complete infiltration of all Sony systems&amp;#8217; Ransomware group, RANSOMEDVC claims to have successfully breached the security system </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>September 25, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/blackcat-gang-wields-new-weapon-to-target-cloud-storage-september-18th.html">
+        <div class="card-thumb"><img src="../images/system-hacking.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>BlackCat Gang Strikes Azure Cloud</h3>
+          <p class="card-excerpt">BlackCat gang wields a new weapon to target cloud storage The BlackCat ransomware gang is now using the Sphynx encryptor to target Azure cloud storage. The Spyn</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>September 18, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/blackcat-sharpens-its-claws.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>BlackCat sharpens its claws</h3>
+          <p class="card-excerpt">The new version of BlackCat ransomware, initially observed by IBM in May, is now reported to be causing chaos worldwide via a previously undiscovered built-in f</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">B</span>
+              <span>BlackCat sharpens its claws - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>August 21, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/infamous-ransomware-groups-linked-august-9th.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Infamous Ransomware Groups Linked</h3>
+          <p class="card-excerpt">Rhysida’s Link to Infamous Ransomware Group Check Point Incident Response Team (CPIRT), in collaboration with Check Point Research (CPR), published a report lin</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 09, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/10m-reward-for-lockbit-mastermind-june-10th.html">
+        <div class="card-thumb"><img src="../images/padlocks.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>$10M Reward for LockBit Mastermind – June 10th</h3>
+          <p class="card-excerpt">$10M Reward for LockBit Mastermind The U.S. Government launched a manhunt for the LockBit ransomware mastermind, Dmitry Yuryevich Khoroshev, for a bounty worth </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/27000-private-data-stolen-from-stanford-ransomware-attack-march-12th.html">
+        <div class="card-thumb"><img src="../images/circuit-board.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>27,000 Private Data Stolen from Stanford Ransomware Attack – March 12th</h3>
+          <p class="card-excerpt">BianLian&amp;#8217;s Extortion-Focused Shift GuidePoint&amp;#8217;s Research and Intelligence Team (GRIT) observed a recent shift in threat actor group, BianLian to foc</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/barracuda-again-the-target-of-malware-attack-august-15th.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Barracuda again the target of malware attack – August 14th</h3>
+          <p class="card-excerpt">Monti Ransomware group is back The group, which has been quiet for an extended period of time, restarted its public operations and released a new encryptor for </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/bhi-energy-comes-clean-about-devastating-data-breach-october-24th.html">
+        <div class="card-thumb"><img src="../images/system-hacking.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>BHI Energy comes clean about devastating data breach – October 24th</h3>
+          <p class="card-excerpt">BHI Energy comes clean about devastating data breach US energy firm BHI Energy has shared details about an Akira ransomware gang attack that breached its networ</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cyber-gangs-hold-healthcare-ransom.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Cyber gangs hold healthcare ransom</h3>
+          <p class="card-excerpt">Healthcare no longer off limits Cybercriminal groups have now completely abandoned any pretense that theirs are basically victimless crimes by attacking the hea</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybercrime-gets-physical.html">
+        <div class="card-thumb"><img src="../images/padlocks.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Cybercrime gets physical</h3>
+          <p class="card-excerpt">Cyber-physical systems (CPS), such as operational technology (OT), the Internet of Things (IoT), building management systems (BMS) and connected media devices h</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ddos-attack-on-pennsylvania-fails-to-halt-city-government-february-6th.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>DDoS Attack on Pennsylvania Fails to Halt City Government – February 6th</h3>
+          <p class="card-excerpt">LockBit Demands $11M From Spanish City The government office of Calvia, Majorca, Spain announced that the city is facing a ransomware attack from the LockBit ra</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/fbi-nails-qakbot-offender-august-30th.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>FBI nails Qakbot offender – August 30th</h3>
+          <p class="card-excerpt">Critical vulnerability exploited by FIN8 threat actors Citrix NetScaler ADC and NetScaler Gateway are vulnerable to opportunistic attacks by a ransomware group </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/fbi-takes-down-breachforums-again.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>FBI takes down BreachForums -again!</h3>
+          <p class="card-excerpt">The US Federal Bureau of Investigation (FBI) is investigating the criminal hacking forum BreachForums after taking down its website last week. This follows the </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/forty-countries-vow-to-not-pay-cyber-ransoms-november-1st.html">
+        <div class="card-thumb"><img src="../images/system-hacking.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Forty Countries Vow to Not Pay Cyber Ransoms – November 1st</h3>
+          <p class="card-excerpt">Forty Countries Vow to Not Pay Cyber Ransoms Forty US-allied countries pledged to no longer pay cybercrime ransoms at the second annual meeting of the Internati</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ghostsec-exposes-irans-surveillance-of-its-citizens-august-28th.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>GhostSec exposes Iran’s surveillance of its citizens – August 28th</h3>
+          <p class="card-excerpt">Hackers hold Prospect Medical&amp;#8217;s data &amp;#8216;hostage&amp;#8217; Hacker group Rhysida has been identified as the mastermind behind the recent ransomware attack </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/companies-pay-1-million-in-ransomware-attacks-july-7th.html">
+        <div class="card-thumb"><img src="../images/circuit-board.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Companies Pay 1 Million In Ransomware Attacks</h3>
+          <p class="card-excerpt"></p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+</div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><span class="logo-accent">C</span>yber Intelligence</div>
+      <p class="footer-tagline">In-depth analysis, breaking news, and expert interviews covering the cybersecurity landscape. Trusted by professionals worldwide.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <a href="../categories/news.html">News</a>
+      <a href="../categories/analysis.html">Analysis</a>
+      <a href="../categories/expert-opinions.html">Expert Opinions</a>
+      <a href="../categories/ransomware.html">Ransomware</a>
+      <a href="../categories/cybercrime.html">Cybercrime</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Conferences</a>
+      <a href="#">Glossary of Terms</a>
+      <a href="#">Awards</a>
+      <a href="#">Ecosystem Map</a>
+    </div>
+    <div class="footer-col">
+      <h4>Stay Informed</h4>
+      <p class="footer-newsletter-text">Get the latest cybersecurity insights delivered to your inbox.</p>
+      <form class="footer-newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" aria-label="Email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-contact">
+        <a href="../about.html">About</a>
+        <a href="mailto:info@cyberintel.media">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>&copy; 2026 Cyber Intelligence Media. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+<script>
+// Dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('ci-dark', document.body.classList.contains('dark') ? '1' : '0');
+}
+if (localStorage.getItem('ci-dark') === '1') document.body.classList.add('dark');
+
+// Search filter (simple client-side)
+function filterArticles(q) {
+  if (!q) return;
+  q = q.toLowerCase();
+  document.querySelectorAll('.card').forEach(function(c) {
+    var t = c.textContent.toLowerCase();
+    c.style.display = t.includes(q) ? '' : 'none';
+  });
+}
+
+// ── Scroll-triggered card animations ──
+(function() {
+  var cards = document.querySelectorAll('.card');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var delay = Array.prototype.indexOf.call(
+          entry.target.parentNode.children, entry.target
+        ) % 3 * 100;
+        setTimeout(function() {
+          entry.target.classList.add('animate-in');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Hero entrance animation ──
+(function() {
+  var hero = document.querySelector('.hero-animate');
+  if (!hero) return;
+  var children = hero.children;
+  for (var i = 0; i < children.length; i++) {
+    (function(el, idx) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      setTimeout(function() {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, 200 + idx * 150);
+    })(children[i], i);
+  }
+})();
+
+// ── Category filter tabs ──
+(function() {
+  var tabs = document.querySelectorAll('.filter-tab');
+  if (!tabs.length) return;
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var cat = tab.getAttribute('data-cat');
+      var cards = document.querySelectorAll('#card-grid .card');
+      cards.forEach(function(c) {
+        if (cat === 'all') {
+          c.style.display = '';
+        } else {
+          var cats = (c.getAttribute('data-category') || '').toLowerCase();
+          c.style.display = cats.includes(cat.toLowerCase()) ? '' : 'none';
+        }
+      });
+      // Reset load-more visibility after filter
+      var btn = document.getElementById('loadMoreBtn');
+      if (btn) btn.style.display = '';
+    });
+  });
+})();
+
+// ── Load More button ──
+(function() {
+  var btn = document.getElementById('loadMoreBtn');
+  if (!btn) return;
+  var grid = document.getElementById('card-grid');
+  if (!grid) return;
+  var allCards = grid.querySelectorAll('.card');
+  var batchSize = 12;
+  var shown = batchSize;
+  // Hide cards beyond initial batch
+  for (var i = 0; i < allCards.length; i++) {
+    if (i >= batchSize) allCards[i].classList.add('hidden-card');
+  }
+  if (allCards.length <= batchSize) btn.style.display = 'none';
+  btn.addEventListener('click', function() {
+    var next = shown + batchSize;
+    for (var i = shown; i < next && i < allCards.length; i++) {
+      allCards[i].classList.remove('hidden-card');
+    }
+    shown = next;
+    if (shown >= allCards.length) btn.style.display = 'none';
+  });
+})();
+
+// ── Sidebar animated counters ──
+(function() {
+  var counters = document.querySelectorAll('.stat-counter');
+  if (!counters.length) return;
+  var animated = false;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        counters.forEach(function(counter) {
+          var target = parseInt(counter.getAttribute('data-target'), 10);
+          var numEl = counter.querySelector('.counter-num');
+          var start = 0;
+          var duration = 1500;
+          var startTime = null;
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            numEl.textContent = Math.floor(eased * target);
+            if (progress < 1) requestAnimationFrame(step);
+            else numEl.textContent = target;
+          }
+          requestAnimationFrame(step);
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  counters.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Reading progress bar (article pages) ──
+(function() {
+  var bar = document.getElementById('readingProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = pct + '%';
+  });
+})();
+</script>
+</body>
+</html>

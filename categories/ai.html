@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI | Cyber Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="accent-strip"></div>
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="header-left">
+        <button class="icon-btn search-btn" aria-label="Search" onclick="document.querySelector('.search-overlay').classList.toggle('open')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <a href="../index.html" class="site-logo">
+          <span class="logo-text"><span class="logo-accent">C</span>yber Intelligence</span>
+        </a>
+        <div class="site-tagline">In-depth cybersecurity analysis &amp; breaking news</div>
+      </div>
+      <div class="header-right">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="icon-btn dark-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="../categories/news.html" class="nav-link">News</a>
+      </div>
+      <div class="nav-item">
+        <a href="../categories/analysis.html" class="nav-link">Analysis</a>
+      </div>
+      <div class="nav-item">
+        <a href="../categories/expert-opinions.html" class="nav-link">Expert Opinions</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Resources</a>
+        <div class="dropdown-menu"><a href="#">Conferences</a>
+<a href="#">Glossary of Terms</a>
+<a href="#">Awards</a>
+<a href="#">Ecosystem Map</a>
+</div>
+      </div>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav .nav-inner').classList.toggle('open')">&#9776;</button>
+  </nav>
+  <div class="trending-bar">
+    <div class="trending-inner">
+      <span class="trending-label">Trending</span>
+      <div class="trending-tags"><a href="../categories/ransomware.html" class="trend-tag">Ransomware</a>
+<a href="../categories/ai-threats.html" class="trend-tag">AI Threats</a>
+<a href="../categories/zero-day.html" class="trend-tag">Zero-Day</a>
+<a href="../categories/data-breach.html" class="trend-tag">Data Breach</a>
+<a href="../categories/apt.html" class="trend-tag">APT</a>
+<a href="../categories/critical-infrastructure.html" class="trend-tag">Critical Infrastructure</a>
+<a href="../categories/supply-chain.html" class="trend-tag">Supply Chain</a>
+<a href="../categories/cloud-security.html" class="trend-tag">Cloud Security</a>
+<a href="../categories/cyber-espionage.html" class="trend-tag">Cyber Espionage</a>
+<a href="../categories/malware.html" class="trend-tag">Malware</a>
+<a href="../categories/phishing.html" class="trend-tag">Phishing</a>
+<a href="../categories/healthcare.html" class="trend-tag">Healthcare</a>
+<a href="../categories/finance.html" class="trend-tag">Finance</a>
+<a href="../categories/geopolitics.html" class="trend-tag">Geopolitics</a>
+<a href="../categories/hacktivism.html" class="trend-tag">Hacktivism</a>
+</div>
+    </div>
+  </div>
+  <div class="search-overlay">
+    <div class="search-box">
+      <input type="text" placeholder="Search articles..." id="searchInput" onkeyup="filterArticles(this.value)">
+      <button class="icon-btn" onclick="document.querySelector('.search-overlay').classList.remove('open')">&#10005;</button>
+    </div>
+  </div>
+</header>
+<main class="cat-page">
+  <div class="cat-header">
+    <div class="cat-header-inner">
+      <span class="cat-label-sm">Category</span>
+      <h1>AI</h1>
+      <p class="cat-count-text">50 articles</p>
+    </div>
+  </div>
+  <div class="cat-body">
+    <div class="grid"><article class="card">
+      <a href="../articles/11-romantic-ai-chatbots-fail-security-tests-february-15th.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>11 Romantic AI Chatbots Fail Security Tests – February 15th</h3>
+          <p class="card-excerpt">11 Romantic AI Chatbots Fail Security Tests The Mozilla Foundation released research that unveils that all 11 romantic AI chatbots tested, failed security and p</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/2025-forecast-to-be-boom-year-for-cybersecurity.html">
+        <div class="card-thumb"><img src="../images/cyber-spy.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>2025 forecast to be boom year for cybersecurity</h3>
+          <p class="card-excerpt">California-based cybersecurity goliath Palo Alto Networks has issued a bullish revenue forecast based on a perceived rising global demand for artificial intelli</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-gives-the-game-away.html">
+        <div class="card-thumb"><img src="../images/computer-monitor.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI gives the game away</h3>
+          <p class="card-excerpt">The latest threat for companies using large language (LLM) AI software to replace human staff is the software’s innate gullibility. LLM software can be likened </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/darcula-can-suck-the-blood-out-of-any-brand.html">
+        <div class="card-thumb"><img src="../images/cyber-spy.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Darcula can suck the blood out of any brand</h3>
+          <p class="card-excerpt">Cybercrime just got easier. A new artificial intelligence off-the-shelf phishing kit named darcula now enables even inexperienced cyber criminals to impersonate</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-powered-ransomware-fuels-cybercrime.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI-powered ransomware fuels cybercrime</h3>
+          <p class="card-excerpt">Artificial intelligence (AI) services are enabling unscrupulous online blackmailers to create fake but highly realistic sexually explicit photographs and videos</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 28, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybersecurity-threats-on-the-rise-in-asia-pacific-july-21st.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">Cybersecurity Threats on the Rise in Asia Pacific Cybersecurity incidents in Asia Pacific have increased by 29 percent this year and 134 percent in the last fou</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>July 21, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/criminal-use-of-ai-enters-new-and-dangerous-phase.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Criminal use of AI enters new and dangerous phase</h3>
+          <p class="card-excerpt">Sextortion, a popular form of online blackmail, is on the rise. Security researchers, ESET reports a 178% increase in sextortion emails between the first half o</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>June 17, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-increasingly-used-to-deliver-malware.html">
+        <div class="card-thumb"><img src="../images/circuit-board.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI increasingly used to deliver malware</h3>
+          <p class="card-excerpt">Many organizations’ ongoing enthusiasm for incorporating artificial intelligence (AI) is leaving them open to sophisticated and carefully planned cyber-attacks.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>AI increasingly used to deliver malware - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>May 30, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-system-blackmails-its-creator.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI system blackmails its creator</h3>
+          <p class="card-excerpt">Artificial Intelligence (AI) is learning to think like a human. But the critical question now being asked in IT circles is: “What kind of human?” Claude, Opus 4</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-driven-cybersecurity-dominates-rsa-in-san-francisco.html">
+        <div class="card-thumb"><img src="../images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI cyber dominates RSA San Francisco</h3>
+          <p class="card-excerpt">Artificial Intelligence (AI)-driven cybersecurity is set to dominate RSA, the world’s largest cybersecurity event, which kicked off yesterday in San Francisco a</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 30, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/deepfake-news-lures-new-victims.html">
+        <div class="card-thumb"><img src="../images/digital-globe.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfake news lures new victims</h3>
+          <p class="card-excerpt">Deepfake videos of TV news presenters are being used to dupe gullible viewers into logging onto illegal gambling sites where malware is then downloaded onto the</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 23, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/chinese-ai-offering-rattles-big-tech-investors.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Chinese AI rattles Big Tech investors</h3>
+          <p class="card-excerpt">The start of this week saw roughly $1 trillion wiped off leading US tech stocks, following the launch of Deepseek, a Chinese rival to AI offerings such as Micro</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>Chinese AI rattles Big Tech investors - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 28, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/genai-speeds-up-cybercrime.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>GenAI speeds up cybercrime</h3>
+          <p class="card-excerpt">While Silicon Valley is finding that artificial intelligence (AI) is proving a tough sell to businesses and consumers, cybercriminals worldwide have lost little</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 27, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-enables-ransomware-boom.html">
+        <div class="card-thumb"><img src="../images/phone-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>AI enables ransomware boom</h3>
+          <p class="card-excerpt">A new ransomware group, named Funksec, is the latest example of relatively inexperienced cybercriminals using AI to develop weaponized malware. The group claims</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>AI enables ransomware boom - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 14, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/generative-ai-the-current-state-of-play.html">
+        <div class="card-thumb"><img src="../images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>GenAI</h3>
+          <p class="card-excerpt">Mike Finley, the Co-Founder and CTO of AnswerRocket In an exclusive interview with Cyber Intelligence, Mike Finley, the Co-Founder and CTO of AnswerRocket, a bu</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>November 14, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybercriminals-ramp-up-ai-driven-deepfake-scams.html">
+        <div class="card-thumb"><img src="../images/shield-icon.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Cybercriminals Ramp up Deepfake Scams</h3>
+          <p class="card-excerpt">Cyber toolkits for threat actors are now harnessing the latest deepfake technology and artificial intelligence (AI) for targeted email attacks, known as ‘spear-</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 07, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/eu-ai-act-to-act-as-a-template-for-other-regions.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>EU AI Act as a Guide for Other Regions</h3>
+          <p class="card-excerpt">The European Union (EU) Artificial Intelligence (AI) Act, which came into effect earlier this month, is now set to act as a template for other regions, such as </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 16, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/deepfakes-set-to-deceive-at-def-con.html">
+        <div class="card-thumb"><img src="../images/robot-white.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfakes set to deceive at DEF CON</h3>
+          <p class="card-excerpt">It looks as if deepfakes will be the hot topic at the big international hacker conference DEF CON in Las Vegas next week, just as they took center stage at Info</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 07, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/exclusive-expanding-ai-data-centers-have-become-tempting-targets.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>AI Data Centers as Cybercrime Hot Spot</h3>
+          <p class="card-excerpt">Big Tech’s rapidly-expanding server farms are becoming increasingly tempting targets for ransomware gangs. In their Gadarene rush to be first with AI-based serv</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>July 09, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/deepfakes-being-used-to-manipulate-share-prices.html">
+        <div class="card-thumb"><img src="../images/circuit-board.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfakes Used for Stock Manipulation</h3>
+          <p class="card-excerpt">Cash-rich cybercriminals are learning that the easiest way to make money on the stock markets while laundering cash at the same time is to use deepfake videos t</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>July 03, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-engineered-email-attacks-are-on-the-rise.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI-Backed Email Attacks Are On The Rise</h3>
+          <p class="card-excerpt">Email scams aimed at business users are becoming increasingly sophisticated and increasingly tough to detect. Threat actors are now using artificial intelligenc</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>June 20, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/deepfakes-dominate-infosecurity-europe-2024.html">
+        <div class="card-thumb"><img src="../images/code-screen.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfakes Rule InfoSecurity Europe 2024</h3>
+          <p class="card-excerpt">Photo of the Infosecurity Europe Keynote Stage taken by Tony Glover InfoSecurity Europe, widely acknowledged as the chief global challenger to RSA in the US, ki</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">D</span>
+              <span>Deepfakes Rule InfoSecurity Europe 2024 - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>June 05, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/91-of-orgs-report-use-of-gen-ai-for-cybersecurity-may-1st.html">
+        <div class="card-thumb"><img src="../images/security-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">91% of Orgs Report Use of Gen AI for Cybersecurity Splunk reported that 91% of organizations reported the use of Generative AI for specific cybersecurity usage.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 01, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/employee-mistrust-of-workplace-ai-is-growing.html">
+        <div class="card-thumb"><img src="../images/digital-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>The Growing Mistrust of Workplace AI</h3>
+          <p class="card-excerpt">Amid widespread speculation that artificial intelligence (AI) will make most of today’s jobs redundant and even replace humanity itself, the UK’s Institute for </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>The Growing Mistrust of Workplace AI - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>March 19, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/deepfake-face-swaps-hijack-video-meetings.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfake Face Swaps Hijack Meetings</h3>
+          <p class="card-excerpt">Artificial Intelligence (AI) tools such as face swaps are now being used in Mission Impossible-style cyber-enabled financial crimes. The South China Morning Pos</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">D</span>
+              <span>Deepfake Face Swaps Hijack Meetings - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>February 09, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/businesses-turn-their-back-on-genai.html">
+        <div class="card-thumb"><img src="../images/digital-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Businesses turn their back on GenAI</h3>
+          <p class="card-excerpt">The reaction of businesses to the introduction of generative AI (GenAI) in the year since the launch of Microsoft-backed ChatGPT is one of increasing suspicion </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">B</span>
+              <span>Businesses turn their back on GenAI - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 30, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/77-of-ceos-believe-ai-more-risk-than-reward-in-cyber-january-16th.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">77% of CEOs Believe AI More Risk Than Reward in Cyber Despite the hype of AI in cybersecurity, a PwC survey revealed that 77% of CEOs still believe AI increases</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - January 16th - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>January 16, 2024</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/h2-2023-dominated-by-ai-malicious-activity-and-android-spyware-threats-december-28th.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>One Minute Roundup</h3>
+          <p class="card-excerpt">H2 2023 Dominated by AI Malicious Activity and Android Spyware Threats According to an ESET report, the threat landscape of the second half of 2023 was dominate</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">O</span>
+              <span>One Minute Roundup - December 28th - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>December 28, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/eus-planned-ai-rulings-meet-opposition.html">
+        <div class="card-thumb"><img src="../images/office-security.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>EU’s planned AI rulings meet opposition</h3>
+          <p class="card-excerpt">Next Wednesday will see the last round in a “King Kong meets Godzilla&amp;#8221;-style contest between the European Union and the global technology sector over prop</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>EU\u2019s planned AI rulings meet opposition - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>December 04, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/global-ai-summit-mired-in-controversy.html">
+        <div class="card-thumb"><img src="../images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Global AI summit mired in controversy</h3>
+          <p class="card-excerpt">The UK-hosted Artificial Intelligence (AI) Safety Summit due to take place on Wednesday and Thursday this week, attended by world leaders and AI experts, is set</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 30, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/googles-vulnerability-rewards-program-vrp-expansion-october-27th.html">
+        <div class="card-thumb"><img src="../images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Google&#x27;s Risk Reward Program Expansion</h3>
+          <p class="card-excerpt">Panel To Advise on International AI Governance, Appointed by UN U.N. Secretary-General António Guterres on Thursday, announced the appointment of a 39-member gl</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">G</span>
+              <span>Google&#x27;s Risk Reward Program Expansion - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>October 27, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/eu-wakes-up-to-the-global-supply-chain-threat.html">
+        <div class="card-thumb"><img src="../images/computer-monitor.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>EU Wakes Up On Supply Chain Threats</h3>
+          <p class="card-excerpt">Systems powered by artificial intelligence, quantum computing, and cutting-edge microchips, together with genetic engineering, are being viewed with suspicion b</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 05, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-comes-to-the-rescue-of-smes.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI comes to the rescue of SMEs</h3>
+          <p class="card-excerpt">The rapid recent advances in artificial intelligence (AI) are now beginning to enable small organizations such as start-ups and SMEs to install fully-automated </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>AI comes to the rescue of SMEs - Cyber Intelligence</span>
+              <span class="sep">&middot;</span>
+              <span>August 09, 2023</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/55-of-organizations-plan-to-use-ai-to-enhance-security-april-4th.html">
+        <div class="card-thumb"><img src="../images/digital-globe.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>55% of Organizations Plan to Use AI to Enhance Security – April 4th</h3>
+          <p class="card-excerpt">55% of Organizations Plan to Use AI to Enhance Security&amp;nbsp; According to a report released by the Cloud Security Alliance and Google Cloud, 55% of all organiz</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/6226-2.html">
+        <div class="card-thumb"><img src="../images/code-screen.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>UK backs AI and intelligence modernization – June 12th</h3>
+          <p class="card-excerpt">UK backs AI and intelligence modernization The UK government has announced its plans to invest in digital and artificial intelligence (AI) in public services, i</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-enabled-drones-navigating-the-new-frontier-of-cyber-c-uas-defence.html">
+        <div class="card-thumb"><img src="../images/shield-icon.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI-Enabled Drones: Navigating the New Frontier of Cyber C-UAS Defense</h3>
+          <p class="card-excerpt">In the rapidly evolving landscape of cybersecurity, artificial intelligence (AI) has emerged as a transformative force, revolutionizing operational methodologie</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-is-fueling-chinas-cyber-war-against-the-us.html">
+        <div class="card-thumb"><img src="../images/ai-robot.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI is fueling China’s cyber war against the US</h3>
+          <p class="card-excerpt">Once again, China is harnessing new Western technology to attack and undermine the US at home and overseas. According to a new report from Microsoft, this time,</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/can-msns-new-ai-copilot-replace-human-workers.html">
+        <div class="card-thumb"><img src="../images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Can MSN’s new AI Copilot replace human workers?</h3>
+          <p class="card-excerpt">In a matter of days, Microsoft will unveil the much-heralded new version of its Copilot software to a business world already severely disappointed by Big Tech’s</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cisa-warns-of-volt-typhoon-group-targeting-critical-infrastructure-march-21st.html">
+        <div class="card-thumb"><img src="../images/office-security.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>CISA Warns of “Volt Typhoon” Group Targeting Critical Infrastructure – March 21st</h3>
+          <p class="card-excerpt">GitHub Launches AI Tool to Fix Code Vulnerabilities GitHub announced the launch of its new &amp;#8220;code scanning autofix,&amp;#8221; an AI-powered tool that automati</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybercrime-continues-to-cold-shoulder-ai.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Cybercrime continues to cold-shoulder AI</h3>
+          <p class="card-excerpt">Organized cybercriminals continue to give artificial intelligence (AI) the cold shoulder. New research from US telecoms conglomerate Verizon confirms a report i</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cybercriminals-weaponize-google-ai-assistant.html">
+        <div class="card-thumb"><img src="../images/phone-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Cybercriminals Weaponize Google AI assistant</h3>
+          <p class="card-excerpt">Cybercriminals have been quick to see nefarious possibilities in search engine giant Google’s new Gemini 2.0 AI assistant. According to Google’s own findings, n</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/deepfake-phishing-targets-trumps-chief-of-staff-may-30th.html">
+        <div class="card-thumb"><img src="../images/circuit-board.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfake Phishing Targets Trump’s Chief of Staff – May 30th</h3>
+          <p class="card-excerpt">🎭 Deepfake Phishing Targets Trump’s Chief of Staff An impersonator breached the phone of White House Chief of Staff Susie Wiles, posing as her in calls and mess</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/from-deepfakes-to-in-person-fraudsters.html">
+        <div class="card-thumb"><img src="../images/security-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>From deepfakes to in-person fraudsters</h3>
+          <p class="card-excerpt">Boeing Employees&amp;#8217; Credit Union (BECU) is a not-for-profit credit union based in Washington, dedicated to improving the financial well-being of its members</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/infosecurity-europe-2025-will-focuses-on-weaponized-ai.html">
+        <div class="card-thumb"><img src="../images/shield-icon.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>InfoSecurity Europe 2025 focuses on weaponized AI</h3>
+          <p class="card-excerpt">InfoSecurity Europe 2025, which begins in London today, Tuesday, June 2nd, will this year be dominated by the rapidly growing threat posed by the weaponization </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-could-overload-us-power-grid.html">
+        <div class="card-thumb"><img src="../images/robot-pointing.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Ai Could Overload Us Power Grid</h3>
+          <p class="card-excerpt"></p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/ai-overrated-and-overhyped-say-cybercriminals.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Ai Overrated And Overhyped Say Cybercriminals</h3>
+          <p class="card-excerpt"></p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/apple-enters-genai-marketplace.html">
+        <div class="card-thumb"><img src="../images/hacking-code.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Apple Enters Genai Marketplace</h3>
+          <p class="card-excerpt"></p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/companies-complacent-about-ai-generated-cyber-attacks.html">
+        <div class="card-thumb"><img src="../images/server-room.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Companies Complacent About Ai Generated Cyber Attacks</h3>
+          <p class="card-excerpt"></p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/cost-of-ai-could-rise-tenfold-warns-gartner.html">
+        <div class="card-thumb"><img src="../images/digital-lock.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Cost Of Ai Could Rise Tenfold Warns Gartner</h3>
+          <p class="card-excerpt"></p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card">
+      <a href="../articles/honeywell-kicks-off-ai-tools-to-accelerate-industrial-autonomy-june-10th.html">
+        <div class="card-thumb"><img src="../images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Honeywell Kicks Off Ai Tools To Accelerate Industrial Autonomy</h3>
+          <p class="card-excerpt"></p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span></span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+</div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><span class="logo-accent">C</span>yber Intelligence</div>
+      <p class="footer-tagline">In-depth analysis, breaking news, and expert interviews covering the cybersecurity landscape. Trusted by professionals worldwide.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <a href="../categories/news.html">News</a>
+      <a href="../categories/analysis.html">Analysis</a>
+      <a href="../categories/expert-opinions.html">Expert Opinions</a>
+      <a href="../categories/ransomware.html">Ransomware</a>
+      <a href="../categories/cybercrime.html">Cybercrime</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Conferences</a>
+      <a href="#">Glossary of Terms</a>
+      <a href="#">Awards</a>
+      <a href="#">Ecosystem Map</a>
+    </div>
+    <div class="footer-col">
+      <h4>Stay Informed</h4>
+      <p class="footer-newsletter-text">Get the latest cybersecurity insights delivered to your inbox.</p>
+      <form class="footer-newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" aria-label="Email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-contact">
+        <a href="../about.html">About</a>
+        <a href="mailto:info@cyberintel.media">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>&copy; 2026 Cyber Intelligence Media. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+<script>
+// Dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('ci-dark', document.body.classList.contains('dark') ? '1' : '0');
+}
+if (localStorage.getItem('ci-dark') === '1') document.body.classList.add('dark');
+
+// Search filter (simple client-side)
+function filterArticles(q) {
+  if (!q) return;
+  q = q.toLowerCase();
+  document.querySelectorAll('.card').forEach(function(c) {
+    var t = c.textContent.toLowerCase();
+    c.style.display = t.includes(q) ? '' : 'none';
+  });
+}
+
+// ── Scroll-triggered card animations ──
+(function() {
+  var cards = document.querySelectorAll('.card');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var delay = Array.prototype.indexOf.call(
+          entry.target.parentNode.children, entry.target
+        ) % 3 * 100;
+        setTimeout(function() {
+          entry.target.classList.add('animate-in');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Hero entrance animation ──
+(function() {
+  var hero = document.querySelector('.hero-animate');
+  if (!hero) return;
+  var children = hero.children;
+  for (var i = 0; i < children.length; i++) {
+    (function(el, idx) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      setTimeout(function() {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, 200 + idx * 150);
+    })(children[i], i);
+  }
+})();
+
+// ── Category filter tabs ──
+(function() {
+  var tabs = document.querySelectorAll('.filter-tab');
+  if (!tabs.length) return;
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var cat = tab.getAttribute('data-cat');
+      var cards = document.querySelectorAll('#card-grid .card');
+      cards.forEach(function(c) {
+        if (cat === 'all') {
+          c.style.display = '';
+        } else {
+          var cats = (c.getAttribute('data-category') || '').toLowerCase();
+          c.style.display = cats.includes(cat.toLowerCase()) ? '' : 'none';
+        }
+      });
+      // Reset load-more visibility after filter
+      var btn = document.getElementById('loadMoreBtn');
+      if (btn) btn.style.display = '';
+    });
+  });
+})();
+
+// ── Load More button ──
+(function() {
+  var btn = document.getElementById('loadMoreBtn');
+  if (!btn) return;
+  var grid = document.getElementById('card-grid');
+  if (!grid) return;
+  var allCards = grid.querySelectorAll('.card');
+  var batchSize = 12;
+  var shown = batchSize;
+  // Hide cards beyond initial batch
+  for (var i = 0; i < allCards.length; i++) {
+    if (i >= batchSize) allCards[i].classList.add('hidden-card');
+  }
+  if (allCards.length <= batchSize) btn.style.display = 'none';
+  btn.addEventListener('click', function() {
+    var next = shown + batchSize;
+    for (var i = shown; i < next && i < allCards.length; i++) {
+      allCards[i].classList.remove('hidden-card');
+    }
+    shown = next;
+    if (shown >= allCards.length) btn.style.display = 'none';
+  });
+})();
+
+// ── Sidebar animated counters ──
+(function() {
+  var counters = document.querySelectorAll('.stat-counter');
+  if (!counters.length) return;
+  var animated = false;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        counters.forEach(function(counter) {
+          var target = parseInt(counter.getAttribute('data-target'), 10);
+          var numEl = counter.querySelector('.counter-num');
+          var start = 0;
+          var duration = 1500;
+          var startTime = null;
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            numEl.textContent = Math.floor(eased * target);
+            if (progress < 1) requestAnimationFrame(step);
+            else numEl.textContent = target;
+          }
+          requestAnimationFrame(step);
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  counters.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Reading progress bar (article pages) ──
+(function() {
+  var bar = document.getElementById('readingProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = pct + '%';
+  });
+})();
+</script>
+</body>
+</html>
