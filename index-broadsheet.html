@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Intelligence | Cybersecurity News &amp; Analysis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Libre+Franklin:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   CYBER INTELLIGENCE — Editorial Broadsheet Theme
+   Premium newspaper aesthetic with copper accents
+   ============================================================ */
+
+/* --- CSS Variables (Light Mode) --- */
+:root {
+  --bg: #F5F0EB;
+  --bg-alt: #EDE7E0;
+  --surface: #FAF8F5;
+  --text: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --muted: #8A8078;
+  --accent: #C17F3E;
+  --accent-hover: #A86B2F;
+  --accent-light: rgba(193,127,62,0.08);
+  --accent-glow: rgba(193,127,62,0.15);
+  --navy: #0D1B2A;
+  --navy-light: #1B2D3E;
+  --border: #D4CCC3;
+  --border-light: #E8E2DB;
+  --rule: #2A2A2A;
+  --rule-light: #C4BAB0;
+  --footer-bg: #0D1B2A;
+  --footer-text: #B8C4D0;
+  --footer-muted: #6B7B8D;
+  --max: 1200px;
+  --radius: 0px;
+  --card-shadow: none;
+  --card-shadow-hover: 0 8px 32px rgba(13,27,42,0.08);
+  --img-brightness: 1;
+  --header-height: 0px;
+}
+
+/* --- Dark Mode --- */
+body.dark {
+  --bg: #0F1318;
+  --bg-alt: #161C23;
+  --surface: #1A2029;
+  --text: #E8E4DF;
+  --text-secondary: #A8A098;
+  --muted: #706860;
+  --accent: #D4964F;
+  --accent-hover: #E0A866;
+  --accent-light: rgba(212,150,79,0.1);
+  --accent-glow: rgba(212,150,79,0.15);
+  --border: #2A3040;
+  --border-light: #222830;
+  --rule: #E8E4DF;
+  --rule-light: #3A4050;
+  --footer-bg: #080C10;
+  --footer-text: #8898A8;
+  --footer-muted: #506070;
+  --card-shadow: none;
+  --card-shadow-hover: 0 8px 32px rgba(0,0,0,0.3);
+  --img-brightness: 0.88;
+}
+
+/* --- Reset --- */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+a { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+img { max-width: 100%; height: auto; display: block; filter: brightness(var(--img-brightness)); }
+
+/* ============================================================
+   MASTHEAD RULES — Double line at top (newspaper style)
+   ============================================================ */
+.masthead-rule {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.masthead-rule::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background: var(--rule);
+  box-shadow: 0 6px 0 0 var(--bg), 0 7px 0 0 var(--rule);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header {
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.4s ease, box-shadow 0.3s ease;
+}
+.site-header.scrolled {
+  box-shadow: 0 1px 0 var(--border);
+}
+
+.header-top {
+  border-bottom: 1px solid var(--border);
+}
+.header-top-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 28px 32px 24px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+.header-left { display: flex; align-items: center; }
+.header-center { text-align: center; }
+.header-right { display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
+
+/* Logo — Newspaper masthead */
+.site-logo { display: inline-block; text-decoration: none; }
+.logo-text {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-optical-sizing: auto;
+  font-size: 42px;
+  color: var(--navy);
+  letter-spacing: -0.5px;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+body.dark .logo-text { color: var(--text); }
+
+.logo-accent { color: var(--accent); }
+
+.site-tagline {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Edition date */
+.edition-date {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Icon buttons */
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+.icon-btn:hover { color: var(--accent); }
+
+/* Dark mode toggle icons */
+.moon-icon { display: none; }
+.sun-icon { display: inline; }
+body.dark .sun-icon { display: none; }
+body.dark .moon-icon { display: inline; }
+
+/* Search overlay */
+.search-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(13,27,42,0.85);
+  z-index: 9999;
+  padding: 20vh 24px 0;
+  backdrop-filter: blur(8px);
+}
+.search-overlay.open { display: flex; justify-content: center; align-items: flex-start; }
+.search-box {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: var(--surface);
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.25);
+}
+.search-box input {
+  flex: 1;
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.search-box input:focus { border-color: var(--accent); }
+.search-box .icon-btn { color: var(--muted); font-size: 20px; }
+
+/* --- Navigation bar --- */
+.main-nav {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  transition: background 0.4s ease;
+}
+.nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.nav-item { position: relative; }
+.nav-link {
+  display: block;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text);
+  padding: 14px 24px;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 24px;
+  right: 24px;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.nav-link:hover { color: var(--accent); }
+.nav-link:hover::after { transform: scaleX(1); }
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Dropdown (Resources) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 220px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 48px rgba(13,27,42,0.1);
+  z-index: 800;
+  animation: fadeDown 0.2s ease;
+}
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.has-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu a {
+  display: block;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 11px 22px;
+  border-bottom: 1px solid var(--border-light);
+  transition: all 0.15s ease;
+  letter-spacing: 0.3px;
+}
+.dropdown-menu a:last-child { border-bottom: none; }
+.dropdown-menu a:hover {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* Trending bar — editorial topics ribbon */
+.trending-bar {
+  background: var(--navy);
+  overflow: hidden;
+}
+body.dark .trending-bar { background: #080C10; }
+.trending-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 9px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.trending-label {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.trending-tags {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.trending-tags::-webkit-scrollbar { display: none; }
+.trend-tag {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: rgba(255,255,255,0.55);
+  white-space: nowrap;
+  padding: 3px 12px;
+  transition: color 0.2s ease;
+  letter-spacing: 0.5px;
+}
+.trend-tag:hover { color: var(--accent); }
+.trend-tag + .trend-tag::before {
+  content: '\00b7';
+  margin-right: 12px;
+  color: rgba(255,255,255,0.2);
+}
+
+/* ============================================================
+   HERO — Editorial Broadsheet Feature
+   ============================================================ */
+.hero-section {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.hero-rule {
+  height: 1px;
+  background: var(--rule);
+  margin-bottom: 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  min-height: 440px;
+  border-bottom: 3px double var(--rule);
+}
+
+/* Main featured story (left) */
+.hero-main {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.hero-main-link {
+  display: block;
+  height: 100%;
+}
+.hero-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.hero-main:hover .hero-main-img { transform: scale(1.03); }
+.hero-main-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13,27,42,0.92) 0%,
+    rgba(13,27,42,0.6) 40%,
+    rgba(13,27,42,0.15) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 48px 40px;
+}
+.hero-cat-badge {
+  display: inline-block;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--accent);
+  align-self: flex-start;
+}
+.hero-main h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.15;
+  margin-bottom: 14px;
+  color: #ffffff;
+  max-width: 520px;
+}
+.hero-main h1 a { color: #ffffff; }
+.hero-main h1 a:hover { color: rgba(255,255,255,0.85); }
+.hero-excerpt {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 460px;
+}
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.45);
+}
+.hero-meta .sep { color: rgba(255,255,255,0.2); }
+.hero-author { color: rgba(255,255,255,0.7); font-weight: 500; }
+
+/* Secondary stories sidebar (right) */
+.hero-sidebar {
+  border-left: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-side-story {
+  flex: 1;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: background 0.2s ease;
+  position: relative;
+}
+.hero-side-story + .hero-side-story {
+  border-top: 1px solid var(--border);
+}
+.hero-side-story:hover { background: var(--accent-light); }
+
+.hero-side-cat {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.hero-side-story h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--text);
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+.hero-side-story:hover h3 { color: var(--accent); }
+.hero-side-story a { color: inherit; text-decoration: none; }
+
+.hero-side-excerpt {
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.hero-side-meta {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   SECTION DIVIDER — Editorial rule with label
+   ============================================================ */
+.section-divider {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.section-divider-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 32px 0 24px;
+}
+.section-divider-inner::before,
+.section-divider-inner::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.section-label {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* ============================================================
+   MAIN CONTENT LAYOUT
+   ============================================================ */
+.home {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.home-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 48px;
+  padding: 0 0 56px;
+}
+.main-content { min-width: 0; }
+
+/* Filter tabs — editorial style */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--rule);
+}
+.filter-tab {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  position: relative;
+}
+.filter-tab::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.filter-tab:hover { color: var(--text); }
+.filter-tab.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+.filter-tab.active::after { transform: scaleX(1); }
+
+/* ============================================================
+   ARTICLE CARDS — Editorial grid
+   ============================================================ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0;
+}
+
+.card {
+  background: transparent;
+  border-bottom: 1px solid var(--border);
+  padding: 24px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.card:first-child { padding-top: 0; }
+
+/* For multi-column: add vertical rules */
+@media (min-width: 700px) {
+  .grid {
+    gap: 0 40px;
+  }
+  .card {
+    border-bottom: 1px solid var(--border);
+    padding: 24px 0;
+  }
+}
+
+.card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card.stub.animate-in { opacity: 0.45; }
+
+.card a {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 20px;
+  align-items: stretch;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.card-body { order: 1; }
+.card-thumb {
+  order: 2;
+  overflow: hidden;
+  position: relative;
+  min-height: 100px;
+}
+.card-thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  filter: grayscale(20%) brightness(var(--img-brightness));
+}
+.card:hover .card-thumb img { transform: scale(1.05); filter: grayscale(0%) brightness(var(--img-brightness)); }
+.card-thumb-overlay { display: none; }
+
+.cat-label {
+  display: inline-block;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.cat-label::before { display: none; }
+
+.card-body h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+.card:hover .card-body h3 { color: var(--accent); }
+
+.card-excerpt {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+.card-meta .sep { color: var(--border); }
+.author-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-size: 9px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+body.dark .author-avatar { background: var(--accent); }
+
+.read-more {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.card:hover .read-more { opacity: 1; }
+
+/* Hidden cards (Load More) */
+.card.hidden-card { display: none; }
+
+/* ============================================================
+   SIDEBAR — Editorial sidebar
+   ============================================================ */
+.sidebar {
+  padding-top: 0;
+  border-left: 1px solid var(--border);
+  padding-left: 32px;
+}
+
+.widget {
+  padding: 0 0 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  border-radius: 0;
+}
+.widget:last-child { border-bottom: none; }
+
+.widget-title {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 800;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--text);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--rule);
+  display: block;
+}
+.widget-title::before { display: none; }
+
+.cat-list { list-style: none; }
+.cat-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border-light);
+  transition: padding-left 0.2s ease;
+}
+.cat-list li:last-child { border-bottom: none; }
+.cat-list li:hover { padding-left: 6px; }
+.cat-list a {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.cat-list a:hover { color: var(--accent); }
+.cat-count {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+
+/* Recent articles */
+.recent-list { list-style: none; }
+.recent-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+  counter-increment: recent;
+}
+.recent-item:last-child { border-bottom: none; }
+.recent-item a {
+  display: flex;
+  gap: 14px;
+  text-decoration: none;
+  align-items: flex-start;
+}
+.recent-item a::before {
+  content: counter(recent, decimal-leading-zero);
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: 28px;
+  color: var(--border);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 32px;
+  transition: color 0.2s ease;
+}
+.recent-item:hover a::before { color: var(--accent); }
+
+.recent-title {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--text);
+  margin-bottom: 4px;
+  transition: color 0.2s ease;
+}
+.recent-item a:hover .recent-title { color: var(--accent); }
+.recent-date {
+  display: block;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   BROWSE ALL CTA
+   ============================================================ */
+.browse-all-cta {
+  padding: 48px 32px 64px;
+  border-top: 3px double var(--rule);
+  margin-top: 0;
+  text-align: center;
+}
+.cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.cta-inner h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.cta-inner > p {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+.cta-cat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.cta-cat-link {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 9px 22px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: transparent;
+  transition: all 0.25s ease;
+}
+.cta-cat-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+}
+.cta-cat-link span {
+  color: var(--muted);
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+/* ============================================================
+   LOAD MORE BUTTON
+   ============================================================ */
+.load-more-wrap {
+  text-align: center;
+  padding: 40px 0 16px;
+}
+.load-more-btn {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 52px;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.load-more-btn:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #ffffff;
+}
+body.dark .load-more-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ============================================================
+   FOOTER — Deep navy editorial footer
+   ============================================================ */
+.site-footer {
+  background: var(--footer-bg);
+  margin-top: 0;
+  color: var(--footer-text);
+}
+body.dark .site-footer { background: #050810; }
+
+.footer-rule {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.footer-rule::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}
+
+.footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 48px 32px 40px;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.3fr;
+  gap: 40px;
+}
+.footer-logo {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.footer-logo .logo-accent { color: var(--accent); }
+.footer-tagline {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: var(--footer-muted);
+  line-height: 1.65;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--footer-text);
+  transition: all 0.2s ease;
+}
+.footer-social a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.footer-col h4 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 16px;
+}
+.footer-col a {
+  display: block;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: var(--footer-muted);
+  padding: 5px 0;
+  transition: color 0.2s ease;
+}
+.footer-col a:hover { color: var(--accent); }
+
+.footer-newsletter-text {
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  color: var(--footer-muted);
+  line-height: 1.5;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+.footer-newsletter {
+  display: flex;
+  gap: 0;
+  margin-bottom: 16px;
+}
+.footer-newsletter input {
+  flex: 1;
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-right: none;
+  background: rgba(255,255,255,0.04);
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.footer-newsletter input::placeholder { color: var(--footer-muted); }
+.footer-newsletter input:focus { border-color: var(--accent); }
+.footer-newsletter button {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+.footer-newsletter button:hover { opacity: 0.85; }
+
+.footer-contact {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-bottom-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 11px;
+  color: var(--footer-muted);
+  letter-spacing: 0.3px;
+}
+.back-to-top {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--footer-muted);
+  transition: color 0.2s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.back-to-top:hover { color: var(--accent); }
+
+/* ============================================================
+   SCROLL ANIMATIONS
+   ============================================================ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 960px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar { display: none; }
+  .hero-grid { grid-template-columns: 1fr; min-height: auto; }
+  .hero-main { min-height: 380px; }
+  .hero-sidebar { border-left: none; border-top: 1px solid var(--rule); }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .header-top-inner { padding: 16px 20px; }
+  .logo-text { font-size: 30px; }
+  .site-tagline { font-size: 10px; letter-spacing: 2px; }
+  .masthead-rule { padding: 0 20px; }
+  .hero-section { padding: 0 20px; }
+  .home { padding: 0 20px; }
+  .section-divider { padding: 0 20px; }
+
+  .nav-inner {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 20px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner.open { display: flex; }
+  .nav-toggle { display: block; }
+  .nav-link { padding: 10px 0; font-size: 11px; }
+  .nav-link::after { display: none; }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 16px;
+    min-width: auto;
+    display: none;
+    transform: none;
+    animation: none;
+  }
+  .has-dropdown:hover .dropdown-menu { display: block; }
+
+  .trending-bar { display: none; }
+  .hero-main { min-height: 320px; }
+  .hero-main h1 { font-size: 26px; }
+  .hero-main-overlay { padding: 32px 24px; }
+
+  .grid { grid-template-columns: 1fr; }
+  .card a { grid-template-columns: 1fr 110px; gap: 16px; }
+  .card-thumb { width: 110px; height: 80px; }
+
+  .filter-tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom-inner { flex-direction: column; gap: 8px; text-align: center; }
+
+  .browse-all-cta { padding: 36px 20px 48px; }
+  .cta-inner h2 { font-size: 24px; }
+}
+
+@media (max-width: 480px) {
+  .header-left { display: none; }
+  .header-top-inner { grid-template-columns: 1fr auto; }
+  .logo-text { font-size: 26px; }
+  .site-tagline { display: none; }
+  .edition-date { display: none; }
+
+  .hero-main { min-height: 280px; }
+  .hero-main h1 { font-size: 22px; }
+  .hero-main-overlay { padding: 24px 16px; }
+  .hero-side-story { padding: 20px 16px; }
+  .hero-side-story h3 { font-size: 17px; }
+
+  .card a { grid-template-columns: 1fr; gap: 12px; }
+  .card-thumb { width: 100%; height: 160px; order: 1; }
+  .card-body { order: 2; }
+
+  .section-divider-inner { padding: 24px 0 18px; }
+  .filter-tab { font-size: 10px; padding: 8px 14px; }
+}
+
+/* ============================================================
+   NOISE TEXTURE — Subtle paper grain overlay
+   ============================================================ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+body.dark::before { opacity: 0.04; }
+</style>
+</head>
+<body>
+
+<div class="masthead-rule"></div>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="header-left">
+        <button class="icon-btn search-btn" aria-label="Search" onclick="document.querySelector('.search-overlay').classList.toggle('open')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <span class="edition-date">February 25, 2026</span>
+      </div>
+      <div class="header-center">
+        <a href="./index.html" class="site-logo">
+          <span class="logo-text"><span class="logo-accent">C</span>yber Intelligence</span>
+        </a>
+        <div class="site-tagline">Intelligence &amp; Analysis</div>
+      </div>
+      <div class="header-right">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="icon-btn dark-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="./categories/news.html" class="nav-link">News</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/analysis.html" class="nav-link">Analysis</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/expert-opinions.html" class="nav-link">Expert Opinions</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/geopolitics.html" class="nav-link">Geopolitics</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/ransomware.html" class="nav-link">Ransomware</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Resources</a>
+        <div class="dropdown-menu"><a href="#">Conferences</a>
+<a href="#">Glossary of Terms</a>
+<a href="#">Awards</a>
+<a href="#">Ecosystem Map</a>
+</div>
+      </div>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav .nav-inner').classList.toggle('open')">&#9776;</button>
+  </nav>
+  <div class="trending-bar">
+    <div class="trending-inner">
+      <span class="trending-label">Tracking</span>
+      <div class="trending-tags"><a href="./categories/ransomware.html" class="trend-tag">Ransomware</a>
+<a href="./categories/ai-threats.html" class="trend-tag">AI Threats</a>
+<a href="./categories/zero-day.html" class="trend-tag">Zero-Day</a>
+<a href="./categories/data-breach.html" class="trend-tag">Data Breach</a>
+<a href="./categories/apt.html" class="trend-tag">APT</a>
+<a href="./categories/critical-infrastructure.html" class="trend-tag">Critical Infrastructure</a>
+<a href="./categories/supply-chain.html" class="trend-tag">Supply Chain</a>
+<a href="./categories/cloud-security.html" class="trend-tag">Cloud Security</a>
+<a href="./categories/cyber-espionage.html" class="trend-tag">Cyber Espionage</a>
+<a href="./categories/malware.html" class="trend-tag">Malware</a>
+<a href="./categories/phishing.html" class="trend-tag">Phishing</a>
+<a href="./categories/healthcare.html" class="trend-tag">Healthcare</a>
+<a href="./categories/finance.html" class="trend-tag">Finance</a>
+<a href="./categories/geopolitics.html" class="trend-tag">Geopolitics</a>
+<a href="./categories/hacktivism.html" class="trend-tag">Hacktivism</a>
+</div>
+    </div>
+  </div>
+  <div class="search-overlay">
+    <div class="search-box">
+      <input type="text" placeholder="Search articles..." id="searchInput" onkeyup="filterArticles(this.value)">
+      <button class="icon-btn" onclick="document.querySelector('.search-overlay').classList.remove('open')">&#10005;</button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════
+     HERO — Editorial broadsheet feature
+     ═══════════════════════════════════════ -->
+<section class="hero-section">
+  <div class="hero-rule"></div>
+  <div class="hero-grid">
+    <div class="hero-main">
+      <a href="articles/11-romantic-ai-chatbots-fail-security-tests-february-15th.html" class="hero-main-link">
+        <img src="./images/ai-robot.jpg" alt="" class="hero-main-img" loading="eager">
+        <div class="hero-main-overlay">
+          <span class="hero-cat-badge">AI</span>
+          <h1><a href="articles/11-romantic-ai-chatbots-fail-security-tests-february-15th.html">11 Romantic AI Chatbots Fail Security Tests</a></h1>
+          <p class="hero-excerpt">The Mozilla Foundation released research that unveils that all 11 romantic AI chatbots tested, failed security and privacy tests. All 11 chatbots feature data privacy concerns.</p>
+          <div class="hero-meta">
+            <span class="hero-author">Editorial Team</span>
+            <span class="sep">&middot;</span>
+            <span>October 06, 2025</span>
+            <span class="sep">&middot;</span>
+            <span>1 min read</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="hero-sidebar">
+      <div class="hero-side-story">
+        <a href="articles/2025-forecast-to-be-boom-year-for-cybersecurity.html">
+          <span class="hero-side-cat">AI</span>
+          <h3>2025 Forecast to Be Boom Year for Cybersecurity</h3>
+          <p class="hero-side-excerpt">Palo Alto Networks has issued a bullish revenue forecast based on rising global demand for artificial intelligence-driven cybersecurity solutions.</p>
+          <span class="hero-side-meta">Editorial Team &middot; October 06, 2025</span>
+        </a>
+      </div>
+      <div class="hero-side-story">
+        <a href="articles/ai-gives-the-game-away.html">
+          <span class="hero-side-cat">AI</span>
+          <h3>AI Gives the Game Away</h3>
+          <p class="hero-side-excerpt">The latest threat for companies using large language AI software is the software's innate gullibility to social engineering attacks.</p>
+          <span class="hero-side-meta">Editorial Team &middot; October 06, 2025</span>
+        </a>
+      </div>
+      <div class="hero-side-story">
+        <a href="articles/cybersecurity-has-become-an-ongoing-war.html">
+          <span class="hero-side-cat">News</span>
+          <h3>Cybersecurity Has Become an Ongoing War</h3>
+          <p class="hero-side-excerpt">In an exclusive interview, Palo Alto Networks CEO Nikesh Arora explains the growing importance of AI in cybersecurity defense.</p>
+          <span class="hero-side-meta">April 15, 2025</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION DIVIDER
+     ═══════════════════════════════════════ -->
+<div class="section-divider">
+  <div class="section-divider-inner">
+    <span class="section-label">Latest Articles</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     MAIN CONTENT
+     ═══════════════════════════════════════ -->
+<main class="home">
+  <div class="home-layout">
+    <section class="main-content">
+      <div class="filter-tabs"><button class="filter-tab active" data-cat="all">All</button><button class="filter-tab" data-cat="News">News</button><button class="filter-tab" data-cat="Data Breaches">Data Breaches</button><button class="filter-tab" data-cat="Cybercrime">Cybercrime</button><button class="filter-tab" data-cat="Geopolitics">Geopolitics</button><button class="filter-tab" data-cat="AI">AI</button><button class="filter-tab" data-cat="Ransomware">Ransomware</button><button class="filter-tab" data-cat="Policy &amp; Regulation">Policy &amp; Regulation</button><button class="filter-tab" data-cat="Industry">Industry</button></div>
+      <div class="grid" id="card-grid"><article class="card" data-category="News">
+      <a href="articles/blocked-ip-addresses-increase-by-116-february-9th.html">
+        <div class="card-body">
+          <span class="cat-label">News</span>
+          <h3>Blocked IP Addresses Increase by 116%</h3>
+          <p class="card-excerpt">According to a report by Qrator Labs, blocked IP addresses associated with malicious activity increased by 116% in Q3 2023, signaling a sharp rise in cyber threats.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/robot-pointing.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime Data Breaches News">
+      <a href="articles/cisa-and-fbi-release-iocs-associated-with-androxgh0st-malware-january-17th.html">
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>CISA and FBI Release IOCs for Androxgh0st Malware</h3>
+          <p class="card-excerpt">94% of cybersecurity leaders disclosed that their organizations experienced email security incidents in 2023, according to an Egress report.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Industry News">
+      <a href="articles/cybersecurity-market-to-reach-478b-by-2030-november-13th.html">
+        <div class="card-body">
+          <span class="cat-label">Industry</span>
+          <h3>Cybersecurity Market to Reach $478B by 2030</h3>
+          <p class="card-excerpt">Despite recent talk of a tech slowdown, Allied Market Research reported that the cybersecurity market is poised for massive growth.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/computer-monitor.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="AI Cybercrime News">
+      <a href="articles/darcula-can-suck-the-blood-out-of-any-brand.html">
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Darcula Can Suck the Blood Out of Any Brand</h3>
+          <p class="card-excerpt">A new AI off-the-shelf phishing kit named darcula enables even inexperienced cyber criminals to impersonate brands with alarming effectiveness.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/cyber-spy.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches News">
+      <a href="articles/discord-called-a-hotbed-of-malware-activity-october-17th.html">
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Discord Called a 'Hotbed' of Malware Activity</h3>
+          <p class="card-excerpt">Discord continues to be used by threat actors to launch malware attacks. Researchers have warned the platform about persistent abuse.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/hacking-code.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime Insider Threats News">
+      <a href="articles/enterprises-face-a-steep-rise-in-insider-threats.html">
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Enterprises Face a Steep Rise in Insider Threats</h3>
+          <p class="card-excerpt">Harsh economic conditions across Western democracies are acting as a catalyst for cybercrime, particularly insider-driven attacks.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/padlocks.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="AI News Ransomware">
+      <a href="articles/ai-powered-ransomware-fuels-cybercrime.html">
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI-Powered Ransomware Fuels Cybercrime</h3>
+          <p class="card-excerpt">Artificial intelligence services are enabling unscrupulous online blackmailers to create fake but highly realistic sexually explicit material.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 28, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/robot-pointing.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches Insider Threats News">
+      <a href="articles/cyber-attack-raises-sim-swapping-fears.html">
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>Cyber-Attack Raises SIM-Swapping Fears</h3>
+          <p class="card-excerpt">Telecoms operator Orange Belgium has revealed that a cyber-attack in July resulted in the theft of data from 850,000 customer accounts.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 27, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/robot-white.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Expert Opinions">
+      <a href="articles/building-a-new-generation-of-ethical-hackers.html">
+        <div class="card-body">
+          <span class="cat-label">Expert Opinions</span>
+          <h3>Building a New Generation of Ethical Hackers</h3>
+          <p class="card-excerpt">AI is learning to think like a human. But the critical question now being asked: "What kind of human?" The future of ethical hacking depends on the answer.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>August 05, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics News">
+      <a href="articles/germany-seeks-cybersecurity-partnership-with-israel-july-2nd.html">
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Germany Seeks Cybersecurity Partnership with Israel</h3>
+          <p class="card-excerpt">Germany seeks to strengthen its cybersecurity collaboration with Israel in light of recent escalation between geopolitical tensions.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>July 02, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/system-hacking.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Cybercrime News">
+      <a href="articles/cybercrime-kills.html">
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Cybercrime Kills</h3>
+          <p class="card-excerpt">A patient's death following a cyber-attack on the UK health sector by ransomware group Qilin has been confirmed by King's College Hospital.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>June 27, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/security-lock.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches Industry News">
+      <a href="articles/16-billion-passwords-breached-june-20th.html">
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>16 Billion Passwords Breached</h3>
+          <p class="card-excerpt">The Cybernews research team discovered a record-breaking breach of over 16 billion passwords worldwide, including Facebook, Google and other major platforms.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>June 20, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/padlocks.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/criminal-use-of-ai-enters-new-and-dangerous-phase.html">
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Criminal Use of AI Enters Dangerous Phase</h3>
+          <p class="card-excerpt">Sextortion is on the rise. ESET reports a 178% increase in sextortion emails between the first half of the year, fueled by AI-generated content.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>June 17, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/robot-white.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics News">
+      <a href="articles/geopolitical-tensions-are-changing-the-cybersecurity-landscape.html">
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Geopolitical Tensions Reshape Cybersecurity</h3>
+          <p class="card-excerpt">Political tensions are prompting nations to re-strategize cybersecurity. Countries that once sought partnership are now building independent capabilities.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>June 13, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/phone-lock.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Cryptocurrency News North Korea">
+      <a href="articles/bogus-it-workers-are-defrauding-us-businesses.html">
+        <div class="card-body">
+          <span class="cat-label">Cryptocurrency</span>
+          <h3>Bogus IT Workers Defrauding US Businesses</h3>
+          <p class="card-excerpt">Cybercriminals have added what may be the most dangerous weapon yet to their arsenal: a Dark Web version of legitimate artificial intelligence tools.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>Alexis Hess</span>
+              <span class="sep">&middot;</span>
+              <span>June 13, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="AI Data Breaches News">
+      <a href="articles/ai-increasingly-used-to-deliver-malware.html">
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI Increasingly Used to Deliver Malware</h3>
+          <p class="card-excerpt">Organizations' ongoing enthusiasm for incorporating AI is leaving them open to sophisticated and carefully planned cyber-attacks.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 30, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/circuit-board.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/ai-system-blackmails-its-creator.html">
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI System Blackmails Its Creator</h3>
+          <p class="card-excerpt">AI is learning to think like a human. But the critical question now being asked in IT circles is: "What kind of human?"</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 27, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/ai-robot.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="News">
+      <a href="articles/cyberattacks-hit-uk-retailers-hard.html">
+        <div class="card-body">
+          <span class="cat-label">News</span>
+          <h3>Cyberattacks Hit UK Retailers Hard</h3>
+          <p class="card-excerpt">Marks &amp; Spencer, Harrods and the Co-Op have been hit by a flurry of cyber-attacks over the last two weeks, experiencing immediate financial impact.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>May 02, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/fingerprint-scan.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/ai-driven-cybersecurity-dominates-rsa-in-san-francisco.html">
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI Cyber Dominates RSA San Francisco</h3>
+          <p class="card-excerpt">AI-driven cybersecurity dominated RSA, the world's largest cybersecurity event, which kicked off in San Francisco attracting record attendance.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 30, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/dark-hoodie.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="AI Data Breaches News">
+      <a href="articles/deepfake-news-lures-new-victims.html">
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Deepfake News Lures New Victims</h3>
+          <p class="card-excerpt">Deepfake videos of TV news presenters are being used to dupe viewers into logging onto illegal gambling sites where malware is downloaded.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>April 23, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/digital-globe.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics News">
+      <a href="articles/cyber-truce-with-russia-opens-up-us-for-cyber-attacks.html">
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Russian Cyber Truce Places US at Risk</h3>
+          <p class="card-excerpt">US Defense Secretary Pete Hegseth's directive to pause offensive cyber-operations against Russia may have unforeseen consequences.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>March 04, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/system-hacking.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="News">
+      <a href="articles/companies-must-identify-the-value-of-their-data.html">
+        <div class="card-body">
+          <span class="cat-label">News</span>
+          <h3>Companies Must Recognize Data's Value</h3>
+          <p class="card-excerpt">Most organizations have no clear idea of the value of the data they hold. Gartner research reveals a staggering disconnect between data value and protection.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 24, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/shield-icon.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Healthcare News">
+      <a href="articles/dark-unicorns-target-us-healthcare.html">
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>'Dark Unicorns' Target US Healthcare</h3>
+          <p class="card-excerpt">Ransomware attacks on the healthcare sector have risen by a third in 2024 with the US the prime target. Black Kite reports 374 incidents.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 12, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/ai-robot.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime News">
+      <a href="articles/identifying-fraudsters-on-the-internet.html">
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Identifying Fraudsters on the Internet</h3>
+          <p class="card-excerpt">In an exclusive interview, Patrick Harding of Ping Identity discusses how digital identity verification is evolving to combat fraud.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>February 07, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/cyber-spy.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Cybercrime News">
+      <a href="articles/hellcat-is-new-breed-of-cybercriminal.html">
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>'Hellcat' Is New Breed of Cybercriminal</h3>
+          <p class="card-excerpt">A ransomware gang that emerged in 2024 is being seen as representative of a new type of threat actor using off-the-shelf malware and innovative extortion.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 30, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/robot-pointing.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="AI Geopolitics News">
+      <a href="articles/chinese-ai-offering-rattles-big-tech-investors.html">
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Chinese AI Rattles Big Tech Investors</h3>
+          <p class="card-excerpt">Roughly $1 trillion was wiped off leading US tech stocks following the launch of Deepseek, a Chinese rival to AI offerings.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 28, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/hacker-laptop.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="AI Cybercrime News">
+      <a href="articles/genai-speeds-up-cybercrime.html">
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>GenAI Speeds Up Cybercrime</h3>
+          <p class="card-excerpt">While Silicon Valley finds AI a tough sell to businesses, cybercriminals worldwide have lost little time weaponizing generative AI tools.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 27, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/hacking-code.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime Cryptocurrency News">
+      <a href="articles/fbi-takes-down-crypto-laundering-scam.html">
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>FBI Takes Down Crypto-Laundering Scam</h3>
+          <p class="card-excerpt">The line between cybercrime and old-fashioned fraud has become yet more blurred following the sentencing of international virtual currency vendor.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 24, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/padlocks.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Policy &amp; Regulation News">
+      <a href="articles/fresh-focus-on-cyber-attacks-for-cisa.html">
+        <div class="card-body">
+          <span class="cat-label">Policy &amp; Regulation</span>
+          <h3>Fresh Focus on Cyber-Attacks for CISA</h3>
+          <p class="card-excerpt">One of the greatest challenges facing Trump's new administration is to protect the US critical infrastructure from rapidly growing cyber threats.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 21, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/system-hacking.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics Data Breaches News">
+      <a href="articles/fbi-unplugs-chinese-hackers.html">
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>FBI Unplugs Chinese Hackers</h3>
+          <p class="card-excerpt">The US Justice Department and FBI completed an operation to delete Chinese malware from approximately 4,258 US-based computers and networks.</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">E</span>
+              <span>Editorial Team</span>
+              <span class="sep">&middot;</span>
+              <span>January 15, 2025</span>
+            </div>
+            <span class="read-more">Read</span>
+          </div>
+        </div>
+        <div class="card-thumb"><img src="./images/security-lock.jpg" alt="" loading="lazy"></div>
+      </a>
+    </article>
+</div>
+      <div class="load-more-wrap">
+        <button class="load-more-btn" id="loadMoreBtn">Load More Articles</button>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <div class="widget">
+        <h3 class="widget-title">Categories</h3>
+        <ul class="cat-list"><li><a href="categories/news.html">News</a><span class="cat-count">298</span></li>
+<li><a href="categories/data-breaches.html">Data Breaches</a><span class="cat-count">93</span></li>
+<li><a href="categories/cybercrime.html">Cybercrime</a><span class="cat-count">80</span></li>
+<li><a href="categories/geopolitics.html">Geopolitics</a><span class="cat-count">59</span></li>
+<li><a href="categories/ai.html">AI</a><span class="cat-count">50</span></li>
+<li><a href="categories/ransomware.html">Ransomware</a><span class="cat-count">38</span></li>
+<li><a href="categories/policy-and-regulation.html">Policy &amp; Regulation</a><span class="cat-count">28</span></li>
+<li><a href="categories/industry.html">Industry</a><span class="cat-count">18</span></li>
+<li><a href="categories/cryptocurrency.html">Cryptocurrency</a><span class="cat-count">13</span></li>
+<li><a href="categories/healthcare.html">Healthcare</a><span class="cat-count">11</span></li>
+<li><a href="categories/insider-threats.html">Insider Threats</a><span class="cat-count">7</span></li>
+<li><a href="categories/workforce.html">Workforce</a><span class="cat-count">7</span></li>
+<li><a href="categories/sextortion.html">Sextortion</a><span class="cat-count">2</span></li>
+<li><a href="categories/expert-opinions.html">Expert Opinions</a><span class="cat-count">1</span></li>
+<li><a href="categories/north-korea.html">North Korea</a><span class="cat-count">1</span></li>
+</ul>
+      </div>
+      <div class="widget">
+        <h3 class="widget-title">Recent</h3>
+        <ul class="recent-list"><li class="recent-item">
+          <a href="articles/11-romantic-ai-chatbots-fail-security-tests-february-15th.html">
+            <span class="recent-title">11 Romantic AI Chatbots Fail Security Tests</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/2025-forecast-to-be-boom-year-for-cybersecurity.html">
+            <span class="recent-title">2025 forecast to be boom year for cybersecurity</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/ai-gives-the-game-away.html">
+            <span class="recent-title">AI gives the game away</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/blocked-ip-addresses-increase-by-116-february-9th.html">
+            <span class="recent-title">Blocked IP Addresses Increase by 116%</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/cisa-and-fbi-release-iocs-associated-with-androxgh0st-malware-january-17th.html">
+            <span class="recent-title">CISA and FBI Release IOCs for Androxgh0st Malware</span>
+            <span class="recent-date">October 06, 2025</span>
+          </a>
+        </li>
+</ul>
+      </div>
+    </aside>
+  </div>
+  <section class="browse-all-cta">
+    <div class="cta-inner">
+      <h2>Explore the Archive</h2>
+      <p>Browse our full collection by category</p>
+      <div class="cta-cat-grid"><a href="categories/news.html" class="cta-cat-link">News <span>(298)</span></a>
+<a href="categories/data-breaches.html" class="cta-cat-link">Data Breaches <span>(93)</span></a>
+<a href="categories/cybercrime.html" class="cta-cat-link">Cybercrime <span>(80)</span></a>
+<a href="categories/geopolitics.html" class="cta-cat-link">Geopolitics <span>(59)</span></a>
+<a href="categories/ai.html" class="cta-cat-link">AI <span>(50)</span></a>
+<a href="categories/ransomware.html" class="cta-cat-link">Ransomware <span>(38)</span></a>
+<a href="categories/policy-and-regulation.html" class="cta-cat-link">Policy &amp; Regulation <span>(28)</span></a>
+<a href="categories/industry.html" class="cta-cat-link">Industry <span>(18)</span></a>
+<a href="categories/cryptocurrency.html" class="cta-cat-link">Cryptocurrency <span>(13)</span></a>
+<a href="categories/healthcare.html" class="cta-cat-link">Healthcare <span>(11)</span></a>
+<a href="categories/insider-threats.html" class="cta-cat-link">Insider Threats <span>(7)</span></a>
+<a href="categories/workforce.html" class="cta-cat-link">Workforce <span>(7)</span></a>
+</div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-rule"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><span class="logo-accent">C</span>yber Intelligence</div>
+      <p class="footer-tagline">In-depth analysis, breaking news, and expert interviews covering the cybersecurity landscape. Trusted by professionals worldwide.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <a href="./categories/news.html">News</a>
+      <a href="./categories/analysis.html">Analysis</a>
+      <a href="./categories/expert-opinions.html">Expert Opinions</a>
+      <a href="./categories/ransomware.html">Ransomware</a>
+      <a href="./categories/cybercrime.html">Cybercrime</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Conferences</a>
+      <a href="#">Glossary of Terms</a>
+      <a href="#">Awards</a>
+      <a href="#">Ecosystem Map</a>
+    </div>
+    <div class="footer-col">
+      <h4>Stay Informed</h4>
+      <p class="footer-newsletter-text">Get the latest cybersecurity insights delivered to your inbox.</p>
+      <form class="footer-newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" aria-label="Email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-contact">
+        <a href="./about.html">About</a>
+        <a href="mailto:info@cyberintel.media">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>&copy; 2026 Cyber Intelligence Media. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('ci-dark', document.body.classList.contains('dark') ? '1' : '0');
+}
+if (localStorage.getItem('ci-dark') === '1') document.body.classList.add('dark');
+
+// Search filter
+function filterArticles(q) {
+  if (!q) { document.querySelectorAll('.card').forEach(function(c) { c.style.display = ''; }); return; }
+  q = q.toLowerCase();
+  document.querySelectorAll('.card').forEach(function(c) {
+    var t = c.textContent.toLowerCase();
+    c.style.display = t.includes(q) ? '' : 'none';
+  });
+}
+
+// Scroll-triggered card animations
+(function() {
+  var cards = document.querySelectorAll('.card');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var delay = Array.prototype.indexOf.call(
+          entry.target.parentNode.children, entry.target
+        ) % 3 * 80;
+        setTimeout(function() {
+          entry.target.classList.add('animate-in');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+
+// Hero entrance animation
+(function() {
+  var hero = document.querySelector('.hero-main-overlay');
+  if (!hero) return;
+  var children = hero.children;
+  for (var i = 0; i < children.length; i++) {
+    (function(el, idx) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+      setTimeout(function() {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, 200 + idx * 120);
+    })(children[i], i);
+  }
+})();
+
+// Category filter tabs
+(function() {
+  var tabs = document.querySelectorAll('.filter-tab');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var cat = tab.getAttribute('data-cat');
+      document.querySelectorAll('.card').forEach(function(c) {
+        if (cat === 'all') {
+          c.style.display = '';
+        } else {
+          var dc = c.getAttribute('data-category') || '';
+          c.style.display = dc.toLowerCase().includes(cat.toLowerCase()) ? '' : 'none';
+        }
+      });
+    });
+  });
+})();
+
+// Load more (reveal hidden cards)
+(function() {
+  var btn = document.getElementById('loadMoreBtn');
+  if (!btn) return;
+  var batchSize = 12;
+  var cards = document.querySelectorAll('.card');
+  // Hide cards beyond first batch
+  cards.forEach(function(c, i) {
+    if (i >= batchSize) c.classList.add('hidden-card');
+  });
+  btn.addEventListener('click', function() {
+    var hidden = document.querySelectorAll('.card.hidden-card');
+    var count = 0;
+    hidden.forEach(function(c) {
+      if (count < batchSize) {
+        c.classList.remove('hidden-card');
+        count++;
+      }
+    });
+    if (document.querySelectorAll('.card.hidden-card').length === 0) {
+      btn.style.display = 'none';
+    }
+  });
+})();
+
+// Header scroll shadow
+(function() {
+  var header = document.querySelector('.site-header');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+})();
+
+// Sidebar recent counter
+(function() {
+  var list = document.querySelector('.recent-list');
+  if (list) list.style.counterReset = 'recent';
+})();
+</script>
+</body>
+</html>
