@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://cyberbriefdaily.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://cyberbriefdaily.com/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://cyberbriefdaily.com/articles/hackers-target-fifa.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/agentic-ai-dominated-infosecurity-europe.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/openai-plans-to-democratize-cybersecurity.html</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/hacktivists-target-polands-water-supply.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -328,6 +329,7 @@
   <url><loc>https://cyberbriefdaily.com/categories/insider-threats.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/workforce.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/sextortion.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cyberbriefdaily.com/categories/sports-security.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/ai-security.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/expert-opinions.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/north-korea.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
