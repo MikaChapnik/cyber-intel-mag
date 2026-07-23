@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://cyberbriefdaily.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://cyberbriefdaily.com/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://cyberbriefdaily.com/articles/vishing-as-a-service.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/senior-executives-blindsided-by-ai-powered-phishing-attacks.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/weaponized-websites-target-ai-agents.html</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/compliance-in-the-age-of-agentic-ai.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -333,9 +334,9 @@
   <url><loc>https://cyberbriefdaily.com/categories/healthcare.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/insider-threats.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/workforce.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cyberbriefdaily.com/categories/phishing.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/agentic-ai.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/sextortion.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://cyberbriefdaily.com/categories/phishing.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/compliance.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/sports-security.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/ai-security.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
