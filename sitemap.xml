@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://cyberbriefdaily.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://cyberbriefdaily.com/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://cyberbriefdaily.com/articles/eus-ai-act-is-now-in-force.html</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/phone-farms-scale-up-scams.html</loc><lastmod>2026-08-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/russians-hijack-international-hotel-wi-fi-networks.html</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/sentenced-teen-hackers-tip-iceberg.html</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -341,6 +342,7 @@
   <url><loc>https://cyberbriefdaily.com/categories/phishing.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/agentic-ai.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/sextortion.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cyberbriefdaily.com/categories/ai-regulation.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/fraud.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/espionage.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/compliance.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
