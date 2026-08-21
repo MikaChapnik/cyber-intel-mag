@@ -294,7 +294,8 @@ body.dark .moon-icon { display: none; }
   z-index: 800;
   animation: fadeDown 0.15s ease;
 }
-.has-dropdown:hover .dropdown-menu { display: block; }
+.has-dropdown:hover .dropdown-menu,
+.has-dropdown.open .dropdown-menu { display: block; }
 .dropdown-menu a {
   display: block;
   font-family: 'Roboto Condensed', sans-serif;
@@ -1395,7 +1396,8 @@ body.dark .footer-logo .logo-accent { color: #7ab0d4; }
     animation: none;
   }
   .has-mega:hover .mega-menu,
-  .has-dropdown:hover .dropdown-menu { display: block; }
+  .has-dropdown:hover .dropdown-menu,
+  .has-dropdown.open .dropdown-menu { display: block; }
   .mega-grid { grid-template-columns: 1fr 1fr; }
 
   .trending-bar { display: none; }

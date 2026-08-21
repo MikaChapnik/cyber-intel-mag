@@ -248,6 +248,26 @@ function toggleDarkMode() {
 }
 if (localStorage.getItem('ci-dark') === '1') document.body.classList.add('dark');
 
+// ── Dropdown click toggle (mobile + desktop) ──
+(function() {
+  document.querySelectorAll('.has-dropdown > .nav-link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var parent = this.parentNode;
+      var isOpen = parent.classList.contains('open');
+      // Close all dropdowns
+      document.querySelectorAll('.has-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      if (!isOpen) parent.classList.add('open');
+    });
+  });
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.has-dropdown')) {
+      document.querySelectorAll('.has-dropdown').forEach(function(d) { d.classList.remove('open'); });
+    }
+  });
+})();
+
 // Search filter (simple client-side)
 function filterArticles(q) {
   if (!q) return;
