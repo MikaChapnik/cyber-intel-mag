@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersecurity Glossary | Cyber Brief Daily</title>
+<meta name="description" content="In-depth cybersecurity analysis, breaking news, and expert interviews. Trusted by professionals worldwide.">
+<link rel="canonical" href="https://cyberbriefdaily.com">
+<meta property="og:title" content="Cybersecurity Glossary | Cyber Brief Daily">
+<meta property="og:description" content="In-depth cybersecurity analysis, breaking news, and expert interviews. Trusted by professionals worldwide.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyberbriefdaily.com">
+<meta property="og:image" content="https://cyberbriefdaily.com/images/dark-hoodie.jpg">
+<meta property="og:site_name" content="Cyber Brief Daily">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cybersecurity Glossary | Cyber Brief Daily">
+<meta name="twitter:description" content="In-depth cybersecurity analysis, breaking news, and expert interviews. Trusted by professionals worldwide.">
+<meta name="twitter:image" content="https://cyberbriefdaily.com/images/dark-hoodie.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Cyber Brief Daily",
+  "url": "https://cyberbriefdaily.com",
+  "description": "In-depth cybersecurity analysis, breaking news, and expert interviews.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cyber Brief Daily",
+    "url": "https://cyberbriefdaily.com"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="accent-strip"></div>
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="header-left">
+        <button class="icon-btn search-btn" aria-label="Search" onclick="document.querySelector('.search-overlay').classList.toggle('open')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <a href="./index.html" class="site-logo">
+          <span class="logo-text"><span class="logo-accent">C</span>yber Brief Daily</span>
+        </a>
+        <div class="site-tagline">In-depth cybersecurity analysis &amp; breaking news</div>
+      </div>
+      <div class="header-right">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="icon-btn dark-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="./categories/news.html" class="nav-link">News</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/analysis.html" class="nav-link">Analysis</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/expert-opinions.html" class="nav-link">Expert Opinions</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Resources</a>
+        <div class="dropdown-menu"><a href="./conferences.html">Conferences</a>
+<a href="./glossary.html">Glossary of Terms</a>
+<a href="#">Awards</a>
+<a href="./ecosystem-map.html">Ecosystem Map</a>
+</div>
+      </div>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav .nav-inner').classList.toggle('open')">&#9776;</button>
+  </nav>
+  <div class="trending-bar">
+    <div class="trending-inner">
+      <span class="trending-label">Trending</span>
+      <div class="trending-tags"><a href="./categories/ransomware.html" class="trend-tag">Ransomware</a>
+<a href="./categories/ai.html" class="trend-tag">AI Threats</a>
+<a href="./categories/data-breaches.html" class="trend-tag">Data Breach</a>
+<a href="./categories/phishing.html" class="trend-tag">Phishing</a>
+<a href="./categories/cybercrime.html" class="trend-tag">Cybercrime</a>
+<a href="./categories/healthcare.html" class="trend-tag">Healthcare</a>
+<a href="./categories/geopolitics.html" class="trend-tag">Geopolitics</a>
+<a href="./categories/policy-and-regulation.html" class="trend-tag">Policy &amp; Regulation</a>
+<a href="./categories/insider-threats.html" class="trend-tag">Insider Threats</a>
+</div>
+    </div>
+  </div>
+  <div class="search-overlay">
+    <div class="search-box">
+      <input type="text" placeholder="Search articles..." id="searchInput" onkeyup="filterArticles(this.value)">
+      <button class="icon-btn" onclick="document.querySelector('.search-overlay').classList.remove('open')">&#10005;</button>
+    </div>
+  </div>
+</header>
+<style>
+.gloss-hero { background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: 60px 24px 48px; text-align: center; }
+.gloss-hero h1 { font-family: "DM Serif Display", serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--text); margin-bottom: 12px; }
+.gloss-hero p { font-size: 1.1rem; color: var(--text-secondary); max-width: 640px; margin: 0 auto; }
+.gloss-az { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; padding: 24px; max-width: var(--max); margin: 0 auto; }
+.az-link { font-family: "Inter", sans-serif; font-weight: 700; font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 3px; color: var(--accent); transition: all 0.2s; text-decoration: none; }
+.az-link:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.az-disabled { color: var(--muted); border-color: var(--border-light); cursor: default; font-family: "Inter", sans-serif; font-weight: 700; font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 3px; }
+.gloss-inner { max-width: 860px; margin: 0 auto; padding: 32px 24px 64px; }
+.gloss-letter { font-family: "DM Serif Display", serif; font-size: 2rem; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin: 40px 0 16px; }
+.gloss-dl { display: block; }
+.gloss-term { font-family: "Inter", sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--text); margin: 20px 0 4px; padding: 0; }
+.gloss-dd { font-family: "Crimson Text", serif; font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; margin: 0 0 0 0; padding: 0 0 12px; border-bottom: 1px solid var(--border-light); }
+</style>
+<main>
+  <div class="gloss-hero">
+    <h1>Cybersecurity Glossary</h1>
+    <p>Definitions of key terms across attack types, defense tools, threat actors, compliance, and protocols.</p>
+  </div>
+  <div class="gloss-az"><a href="#letter-A" class="az-link">A</a><a href="#letter-B" class="az-link">B</a><a href="#letter-C" class="az-link">C</a><a href="#letter-D" class="az-link">D</a><a href="#letter-E" class="az-link">E</a><a href="#letter-F" class="az-link">F</a><span class="az-link az-disabled">G</span><a href="#letter-H" class="az-link">H</a><a href="#letter-I" class="az-link">I</a><span class="az-link az-disabled">J</span><a href="#letter-K" class="az-link">K</a><a href="#letter-L" class="az-link">L</a><a href="#letter-M" class="az-link">M</a><a href="#letter-N" class="az-link">N</a><a href="#letter-O" class="az-link">O</a><a href="#letter-P" class="az-link">P</a><span class="az-link az-disabled">Q</span><a href="#letter-R" class="az-link">R</a><a href="#letter-S" class="az-link">S</a><a href="#letter-T" class="az-link">T</a><span class="az-link az-disabled">U</span><a href="#letter-V" class="az-link">V</a><a href="#letter-W" class="az-link">W</a><a href="#letter-X" class="az-link">X</a><span class="az-link az-disabled">Y</span><a href="#letter-Z" class="az-link">Z</a></div>
+  <div class="gloss-inner">
+    <h2 class="gloss-letter" id="letter-A">A</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-apt">APT</dt>
+  <dd class="gloss-dd">Advanced Persistent Threat (APT) refers to a prolonged and targeted cyberattack in which an intruder gains access to a network and remains undetected for an extended period. APT actors are typically nation-state groups or sophisticated criminal organizations. Their goal is usually data theft, espionage, or sabotage rather than quick financial gain.</dd>
+  <dt class="gloss-term" id="term-attack-surface">Attack Surface</dt>
+  <dd class="gloss-dd">The attack surface is the total sum of all points where an unauthorized user can try to enter or extract data from a system or network. A larger attack surface means more potential vulnerabilities for adversaries to exploit. Reducing the attack surface is a core principle of security hardening.</dd>
+  <dt class="gloss-term" id="term-authentication">Authentication</dt>
+  <dd class="gloss-dd">Authentication is the process of verifying the identity of a user, device, or system before granting access. Common methods include passwords, biometrics, and hardware tokens. Strong authentication mechanisms, especially multi-factor authentication, significantly reduce the risk of unauthorized access.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-B">B</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-backdoor">Backdoor</dt>
+  <dd class="gloss-dd">A backdoor is a covert method of bypassing normal authentication or encryption in a computer system or product. Backdoors may be installed intentionally by vendors for maintenance or maliciously by attackers after a compromise. They allow persistent access that can be difficult to detect.</dd>
+  <dt class="gloss-term" id="term-black-hat">Black Hat</dt>
+  <dd class="gloss-dd">A black hat hacker is a malicious actor who exploits computer systems or networks without authorization for personal gain, espionage, or disruption. The term contrasts with white hat (ethical) hackers who use the same skills defensively. Black hat activities are illegal in most jurisdictions.</dd>
+  <dt class="gloss-term" id="term-blue-team">Blue Team</dt>
+  <dd class="gloss-dd">The blue team is the defensive security team responsible for protecting an organization&#x27;s systems against cyberattacks. They monitor networks, respond to incidents, and implement security controls. Blue teams work in contrast to red teams, which simulate offensive attacks.</dd>
+  <dt class="gloss-term" id="term-botnet">Botnet</dt>
+  <dd class="gloss-dd">A botnet is a network of internet-connected devices infected with malware and controlled remotely by a threat actor. Botnets are commonly used to launch distributed denial-of-service (DDoS) attacks, send spam, or distribute additional malware. Individual infected devices in the botnet are called bots or zombies.</dd>
+  <dt class="gloss-term" id="term-breach">Breach</dt>
+  <dd class="gloss-dd">A data breach is an incident in which sensitive, protected, or confidential data is accessed, disclosed, or stolen without authorization. Breaches can result from external attacks, insider threats, or misconfigured systems. They may trigger regulatory notification requirements and significant financial penalties.</dd>
+  <dt class="gloss-term" id="term-brute-force">Brute Force</dt>
+  <dd class="gloss-dd">A brute force attack is a trial-and-error method used to decode encrypted data by systematically trying every possible combination of passwords or keys. Modern brute force attacks leverage automation and specialized hardware to test billions of combinations per second. Strong, complex passwords and account lockout policies mitigate this risk.</dd>
+  <dt class="gloss-term" id="term-bug-bounty">Bug Bounty</dt>
+  <dd class="gloss-dd">A bug bounty program incentivizes independent security researchers to discover and responsibly disclose vulnerabilities in exchange for financial rewards. Organizations ranging from tech giants to governments run these programs to supplement internal security testing. They represent a cost-effective way to identify flaws before malicious actors do.</dd>
+  <dt class="gloss-term" id="term-byod">BYOD</dt>
+  <dd class="gloss-dd">Bring Your Own Device (BYOD) is a policy that allows employees to use their personal devices for work purposes. While BYOD increases flexibility and productivity, it introduces security risks because personal devices may lack corporate security controls. Organizations typically address this with mobile device management (MDM) solutions and strict access policies.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-C">C</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-c2-command-and-control">C2 (Command and Control)</dt>
+  <dd class="gloss-dd">Command and Control (C2) infrastructure refers to the servers and channels used by threat actors to communicate with compromised systems. Attackers use C2 channels to issue instructions, exfiltrate data, and deploy additional payloads to infected machines. Disrupting C2 communications is a key defensive goal during incident response.</dd>
+  <dt class="gloss-term" id="term-cia-triad">CIA Triad</dt>
+  <dd class="gloss-dd">The CIA Triad is the foundational model for information security, representing Confidentiality, Integrity, and Availability. Confidentiality ensures data is only accessible to authorized parties; integrity ensures data accuracy and trustworthiness; availability ensures systems are accessible when needed. All security decisions should be evaluated against this framework.</dd>
+  <dt class="gloss-term" id="term-ciso">CISO</dt>
+  <dd class="gloss-dd">The Chief Information Security Officer (CISO) is the senior executive responsible for an organization&#x27;s information security strategy, governance, and risk management. CISOs balance technical security requirements with business objectives and regulatory compliance. The role has become increasingly prominent as cyber risk is recognized as a top business concern.</dd>
+  <dt class="gloss-term" id="term-cloud-security">Cloud Security</dt>
+  <dd class="gloss-dd">Cloud security encompasses the technologies, policies, and controls designed to protect data, applications, and infrastructure hosted in cloud environments. Unique challenges include shared responsibility models, misconfiguration risks, and identity sprawl across cloud services. Leading cloud security solutions address posture management, workload protection, and data governance.</dd>
+  <dt class="gloss-term" id="term-cve">CVE</dt>
+  <dd class="gloss-dd">Common Vulnerabilities and Exposures (CVE) is a publicly maintained list of known cybersecurity vulnerabilities, each assigned a unique identifier. CVE entries enable security teams and vendors to coordinate patching and communicate clearly about specific vulnerabilities. The CVE system is maintained by MITRE and sponsored by the US government.</dd>
+  <dt class="gloss-term" id="term-cyber-espionage">Cyber Espionage</dt>
+  <dd class="gloss-dd">Cyber espionage involves the use of digital techniques to covertly access confidential information from governments, corporations, or individuals for political, economic, or military advantage. It is predominantly conducted by nation-state actors or groups acting on their behalf. Targets typically include defense contractors, research institutions, and government agencies.</dd>
+  <dt class="gloss-term" id="term-cyber-hygiene">Cyber Hygiene</dt>
+  <dd class="gloss-dd">Cyber hygiene refers to the routine practices and habits that individuals and organizations adopt to maintain system health and security. Core practices include applying patches promptly, using strong unique passwords, enabling MFA, and regularly backing up data. Good cyber hygiene significantly reduces exposure to the most common attack vectors.</dd>
+  <dt class="gloss-term" id="term-cyberwarfare">Cyberwarfare</dt>
+  <dd class="gloss-dd">Cyberwarfare involves the use of digital attacks by nation-states or state-sponsored groups to disrupt, damage, or destroy the critical infrastructure or capabilities of an adversary. Operations can target power grids, financial systems, military networks, and communications infrastructure. The line between cyberwarfare and espionage is often deliberately blurred by threat actors.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-D">D</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-dark-web">Dark Web</dt>
+  <dd class="gloss-dd">The dark web refers to encrypted online content not indexed by conventional search engines, accessible only through specialized anonymizing browsers such as Tor. It hosts both legitimate privacy-focused services and illicit marketplaces where stolen credentials, ransomware kits, and other criminal services are bought and sold. It is a key venue for cybercriminal commerce.</dd>
+  <dt class="gloss-term" id="term-data-exfiltration">Data Exfiltration</dt>
+  <dd class="gloss-dd">Data exfiltration is the unauthorized transfer of data from an organization&#x27;s systems to an external destination controlled by an attacker. It is often the primary goal of intrusion operations and may occur via encrypted channels to evade detection. Double extortion ransomware attacks combine file encryption with threatened public release of exfiltrated data.</dd>
+  <dt class="gloss-term" id="term-ddos">DDoS</dt>
+  <dd class="gloss-dd">A Distributed Denial of Service (DDoS) attack overwhelms a target&#x27;s network, service, or website with traffic from multiple sources — typically a botnet — rendering it unavailable to legitimate users. Volumetric, protocol, and application-layer variants target different parts of infrastructure. DDoS attacks are used for extortion, hacktivism, or as a diversion for simultaneous intrusion.</dd>
+  <dt class="gloss-term" id="term-defense-in-depth">Defense in Depth</dt>
+  <dd class="gloss-dd">Defense in depth is a security strategy that employs multiple layers of controls so that if one layer fails, others continue to provide protection. The approach draws on a military concept of using multiple redundant defensive lines. In practice it combines perimeter controls, network segmentation, endpoint security, identity controls, and monitoring.</dd>
+  <dt class="gloss-term" id="term-digital-forensics">Digital Forensics</dt>
+  <dd class="gloss-dd">Digital forensics is the scientific process of collecting, preserving, analyzing, and presenting digital evidence from computers, networks, and other devices in a legally admissible manner. It is used in criminal investigations, corporate litigation, and post-incident analysis. Proper chain-of-custody handling is essential to ensure evidence integrity.</dd>
+  <dt class="gloss-term" id="term-double-extortion">Double Extortion</dt>
+  <dd class="gloss-dd">Double extortion is a ransomware tactic in which attackers both encrypt victim files and exfiltrate sensitive data before demanding payment. If the ransom is refused, attackers threaten to publicly release the stolen data on leak sites. This approach increases pressure on victims and eliminates the option of simply restoring from backups.</dd>
+  <dt class="gloss-term" id="term-doxing">Doxing</dt>
+  <dd class="gloss-dd">Doxing (or doxxing) is the malicious practice of researching and publicly exposing private information about a person, such as their home address, employer, or personal contacts, without consent. It is used as a tool for harassment, intimidation, or to incite others to target the victim. Doxing can have severe real-world consequences for targets.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-E">E</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-edr">EDR</dt>
+  <dd class="gloss-dd">Endpoint Detection and Response (EDR) is a category of security solutions that continuously monitor endpoint devices to detect, investigate, and respond to advanced threats. EDR tools collect telemetry from endpoints, apply behavioral analytics, and enable rapid containment of threats. They have largely superseded traditional antivirus as the endpoint security standard for enterprises.</dd>
+  <dt class="gloss-term" id="term-encryption">Encryption</dt>
+  <dd class="gloss-dd">Encryption is the process of converting data into an unreadable format using cryptographic algorithms so that only authorized parties with the correct key can decrypt and access it. It protects data in transit over networks and data at rest on storage media. Both symmetric and asymmetric encryption play critical roles in modern security architectures.</dd>
+  <dt class="gloss-term" id="term-endpoint-security">Endpoint Security</dt>
+  <dd class="gloss-dd">Endpoint security is the practice of securing end-user devices such as desktops, laptops, and mobile devices against cyber threats. Modern endpoint security platforms combine antivirus, EDR, application control, and behavioral analytics into unified agents. As the perimeter has dissolved, endpoint security has become the primary defensive frontier.</dd>
+  <dt class="gloss-term" id="term-exploit">Exploit</dt>
+  <dd class="gloss-dd">An exploit is a piece of software, a set of commands, or a sequence of data that takes advantage of a vulnerability in a system to cause unintended behavior. Exploits can achieve outcomes such as privilege escalation, remote code execution, or data theft. Zero-day exploits target vulnerabilities unknown to the vendor and are highly valuable on criminal markets.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-F">F</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-fileless-malware">Fileless Malware</dt>
+  <dd class="gloss-dd">Fileless malware is a type of malicious software that operates entirely in memory without writing files to disk, making it difficult for traditional signature-based security tools to detect. It typically leverages legitimate system tools such as PowerShell or WMI to carry out its objectives. Detection requires behavioral analytics rather than file scanning.</dd>
+  <dt class="gloss-term" id="term-firewall">Firewall</dt>
+  <dd class="gloss-dd">A firewall is a network security device or software that monitors and controls incoming and outgoing network traffic based on predefined security rules. Modern next-generation firewalls (NGFWs) add deep packet inspection, application awareness, and intrusion prevention capabilities. Firewalls form a foundational element of network perimeter defense.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-H">H</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-hacktivism">Hacktivism</dt>
+  <dd class="gloss-dd">Hacktivism is the use of hacking techniques to promote political agendas, social causes, or ideological messages. Hacktivist groups such as Anonymous have targeted government agencies, corporations, and religious organizations through website defacements, DDoS attacks, and data leaks. The line between hacktivism and state-sponsored operations is increasingly blurred.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-I">I</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-iab-initial-access-broker">IAB (Initial Access Broker)</dt>
+  <dd class="gloss-dd">Initial Access Brokers (IABs) are cybercriminals who specialize in compromising networks and then selling that access to other threat actors, including ransomware operators. They operate in a specialized division-of-labor ecosystem within the criminal underground. IABs have significantly lowered the barrier to entry for ransomware attacks.</dd>
+  <dt class="gloss-term" id="term-iam">IAM</dt>
+  <dd class="gloss-dd">Identity and Access Management (IAM) is the framework of policies and technologies that ensures the right users have the appropriate access to technology resources. It encompasses authentication, authorization, role-based access control, and lifecycle management for user identities. Robust IAM is foundational to zero trust security architectures.</dd>
+  <dt class="gloss-term" id="term-ids-ips">IDS/IPS</dt>
+  <dd class="gloss-dd">Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) are security tools that monitor network or system activity for malicious behavior. An IDS alerts on suspicious activity while an IPS can also actively block threats in real time. Modern deployments often integrate IDS/IPS capabilities into next-generation firewalls or SIEM platforms.</dd>
+  <dt class="gloss-term" id="term-incident-response">Incident Response</dt>
+  <dd class="gloss-dd">Incident response (IR) is an organized approach to addressing and managing the aftermath of a security breach or cyberattack. A formal IR plan defines the process for detecting, containing, eradicating, and recovering from incidents. Effective IR minimizes damage, reduces recovery time, and preserves evidence for forensic analysis.</dd>
+  <dt class="gloss-term" id="term-indicators-of-compromise-ioc">Indicators of Compromise (IoC)</dt>
+  <dd class="gloss-dd">Indicators of Compromise (IoCs) are artifacts or evidence found on a network or endpoint that indicate a likely security breach or intrusion. Examples include suspicious IP addresses, file hashes, domain names, and registry keys associated with known malware. Sharing IoCs through threat intelligence platforms helps organizations detect and block known threats.</dd>
+  <dt class="gloss-term" id="term-insider-threat">Insider Threat</dt>
+  <dd class="gloss-dd">An insider threat is a security risk that originates from within the organization, such as employees, contractors, or business partners who have authorized access to systems. Insider threats may be malicious (deliberate data theft or sabotage) or negligent (accidental exposure). They are among the most difficult threats to detect because perpetrators have legitimate access.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-K">K</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-kill-chain">Kill Chain</dt>
+  <dd class="gloss-dd">The Cyber Kill Chain is a framework developed by Lockheed Martin describing the stages of a cyberattack: reconnaissance, weaponization, delivery, exploitation, installation, command and control, and actions on objectives. It helps defenders understand attacker behavior and identify opportunities to detect and disrupt attacks. The MITRE ATT&amp;CK framework extends this concept with more granular tactics.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-L">L</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-lateral-movement">Lateral Movement</dt>
+  <dd class="gloss-dd">Lateral movement refers to techniques attackers use to progressively move through a network in search of key assets and data after gaining an initial foothold. Methods include pass-the-hash, remote service exploitation, and abuse of legitimate administrative tools. Detecting lateral movement is critical to limiting the blast radius of a breach.</dd>
+  <dt class="gloss-term" id="term-living-off-the-land-lotl">Living off the Land (LotL)</dt>
+  <dd class="gloss-dd">Living off the Land (LotL) is an attack technique in which adversaries use legitimate, pre-existing tools and features of the target operating system — such as PowerShell, WMI, or certutil — to conduct malicious activities. Because these are authorized system tools, LotL attacks are harder to detect with signature-based defenses. Detection requires behavioral analytics.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-M">M</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-malware">Malware</dt>
+  <dd class="gloss-dd">Malware is any software intentionally designed to cause disruption, damage, or unauthorized access to computer systems. It encompasses viruses, worms, trojans, ransomware, spyware, and adware. The malware ecosystem is highly commercialized, with criminal groups offering Malware-as-a-Service products on dark web forums.</dd>
+  <dt class="gloss-term" id="term-mfa">MFA</dt>
+  <dd class="gloss-dd">Multi-Factor Authentication (MFA) requires users to provide two or more verification factors to gain access to a resource — typically something they know (password), something they have (token), and something they are (biometric). MFA is one of the single most effective controls for preventing account compromise. Even SMS-based MFA is substantially better than passwords alone.</dd>
+  <dt class="gloss-term" id="term-mitre-att&ck">MITRE ATT&amp;CK</dt>
+  <dd class="gloss-dd">MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques derived from real-world observations. It provides a common taxonomy for describing attacker behavior that is used by security teams for threat modeling, detection engineering, and red team planning. The framework is maintained by MITRE Corporation and is free to use.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-N">N</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-nation-state-actor">Nation-State Actor</dt>
+  <dd class="gloss-dd">Nation-state actors are government-sponsored or government-directed hacking groups that conduct cyber operations on behalf of their countries. They typically possess advanced capabilities, significant resources, and long-term objectives such as espionage, intellectual property theft, or destructive attacks. Major nation-state actors include groups attributed to Russia, China, Iran, and North Korea.</dd>
+  <dt class="gloss-term" id="term-network-segmentation">Network Segmentation</dt>
+  <dd class="gloss-dd">Network segmentation is the practice of dividing a computer network into smaller, isolated subnetworks to limit the spread of threats and reduce the attack surface. Properly segmented networks ensure that a breach in one zone cannot easily propagate to others. Microsegmentation takes this further by applying controls at the individual workload level.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-O">O</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-osint">OSINT</dt>
+  <dd class="gloss-dd">Open Source Intelligence (OSINT) is the collection and analysis of information gathered from publicly available sources, including websites, social media, public records, and academic publications. It is used by both security professionals for reconnaissance and threat intelligence gathering, and by adversaries for targeting potential victims. OSINT is a foundational skill in penetration testing and threat hunting.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-P">P</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-patch-management">Patch Management</dt>
+  <dd class="gloss-dd">Patch management is the systematic process of acquiring, testing, and installing updates to software and firmware to fix vulnerabilities and improve functionality. Unpatched systems are among the most common entry points for attackers. An effective patch management program prioritizes critical patches based on vulnerability severity and business risk.</dd>
+  <dt class="gloss-term" id="term-penetration-testing">Penetration Testing</dt>
+  <dd class="gloss-dd">Penetration testing (or pen testing) is an authorized simulated cyberattack on a system, network, or application to identify exploitable vulnerabilities before real attackers do. Pen tests can be black box (no prior knowledge), white box (full knowledge), or gray box (partial knowledge) engagements. Results are documented in reports that guide remediation efforts.</dd>
+  <dt class="gloss-term" id="term-phishing">Phishing</dt>
+  <dd class="gloss-dd">Phishing is a social engineering attack in which adversaries send fraudulent communications — typically email — that appear to come from a trusted source to trick victims into revealing credentials, clicking malicious links, or downloading malware. It remains the most common initial access vector for cyberattacks. Spear phishing tailors the attack to a specific individual.</dd>
+  <dt class="gloss-term" id="term-privilege-escalation">Privilege Escalation</dt>
+  <dd class="gloss-dd">Privilege escalation is an attack technique in which a threat actor gains elevated access to resources beyond those initially granted, moving from a standard user account to administrative or root privileges. Vertical escalation grants higher-level permissions; horizontal escalation gains access to resources of another user at the same level. Attackers use it to expand their reach after initial compromise.</dd>
+  <dt class="gloss-term" id="term-proxy">Proxy</dt>
+  <dd class="gloss-dd">In a security context, a proxy server acts as an intermediary between a client and the internet, which can be used for content filtering, anonymization, or traffic inspection. Attackers abuse proxy infrastructure — including residential proxies — to mask their true origin and evade IP-based detection. Threat actors often route their operations through multi-hop proxy chains.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-R">R</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-raas">RaaS</dt>
+  <dd class="gloss-dd">Ransomware-as-a-Service (RaaS) is a criminal business model in which ransomware developers lease their malware to affiliates in exchange for a percentage of ransom payments. This model has dramatically scaled ransomware operations by enabling technically unsophisticated actors to carry out attacks. Major RaaS operations include LockBit, BlackCat/ALPHV, and Clop.</dd>
+  <dt class="gloss-term" id="term-ransomware">Ransomware</dt>
+  <dd class="gloss-dd">Ransomware is a type of malicious software that encrypts a victim&#x27;s files or locks their systems, demanding payment in cryptocurrency in exchange for the decryption key. Modern ransomware groups operate as sophisticated criminal enterprises using a Ransomware-as-a-Service model. Recovery without paying typically requires secure, offline backups and often takes weeks.</dd>
+  <dt class="gloss-term" id="term-red-team">Red Team</dt>
+  <dd class="gloss-dd">A red team is a group of security professionals who simulate adversarial attacks against an organization to test the effectiveness of its defenses. Unlike penetration testing, red team engagements are broader, longer, and goal-oriented — designed to test the entire kill chain. Red team findings directly inform blue team defensive improvements.</dd>
+  <dt class="gloss-term" id="term-remote-code-execution-rce">Remote Code Execution (RCE)</dt>
+  <dd class="gloss-dd">Remote Code Execution (RCE) is a class of vulnerability that allows an attacker to run arbitrary commands or malicious code on a target system over a network without physical access. RCE vulnerabilities are among the most severe, often earning the highest CVSS scores. They frequently serve as the initial exploitation step in a broader attack chain.</dd>
+  <dt class="gloss-term" id="term-rootkit">Rootkit</dt>
+  <dd class="gloss-dd">A rootkit is a collection of malicious software designed to hide its presence and the presence of other malware by subverting the operating system. Advanced rootkits operate at the kernel level, making them extremely difficult to detect and remove. Rootkit detection often requires offline scanning tools or complete system reimaging.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-S">S</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-siem">SIEM</dt>
+  <dd class="gloss-dd">Security Information and Event Management (SIEM) is a platform that aggregates, correlates, and analyzes security log data from across an organization&#x27;s IT environment to detect threats and support compliance. SIEM tools provide centralized visibility and enable automated alerting on suspicious patterns. Modern SIEM solutions incorporate machine learning and threat intelligence feeds.</dd>
+  <dt class="gloss-term" id="term-soar">SOAR</dt>
+  <dd class="gloss-dd">Security Orchestration, Automation, and Response (SOAR) platforms help security teams manage and respond to threats by automating repetitive tasks and orchestrating workflows across security tools. SOAR reduces mean time to respond (MTTR) and allows analysts to focus on higher-value tasks. It is often deployed alongside SIEM to operationalize alert triage and incident response.</dd>
+  <dt class="gloss-term" id="term-soc">SOC</dt>
+  <dd class="gloss-dd">A Security Operations Center (SOC) is a centralized team and facility dedicated to monitoring, detecting, analyzing, and responding to cybersecurity incidents on an ongoing basis. SOC analysts work with SIEM, EDR, and other tools to protect the organization around the clock. Managed SOC (MSOCs) and MDR services offer outsourced SOC capabilities for organizations that lack internal resources.</dd>
+  <dt class="gloss-term" id="term-social-engineering">Social Engineering</dt>
+  <dd class="gloss-dd">Social engineering is the manipulation of people into performing actions or divulging confidential information through psychological deception rather than technical hacking. Techniques include phishing, vishing (voice), pretexting, and baiting. Humans remain the most exploitable link in the security chain, making security awareness training essential.</dd>
+  <dt class="gloss-term" id="term-spear-phishing">Spear Phishing</dt>
+  <dd class="gloss-dd">Spear phishing is a highly targeted form of phishing in which attackers customize their communications using specific information about the target — such as their name, role, or recent activities — to increase credibility. It is far more effective than generic phishing campaigns and is the initial access method of choice for many APT groups. Business email compromise (BEC) is a financially motivated variant.</dd>
+  <dt class="gloss-term" id="term-supply-chain-attack">Supply Chain Attack</dt>
+  <dd class="gloss-dd">A supply chain attack targets less-secure elements in the supply chain — such as a software vendor, managed service provider, or hardware supplier — to ultimately compromise the attacker&#x27;s true target downstream. The SolarWinds and MOVEit attacks are prominent examples. Supply chain attacks are particularly dangerous because they can compromise thousands of organizations through a single vendor breach.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-T">T</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-threat-actor">Threat Actor</dt>
+  <dd class="gloss-dd">A threat actor is any individual, group, or entity that conducts or has the intent to conduct malicious cyber activities. Categories include nation-state actors, organized criminal groups, hacktivists, insider threats, and opportunistic script kiddies. Understanding the likely threat actors targeting your industry helps prioritize defensive investments.</dd>
+  <dt class="gloss-term" id="term-threat-hunting">Threat Hunting</dt>
+  <dd class="gloss-dd">Threat hunting is the proactive, human-driven process of searching through networks and systems for advanced threats that have evaded automated security controls. Hunters develop hypotheses based on threat intelligence and attacker TTPs, then investigate to confirm or disprove them. It complements reactive detection by finding threats that automated tools miss.</dd>
+  <dt class="gloss-term" id="term-threat-intelligence">Threat Intelligence</dt>
+  <dd class="gloss-dd">Threat intelligence (TI) is evidence-based knowledge about existing or emerging threats, including context, mechanisms, indicators, and actionable advice. It enables organizations to make faster, better-informed security decisions. Threat intelligence is classified by type: strategic (for executives), tactical (TTPs), technical (IoCs), and operational (specific campaigns).</dd>
+  <dt class="gloss-term" id="term-trojan">Trojan</dt>
+  <dd class="gloss-dd">A Trojan horse (or simply Trojan) is malicious software disguised as legitimate software to trick users into installing it. Unlike viruses or worms, Trojans do not self-replicate but rely on social engineering to spread. Once installed, they can create backdoors, exfiltrate data, or download additional malware.</dd>
+  <dt class="gloss-term" id="term-ttps">TTPs</dt>
+  <dd class="gloss-dd">Tactics, Techniques, and Procedures (TTPs) describe the behavior and methods used by threat actors to conduct cyberattacks. Tactics represent the high-level objective (e.g., initial access); techniques describe how the tactic is achieved; procedures are specific implementations. The MITRE ATT&amp;CK framework organizes adversary TTPs into a structured, searchable matrix.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-V">V</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-vishing">Vishing</dt>
+  <dd class="gloss-dd">Vishing (voice phishing) is a social engineering attack conducted over the telephone or VoIP, where attackers impersonate trusted entities — such as tech support, banks, or government agencies — to extract sensitive information or money from victims. AI-generated voice cloning has dramatically improved vishing attack credibility. It is a key component of many business email compromise and fraud schemes.</dd>
+  <dt class="gloss-term" id="term-vpn">VPN</dt>
+  <dd class="gloss-dd">A Virtual Private Network (VPN) creates an encrypted tunnel between a device and a network, protecting data in transit and masking the user&#x27;s IP address. VPNs are used legitimately by organizations to enable secure remote access. However, unpatched VPN appliances are a common attack vector, and threat actors also abuse VPN services to anonymize their operations.</dd>
+  <dt class="gloss-term" id="term-vulnerability">Vulnerability</dt>
+  <dd class="gloss-dd">A vulnerability is a weakness in a system, application, or process that could be exploited to cause harm. Vulnerabilities are classified by severity using the Common Vulnerability Scoring System (CVSS) and assigned CVE identifiers. Timely vulnerability identification and patching is one of the most impactful risk reduction activities an organization can undertake.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-W">W</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-watering-hole-attack">Watering Hole Attack</dt>
+  <dd class="gloss-dd">A watering hole attack is a targeted strategy in which adversaries compromise websites that are commonly visited by the intended victims. When targets browse the compromised site, malware is silently delivered to their systems. The attack is named after the predator tactic of lying in wait near a watering hole.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-X">X</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-xdr">XDR</dt>
+  <dd class="gloss-dd">Extended Detection and Response (XDR) is a security solution that unifies data collection and threat detection across endpoints, networks, cloud workloads, and email into a single platform. XDR extends EDR capabilities beyond the endpoint to provide a holistic view of threats across the entire environment. It aims to reduce alert fatigue and speed up detection and response.</dd>
+</dl>
+<h2 class="gloss-letter" id="letter-Z">Z</h2>
+<dl class="gloss-dl">
+  <dt class="gloss-term" id="term-zero-trust">Zero Trust</dt>
+  <dd class="gloss-dd">Zero Trust is a security framework based on the principle &#x27;never trust, always verify&#x27; — requiring strict identity verification and least-privilege access for every user, device, and application, regardless of whether they are inside or outside the network perimeter. It assumes that breaches are inevitable and limits blast radius through continuous verification and microsegmentation. Zero Trust is now a foundational strategy for modern enterprise security.</dd>
+  <dt class="gloss-term" id="term-zero-day">Zero-Day</dt>
+  <dd class="gloss-dd">A zero-day vulnerability is a software flaw that is unknown to the vendor and for which no patch exists, giving defenders zero days to prepare. Zero-day exploits are highly valuable to both nation-state actors and cybercriminals and are actively traded on exploit markets. Once a zero-day is discovered and disclosed, it is no longer technically a zero-day.</dd>
+</dl>
+
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><span class="logo-accent">C</span>yber Brief Daily</div>
+      <p class="footer-tagline">In-depth analysis, breaking news, and expert interviews covering the cybersecurity landscape. Trusted by professionals worldwide.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <a href="./categories/news.html">News</a>
+      <a href="./categories/analysis.html">Analysis</a>
+      <a href="./categories/expert-opinions.html">Expert Opinions</a>
+      <a href="./categories/ransomware.html">Ransomware</a>
+      <a href="./categories/cybercrime.html">Cybercrime</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="./conferences.html">Conferences</a>
+      <a href="./glossary.html">Glossary of Terms</a>
+      <a href="#">Awards</a>
+      <a href="./ecosystem-map.html">Ecosystem Map</a>
+    </div>
+    <div class="footer-col">
+      <h4>Stay Informed</h4>
+      <p class="footer-newsletter-text">Get the latest cybersecurity insights delivered to your inbox.</p>
+      <form class="footer-newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" aria-label="Email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-contact">
+        <a href="./about.html">About</a>
+        <a href="mailto:info@cyberbriefdaily.com">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>&copy; 2026 Cyber Brief Daily. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+<script>
+// Dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('ci-dark', document.body.classList.contains('dark') ? '1' : '0');
+}
+if (localStorage.getItem('ci-dark') === '1') document.body.classList.add('dark');
+
+// Search filter (simple client-side)
+function filterArticles(q) {
+  if (!q) return;
+  q = q.toLowerCase();
+  document.querySelectorAll('.card').forEach(function(c) {
+    var t = c.textContent.toLowerCase();
+    c.style.display = t.includes(q) ? '' : 'none';
+  });
+}
+
+// ── Scroll-triggered card animations ──
+(function() {
+  var cards = document.querySelectorAll('.card');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var delay = Array.prototype.indexOf.call(
+          entry.target.parentNode.children, entry.target
+        ) % 3 * 100;
+        setTimeout(function() {
+          entry.target.classList.add('animate-in');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Hero entrance animation ──
+(function() {
+  var hero = document.querySelector('.hero-animate');
+  if (!hero) return;
+  var children = hero.children;
+  for (var i = 0; i < children.length; i++) {
+    (function(el, idx) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      setTimeout(function() {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, 200 + idx * 150);
+    })(children[i], i);
+  }
+})();
+
+// ── Category filter tabs ──
+(function() {
+  var tabs = document.querySelectorAll('.filter-tab');
+  if (!tabs.length) return;
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var cat = tab.getAttribute('data-cat');
+      var cards = document.querySelectorAll('#card-grid .card');
+      cards.forEach(function(c) {
+        if (cat === 'all') {
+          c.style.display = '';
+        } else {
+          var cats = (c.getAttribute('data-category') || '').toLowerCase();
+          c.style.display = cats.includes(cat.toLowerCase()) ? '' : 'none';
+        }
+      });
+      // Reset load-more visibility after filter
+      var btn = document.getElementById('loadMoreBtn');
+      if (btn) btn.style.display = '';
+    });
+  });
+})();
+
+// ── Load More button ──
+(function() {
+  var btn = document.getElementById('loadMoreBtn');
+  if (!btn) return;
+  var grid = document.getElementById('card-grid');
+  if (!grid) return;
+  var allCards = grid.querySelectorAll('.card');
+  var batchSize = 12;
+  var shown = batchSize;
+  // Hide cards beyond initial batch
+  for (var i = 0; i < allCards.length; i++) {
+    if (i >= batchSize) allCards[i].classList.add('hidden-card');
+  }
+  if (allCards.length <= batchSize) btn.style.display = 'none';
+  btn.addEventListener('click', function() {
+    var next = shown + batchSize;
+    for (var i = shown; i < next && i < allCards.length; i++) {
+      allCards[i].classList.remove('hidden-card');
+    }
+    shown = next;
+    if (shown >= allCards.length) btn.style.display = 'none';
+  });
+})();
+
+// ── Sidebar animated counters ──
+(function() {
+  var counters = document.querySelectorAll('.stat-counter');
+  if (!counters.length) return;
+  var animated = false;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        counters.forEach(function(counter) {
+          var target = parseInt(counter.getAttribute('data-target'), 10);
+          var numEl = counter.querySelector('.counter-num');
+          var start = 0;
+          var duration = 1500;
+          var startTime = null;
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            numEl.textContent = Math.floor(eased * target);
+            if (progress < 1) requestAnimationFrame(step);
+            else numEl.textContent = target;
+          }
+          requestAnimationFrame(step);
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  counters.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Reading progress bar (article pages) ──
+(function() {
+  var bar = document.getElementById('readingProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = pct + '%';
+  });
+})();
+</script>
+</body>
+</html>
