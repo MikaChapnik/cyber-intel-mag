@@ -5,6 +5,7 @@
   <url><loc>https://cyberbriefdaily.com/glossary.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/ecosystem-map.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/conferences.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cyberbriefdaily.com/articles/contactless-payments-the-tipping-point.html</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/governments-companies-must-act-fast-defend-against-ai.html</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/china-russia-target-german-companies.html</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/unsanctioned-ai-leaving-companies-vulnerable.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -359,6 +360,7 @@
   <url><loc>https://cyberbriefdaily.com/categories/workforce.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/agentic-ai.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/cybersecurity.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cyberbriefdaily.com/categories/fraud.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/artificial-intelligence.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/ai-security.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/phishing.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -371,7 +373,6 @@
   <url><loc>https://cyberbriefdaily.com/categories/policy.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/threat-intelligence.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/ai-regulation.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://cyberbriefdaily.com/categories/fraud.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/espionage.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/compliance.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/sports-security.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
