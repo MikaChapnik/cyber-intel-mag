@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Cyber Brief Daily</title>
+  <link>https://cyberbriefdaily.com/</link>
+  <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
+  <language>en-us</language>
+  <lastBuildDate>Thu, 03 Sep 2026 20:56:14 -0000</lastBuildDate>
+  <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <image>
+    <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
+    <title>Cyber Brief Daily</title>
+    <link>https://cyberbriefdaily.com/</link>
+  </image>
+  <item>
+    <title>Contactless Payments: The Tipping Point</title>
+    <link>https://cyberbriefdaily.com/articles/contactless-payments-the-tipping-point.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/contactless-payments-the-tipping-point.html</guid>
+    <description></description>
+    <pubDate>Thu, 03 Sep 2026 10:00:00 -0000</pubDate>
+    <category>Fraud</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/fingerprint-scan.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Governments and companies must act fast to defend against AI</title>
+    <link>https://cyberbriefdaily.com/articles/governments-companies-must-act-fast-defend-against-ai.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/governments-companies-must-act-fast-defend-against-ai.html</guid>
+    <description></description>
+    <pubDate>Tue, 01 Sep 2026 10:00:00 -0000</pubDate>
+    <category>Artificial Intelligence</category><category>Cybersecurity</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>China and Russia target German companies</title>
+    <link>https://cyberbriefdaily.com/articles/china-russia-target-german-companies.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/china-russia-target-german-companies.html</guid>
+    <description></description>
+    <pubDate>Tue, 01 Sep 2026 10:00:00 -0000</pubDate>
+    <category>Nation-State Threats</category><category>Cybersecurity</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy-monitors.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Unsanctioned AI is leaving companies vulnerable to attack</title>
+    <link>https://cyberbriefdaily.com/articles/unsanctioned-ai-leaving-companies-vulnerable.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/unsanctioned-ai-leaving-companies-vulnerable.html</guid>
+    <description></description>
+    <pubDate>Sat, 29 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Agentic AI</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/code-screen.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Iranian Cyber-Attack Shuts Down a UK Power Plant</title>
+    <link>https://cyberbriefdaily.com/articles/iranian-cyber-attack-shuts-down-uk-power-plant.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/iranian-cyber-attack-shuts-down-uk-power-plant.html</guid>
+    <description></description>
+    <pubDate>Tue, 25 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Critical Infrastructure</category><category>Cyber Attacks</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Medusa Ransomware Claims 500 Victim Organizations</title>
+    <link>https://cyberbriefdaily.com/articles/medusa-ransomware-500-victim-organizations.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/medusa-ransomware-500-victim-organizations.html</guid>
+    <description></description>
+    <pubDate>Fri, 21 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Ransomware</category><category>Cybercrime</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/dark-hoodie.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>EU introduces 17 new cybersecurity standards</title>
+    <link>https://cyberbriefdaily.com/articles/eu-introduces-17-new-cybersecurity-standards.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/eu-introduces-17-new-cybersecurity-standards.html</guid>
+    <description></description>
+    <pubDate>Wed, 19 Aug 2026 11:00:00 -0000</pubDate>
+    <category>Cybersecurity</category><category>Regulation</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/vpn-tablet-person.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>SRA warns lawyers about AI hallucinations</title>
+    <link>https://cyberbriefdaily.com/articles/sra-warns-lawyers-about-ai-hallucinations.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/sra-warns-lawyers-about-ai-hallucinations.html</guid>
+    <description></description>
+    <pubDate>Wed, 19 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Artificial Intelligence</category><category>Legal</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/robot-white.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Half of Companies Pay the Ransomware Demand</title>
+    <link>https://cyberbriefdaily.com/articles/half-of-companies-pay-ransomware-demand.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/half-of-companies-pay-ransomware-demand.html</guid>
+    <description></description>
+    <pubDate>Mon, 17 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Ransomware</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Private Firms Enlisted to Fight US Cyber Wars</title>
+    <link>https://cyberbriefdaily.com/articles/private-firms-enlisted-to-fight-us-cyber-wars.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/private-firms-enlisted-to-fight-us-cyber-wars.html</guid>
+    <description></description>
+    <pubDate>Wed, 12 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Policy</category><category>Cybercrime</category>
+    <enclosure url="https://cyberbriefdaily.com/images/security-camera-brick.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Ransomware attacks are ramping up</title>
+    <link>https://cyberbriefdaily.com/articles/ransomware-attacks-are-ramping-up.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/ransomware-attacks-are-ramping-up.html</guid>
+    <description></description>
+    <pubDate>Wed, 12 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Ransomware</category><category>Threat Intelligence</category>
+    <enclosure url="https://cyberbriefdaily.com/images/guy-fawkes-hacker.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>There&#x27;s hacking – and there&#x27;s Levi&#x27;s hacking</title>
+    <link>https://cyberbriefdaily.com/articles/theres-hacking-and-theres-levis-hacking.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/theres-hacking-and-theres-levis-hacking.html</guid>
+    <description></description>
+    <pubDate>Tue, 11 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Data Breaches</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/key-with-usb-drive.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Ransomware gangs target middle management</title>
+    <link>https://cyberbriefdaily.com/articles/ransomware-gangs-target-middle-management.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/ransomware-gangs-target-middle-management.html</guid>
+    <description></description>
+    <pubDate>Mon, 10 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Ransomware</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/office-security.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Increased security risk for agentic AI</title>
+    <link>https://cyberbriefdaily.com/articles/increased-security-risk-for-agentic-ai.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/increased-security-risk-for-agentic-ai.html</guid>
+    <description></description>
+    <pubDate>Fri, 07 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Agentic AI</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/hacker-group-dark-room.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Iran-backed attacks target US water systems</title>
+    <link>https://cyberbriefdaily.com/articles/iran-backed-attacks-target-us-water-systems.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/iran-backed-attacks-target-us-water-systems.html</guid>
+    <description></description>
+    <pubDate>Thu, 06 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Geopolitics</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/surveillance-cameras-pole.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Las Vegas&#x27;s biggest gamble</title>
+    <link>https://cyberbriefdaily.com/articles/las-vegas-biggest-gamble.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/las-vegas-biggest-gamble.html</guid>
+    <description></description>
+    <pubDate>Thu, 06 Aug 2026 10:00:00 -0000</pubDate>
+    <category>AI Security</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/indoor-security-camera.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>The EU&#x27;s AI Act is now in force</title>
+    <link>https://cyberbriefdaily.com/articles/eus-ai-act-is-now-in-force.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/eus-ai-act-is-now-in-force.html</guid>
+    <description></description>
+    <pubDate>Sun, 02 Aug 2026 10:00:00 -0000</pubDate>
+    <category>AI Regulation</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/digital-globe.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Phone farms scale up scams</title>
+    <link>https://cyberbriefdaily.com/articles/phone-farms-scale-up-scams.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/phone-farms-scale-up-scams.html</guid>
+    <description></description>
+    <pubDate>Sat, 01 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Fraud</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/hacker-keyboard-tiles.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Russians hijack international hotel wi-fi networks</title>
+    <link>https://cyberbriefdaily.com/articles/russians-hijack-international-hotel-wi-fi-networks.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/russians-hijack-international-hotel-wi-fi-networks.html</guid>
+    <description></description>
+    <pubDate>Tue, 28 Jul 2026 10:00:00 -0000</pubDate>
+    <category>Espionage</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/network-cables.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Sentenced teen hackers are only the tip of a huge iceberg</title>
+    <link>https://cyberbriefdaily.com/articles/sentenced-teen-hackers-tip-iceberg.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/sentenced-teen-hackers-tip-iceberg.html</guid>
+    <description></description>
+    <pubDate>Fri, 24 Jul 2026 10:00:00 -0000</pubDate>
+    <category>News</category><category>Cybercrime</category>
+    <enclosure url="https://cyberbriefdaily.com/images/teen-hacker.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>AI Agent Goes Rogue</title>
+    <link>https://cyberbriefdaily.com/articles/ai-agent-goes-rogue.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/ai-agent-goes-rogue.html</guid>
+    <description></description>
+    <pubDate>Fri, 24 Jul 2026 10:00:00 -0000</pubDate>
+    <category>AI</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/person-number-screen.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Vishing-as-a-service</title>
+    <link>https://cyberbriefdaily.com/articles/vishing-as-a-service.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/vishing-as-a-service.html</guid>
+    <description></description>
+    <pubDate>Thu, 23 Jul 2026 10:00:00 -0000</pubDate>
+    <category>Phishing</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/vpn-smartphone-hands.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Senior executives blindsided by AI-powered phishing attacks</title>
+    <link>https://cyberbriefdaily.com/articles/senior-executives-blindsided-by-ai-powered-phishing-attacks.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/senior-executives-blindsided-by-ai-powered-phishing-attacks.html</guid>
+    <description></description>
+    <pubDate>Thu, 16 Jul 2026 10:00:00 -0000</pubDate>
+    <category>Phishing</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/magnifying-cryptic-codes.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Weaponized websites target AI agents</title>
+    <link>https://cyberbriefdaily.com/articles/weaponized-websites-target-ai-agents.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/weaponized-websites-target-ai-agents.html</guid>
+    <description></description>
+    <pubDate>Fri, 10 Jul 2026 10:00:00 -0000</pubDate>
+    <category>Agentic AI</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/hacker-smartphone-laptop.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Compliance in the Age of Agentic AI</title>
+    <link>https://cyberbriefdaily.com/articles/compliance-in-the-age-of-agentic-ai.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/compliance-in-the-age-of-agentic-ai.html</guid>
+    <description></description>
+    <pubDate>Wed, 01 Jul 2026 10:00:00 -0000</pubDate>
+    <category>Agentic AI</category><category>Compliance</category>
+    <enclosure url="https://cyberbriefdaily.com/images/soc-analyst-screens.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>AI agents represent a new insider threat</title>
+    <link>https://cyberbriefdaily.com/articles/ai-agents-represent-a-new-insider-threat.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/ai-agents-represent-a-new-insider-threat.html</guid>
+    <description></description>
+    <pubDate>Thu, 18 Jun 2026 10:00:00 -0000</pubDate>
+    <category>Cybercrime</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>New trojan targets Android banking customers</title>
+    <link>https://cyberbriefdaily.com/articles/new-trojan-targets-android-banking-customers.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/new-trojan-targets-android-banking-customers.html</guid>
+    <description></description>
+    <pubDate>Wed, 17 Jun 2026 10:00:00 -0000</pubDate>
+    <category>Cybercrime</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Hackers Target FIFA</title>
+    <link>https://cyberbriefdaily.com/articles/hackers-target-fifa.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/hackers-target-fifa.html</guid>
+    <description></description>
+    <pubDate>Tue, 16 Jun 2026 10:00:00 -0000</pubDate>
+    <category>Sports Security</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/hoodie-hacker-white-room.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Agentic AI dominated InfoSecurity Europe</title>
+    <link>https://cyberbriefdaily.com/articles/agentic-ai-dominated-infosecurity-europe.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/agentic-ai-dominated-infosecurity-europe.html</guid>
+    <description></description>
+    <pubDate>Tue, 16 Jun 2026 10:00:00 -0000</pubDate>
+    <category>AI Security</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/neon-mask-tablet.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>OpenAI Plans to Democratize Cybersecurity</title>
+    <link>https://cyberbriefdaily.com/articles/openai-plans-to-democratize-cybersecurity.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/openai-plans-to-democratize-cybersecurity.html</guid>
+    <description></description>
+    <pubDate>Fri, 15 May 2026 09:00:00 -0000</pubDate>
+    <category>AI</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/programmer-laptop-code.jpg" type="image/jpeg" length="0"/>
+  </item>
+</channel>
+</rss>
