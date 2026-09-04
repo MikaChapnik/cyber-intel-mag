@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Thu, 03 Sep 2026 21:01:36 -0000</lastBuildDate>
+  <lastBuildDate>Fri, 04 Sep 2026 15:39:31 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>Rogue AI Agents Run Amok</title>
+    <link>https://cyberbriefdaily.com/articles/rogue-ai-agents-run-amok.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/rogue-ai-agents-run-amok.html</guid>
+    <description></description>
+    <pubDate>Fri, 04 Sep 2026 10:00:00 -0000</pubDate>
+    <category>Agentic AI</category><category>AI Security</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>Contactless Payments: The Tipping Point</title>
     <link>https://cyberbriefdaily.com/articles/contactless-payments-the-tipping-point.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Tue, 16 Jun 2026 10:00:00 -0000</pubDate>
     <category>AI Security</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/neon-mask-tablet.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>OpenAI Plans to Democratize Cybersecurity</title>
-    <link>https://cyberbriefdaily.com/articles/openai-plans-to-democratize-cybersecurity.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/openai-plans-to-democratize-cybersecurity.html</guid>
-    <description></description>
-    <pubDate>Fri, 15 May 2026 09:00:00 -0000</pubDate>
-    <category>AI</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/programmer-laptop-code.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
