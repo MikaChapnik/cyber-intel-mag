@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 04 Sep 2026 15:39:31 -0000</lastBuildDate>
+  <lastBuildDate>Wed, 09 Sep 2026 15:45:35 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</title>
+    <link>https://cyberbriefdaily.com/articles/uk-cyber-security-resilience-bill-lords-criticism.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/uk-cyber-security-resilience-bill-lords-criticism.html</guid>
+    <description></description>
+    <pubDate>Wed, 09 Sep 2026 10:00:00 -0000</pubDate>
+    <category>Legislation</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/security-lock.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>Rogue AI Agents Run Amok</title>
     <link>https://cyberbriefdaily.com/articles/rogue-ai-agents-run-amok.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Tue, 16 Jun 2026 10:00:00 -0000</pubDate>
     <category>Sports Security</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/hoodie-hacker-white-room.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Agentic AI dominated InfoSecurity Europe</title>
-    <link>https://cyberbriefdaily.com/articles/agentic-ai-dominated-infosecurity-europe.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/agentic-ai-dominated-infosecurity-europe.html</guid>
-    <description></description>
-    <pubDate>Tue, 16 Jun 2026 10:00:00 -0000</pubDate>
-    <category>AI Security</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/neon-mask-tablet.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
