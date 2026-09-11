@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 09 Sep 2026 15:45:35 -0000</lastBuildDate>
+  <lastBuildDate>Fri, 11 Sep 2026 22:11:03 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>The FBI Unveils Its New Cyber Strategy</title>
+    <link>https://cyberbriefdaily.com/articles/fbi-unveils-new-cyber-strategy.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/fbi-unveils-new-cyber-strategy.html</guid>
+    <description></description>
+    <pubDate>Sat, 12 Sep 2026 10:00:00 -0000</pubDate>
+    <category>Government</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</title>
     <link>https://cyberbriefdaily.com/articles/uk-cyber-security-resilience-bill-lords-criticism.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Wed, 17 Jun 2026 10:00:00 -0000</pubDate>
     <category>Cybercrime</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Hackers Target FIFA</title>
-    <link>https://cyberbriefdaily.com/articles/hackers-target-fifa.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/hackers-target-fifa.html</guid>
-    <description></description>
-    <pubDate>Tue, 16 Jun 2026 10:00:00 -0000</pubDate>
-    <category>Sports Security</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/hoodie-hacker-white-room.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
