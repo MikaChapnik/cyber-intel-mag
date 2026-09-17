@@ -140,8 +140,6 @@
     <div class="article-hero"><img src="../images/circuit-board.jpg" alt="StarkWare Unveils Quantum-Proof Bitcoin Lock"></div>
     <div class="article-body"><p>There are growing fears that cryptocurrencies such as Bitcoin may be vulnerable to quantum computing attacks sooner than previously anticipated — potentially enabling cybercriminals to empty cryptocurrency wallets at will. But an immediate solution to Bitcoin owners' fears is now at hand, with StarkWare's newly demonstrated Quantum-Safe Bitcoin (QSB) method offering wallet-level protection without waiting for changes to the Bitcoin protocol itself.</p>
 
-<h2>Why Quantum Computing Threatens Bitcoin Now</h2>
-
 <p>Bitcoin's security rests on elliptic curve cryptography (ECC), a mathematical system that classical computers cannot crack in any practical timeframe. Quantum computers, however, use qubits that can exist in superposition — representing 0 and 1 simultaneously — allowing them to explore millions of possibilities at once rather than step by step. This makes certain cryptographic problems that take classical computers billions of years trivially solvable.</p>
 
 <p><a href="https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/" target="_blank" rel="noopener noreferrer">Google warns</a> that future quantum computers may break the elliptic curve cryptography protecting cryptocurrency and other systems "with fewer qubits and gates than previously realized," and recommends that blockchains transition to post-quantum cryptography (PQC) now. That transition is, however, a lengthy and complex process — and Bitcoin holders cannot wait.</p>
@@ -150,15 +148,13 @@
 
 <p><a href="https://www.coinbase.com/en-gb/blog/coinbase-quantum-advisory-council-post-quantum-migration-and-abandoned-coins" target="_blank" rel="noopener noreferrer">Coinbase</a> has warned that the timeline for widespread quantum computing remains uncertain, but the crypto community needs to start preparing now rather than debating exactly when the threat will arrive. Bitcoin is in a race against time — and the jury is still out on whether it will cross the finish line before sufficiently powerful quantum computers emerge.</p>
 
-<h2>What Is StarkWare's Quantum-Safe Bitcoin (QSB)?</h2>
-
 <p>StarkWare, a cryptography and blockchain-infrastructure company, recently demonstrated that a quantum-safe transaction using its Quantum-Safe Bitcoin (QSB) method has been mined on the Bitcoin mainnet — the cryptocurrency's live production network. The transaction is a proof of concept, but one that may open the door to commercial-scale deployment.</p>
+
+<p><strong>"The threat that quantum poses is very real"</strong></p>
 
 <p>"The threat that quantum computing poses is definitely very real and well documented," said StarkWare co-founder and CEO Eli Ben-Sasson. "Quantum computers already exist and will soon become powerful enough to decrypt blockchains such as Bitcoin, leaving them open to theft and fraud."</p>
 
 <p>QSB is not a protocol-level fix for Bitcoin itself. Instead, it acts as an additional security layer — a second lock placed around individual Bitcoin wallets in the interim period before the cryptocurrency can be made natively quantum-resistant. Ben-Sasson describes it this way: "Quantum Safe Bitcoin acts like a safety deposit box. It essentially uses a different form of cryptography to put a second block around Bitcoin assets. But the simplicity of that idea is highly complex in its execution as it has to combine with the Bitcoin blockchain without degrading it in any way."</p>
-
-<h2>How QSB Works: Hash Functions vs. Elliptic Curves</h2>
 
 <p>The core vulnerability in Bitcoin's current design is that its signatures rely on elliptic curve cryptography. A mathematical formula known as <a href="https://quantum.cloud.ibm.com/docs/en/tutorials/shors-algorithm" target="_blank" rel="noopener noreferrer">Shor's algorithm</a>, running on a sufficiently large quantum computer, can crack Bitcoin's existing ECC quickly — rendering the cryptographic puzzle that protects each coin insufficient.</p>
 
@@ -166,34 +162,25 @@
 
 <p>Once the underlying ECC is broken, Bitcoin owners would no longer have a valid proof of ownership, leaving their wallets exposed to bad actors. QSB prevents that outcome at the individual wallet level, without requiring any changes to the Bitcoin protocol.</p>
 
-<h2>Who Can Use QSB — and What Does It Cost?</h2>
-
 <p>At present, QSB cannot be deployed in-house, even by large institutions such as banks, owing to the volume of computing power required. However, according to StarkWare, this compute can be outsourced for as little as $100 to $200 per transaction. For the moment, Bitcoin holders must deploy the software independently — commercial services built on QSB are a next step, not yet available at scale.</p>
 
 <p>"The QSB solution will continue to be effective, but the ultimate solution, of course, is for cryptocurrencies such as Bitcoin to install their own protocols to protect all their currency holders," adds Ben-Sasson.</p>
 
-<h2>The Quantum-Safe Bitcoin Optimization Challenge</h2>
-
 <p>On September 16, 2026, StarkWare, Yukon Research, and Eigen Labs launched the <a href="https://starkware.co/blog/quantum-safe-bitcoin-optimization-challenge/" target="_blank" rel="noopener noreferrer">Quantum-Safe Bitcoin Optimization Challenge</a>, open to developers, researchers, and AI agents. The goal is to make QSB suitable for large-scale deployment. StarkWare is offering $20,000 in prizes, with an additional prize contributed by Yukon Research.</p>
 
-<p>As the market uncertainty created by quantum threats risks affecting Bitcoin's value, StarkWare's approach offers holders something tangible today: a demonstrable, deployable second lock that does not require waiting for a Bitcoin-wide protocol upgrade.</p>
+<p><strong>Quantum computers will break public-key cryptography</strong></p>
 
-<h2>Frequently Asked Questions</h2>
+<p>"Large-scale cryptographically relevant quantum computers (CRQCs) will also be able to break current, widely used public-key cryptography that protects things like people's confidential information…. With continued scientific and technological progress, CRQCs are getting closer to reality," says Google.</p>
 
-<h3>What is quantum-safe Bitcoin?</h3>
-<p>Quantum-safe Bitcoin refers to Bitcoin transactions or wallets protected by post-quantum cryptography — cryptographic methods that remain secure even against attacks from large-scale quantum computers. StarkWare's QSB method adds a hash-function-based second lock to individual wallets without modifying the Bitcoin protocol itself.</p>
+<p><a href="https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/" target="_blank" rel="noopener noreferrer">Google warns</a>: "Future quantum computers may break the elliptic curve cryptography that protects cryptocurrency and other systems with fewer qubits and gates than previously realized. We want to raise awareness on this issue."</p>
 
-<h3>Can quantum computers break Bitcoin today?</h3>
-<p>Not yet. Current quantum computers are not powerful enough to break Bitcoin's elliptic curve cryptography. However, the estimated resource cost of such an attack has been falling — researchers recently halved the benchmark — and Google, Coinbase, and others warn that preparation must begin now to avoid being caught off guard when cryptographically relevant quantum computers (CRQCs) arrive.</p>
+<p>As quantum computing starts to come closer to being more widely available, cryptocurrencies like Bitcoin may see their value adversely affected by market uncertainty and now need to start assuring holders that the problem is being effectively addressed. According to Bitcoin, users need to be kept informed that this challenge is being taken seriously, as uncertainty is its own risk.</p>
 
-<h3>What is Shor's algorithm and why does it matter for Bitcoin?</h3>
-<p><a href="https://quantum.cloud.ibm.com/docs/en/tutorials/shors-algorithm" target="_blank" rel="noopener noreferrer">Shor's algorithm</a> is a quantum algorithm capable of efficiently factoring large numbers and solving the discrete logarithm problem — the mathematical foundation of elliptic curve cryptography. A quantum computer running Shor's algorithm at sufficient scale could derive Bitcoin private keys from public keys, breaking wallet security entirely.</p>
+<p>Unlike classical computers that use bits (either 0 or 1), quantum computers use qubits, which can exist in a state called superposition, meaning they can be 0 and 1 simultaneously. This allows quantum computers to explore many possibilities at once, rather than solving problems step by step like classical computers, which enables them to break traditional cryptographic security.</p>
 
-<h3>How much does quantum-safe Bitcoin protection cost?</h3>
-<p>According to StarkWare, the computing power needed to apply QSB protection can be outsourced for approximately $100–$200 per transaction. In-house deployment is not currently feasible even for large financial institutions due to the compute requirements involved.</p>
+<p>The real and increasingly imminent danger is that, once the underlying cryptography is broken, Bitcoin owners will no longer have a valid proof of ownership, leaving them exposed to exploitation by bad actors. Bitcoin's signatures rest on elliptic curve cryptography. A mathematical formula, referred to as <a href="https://quantum.cloud.ibm.com/docs/en/tutorials/shors-algorithm" target="_blank" rel="noopener noreferrer">Shor's algorithm</a>, running on a large enough quantum computer, will be able to crack Bitcoin's existing cryptography quickly, so the puzzle protecting a coin will no longer be sufficient to protect it.</p>
 
-<h3>What is the difference between QSB and a Bitcoin protocol upgrade?</h3>
-<p>A Bitcoin protocol upgrade would make the entire network quantum-resistant for all users — but requires consensus among Bitcoin stakeholders and takes years to implement. QSB is an individual wallet-level solution available today, offering protection in the interim period before any protocol-level change is deployed.</p></div>
+<p>StarkWare's QSB closes the window for that type of attack by adding a second quantum-resistant lock alongside the existing one, built on what mathematicians call hash functions instead of elliptic curves. Shor's algorithm does not pose the same threat to hash functions as it does to elliptic-curve cryptography.</p></div>
   </article>
 </main>
 <footer class="site-footer">
