@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 11 Sep 2026 22:11:03 -0000</lastBuildDate>
+  <lastBuildDate>Thu, 17 Sep 2026 06:30:11 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>Fake Government Request Compromises Revolut Customers</title>
+    <link>https://cyberbriefdaily.com/articles/fake-government-request-compromises-revolut-customers.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/fake-government-request-compromises-revolut-customers.html</guid>
+    <description></description>
+    <pubDate>Thu, 17 Sep 2026 10:00:00 -0000</pubDate>
+    <category>Phishing</category><category>Data Breach</category><category>Financial Security</category>
+    <enclosure url="https://cyberbriefdaily.com/images/phishing-scam-laptop.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>The FBI Unveils Its New Cyber Strategy</title>
     <link>https://cyberbriefdaily.com/articles/fbi-unveils-new-cyber-strategy.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Thu, 18 Jun 2026 10:00:00 -0000</pubDate>
     <category>Cybercrime</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>New trojan targets Android banking customers</title>
-    <link>https://cyberbriefdaily.com/articles/new-trojan-targets-android-banking-customers.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/new-trojan-targets-android-banking-customers.html</guid>
-    <description></description>
-    <pubDate>Wed, 17 Jun 2026 10:00:00 -0000</pubDate>
-    <category>Cybercrime</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
