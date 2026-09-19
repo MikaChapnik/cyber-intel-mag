@@ -501,6 +501,7 @@ body.dark .trending-label { color: #e74c3c; background: rgba(231, 76, 60, 0.1); 
   grid-template-columns: 1fr 300px;
   gap: 48px;
   padding: 48px 0;
+  align-items: start;
 }
 .main-content { min-width: 0; }
 
@@ -647,7 +648,7 @@ body.dark .trending-label { color: #e74c3c; background: rgba(231, 76, 60, 0.1); 
 /* ============================================================
    SIDEBAR
    ============================================================ */
-.sidebar { padding-top: 0; }
+.sidebar { padding-top: 0; position: sticky; top: 20px; }
 
 .widget {
   border: 1px solid var(--border);
