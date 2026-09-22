@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 22 Sep 2026 11:27:40 -0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 15:59:55 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>Exclusive: The Opportunities and Pitfalls of Agentic AI</title>
+    <link>https://cyberbriefdaily.com/articles/opportunities-and-pitfalls-of-agentic-ai.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/opportunities-and-pitfalls-of-agentic-ai.html</guid>
+    <description></description>
+    <pubDate>Tue, 22 Sep 2026 09:00:00 -0000</pubDate>
+    <category>AI</category><category>Cybersecurity</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>StarkWare Unveils Quantum-Proof Bitcoin Lock</title>
     <link>https://cyberbriefdaily.com/articles/starkware-quantum-safe-bitcoin-lock.html</link>
@@ -37,7 +46,7 @@
     <description></description>
     <pubDate>Sat, 12 Sep 2026 10:00:00 -0000</pubDate>
     <category>Government</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</title>
@@ -100,7 +109,7 @@
     <description></description>
     <pubDate>Tue, 25 Aug 2026 10:00:00 -0000</pubDate>
     <category>Critical Infrastructure</category><category>Cyber Attacks</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Medusa Ransomware Claims 500 Victim Organizations</title>
@@ -136,7 +145,7 @@
     <description></description>
     <pubDate>Mon, 17 Aug 2026 10:00:00 -0000</pubDate>
     <category>Ransomware</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Private Firms Enlisted to Fight US Cyber Wars</title>
@@ -272,15 +281,6 @@
     <pubDate>Fri, 10 Jul 2026 10:00:00 -0000</pubDate>
     <category>Agentic AI</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/hacker-smartphone-laptop.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Compliance in the Age of Agentic AI</title>
-    <link>https://cyberbriefdaily.com/articles/compliance-in-the-age-of-agentic-ai.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/compliance-in-the-age-of-agentic-ai.html</guid>
-    <description></description>
-    <pubDate>Wed, 01 Jul 2026 10:00:00 -0000</pubDate>
-    <category>Agentic AI</category><category>Compliance</category>
-    <enclosure url="https://cyberbriefdaily.com/images/soc-analyst-screens.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
