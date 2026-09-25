@@ -5,7 +5,7 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 22 Sep 2026 20:03:12 -0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 14:16:13 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
@@ -20,6 +20,15 @@
     <pubDate>Tue, 22 Sep 2026 09:00:00 -0000</pubDate>
     <category>AI</category><category>Cybersecurity</category>
     <enclosure url="https://cyberbriefdaily.com/images/person-binary-projection.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Full Report: The Opportunities and Pitfalls of Agentic AI</title>
+    <link>https://cyberbriefdaily.com/articles/agentic-ai-report.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/agentic-ai-report.html</guid>
+    <description></description>
+    <pubDate>Tue, 22 Sep 2026 08:00:00 -0000</pubDate>
+    <category>AI</category><category>Cybersecurity</category>
+    <enclosure url="https://cyberbriefdaily.com/images/soc-analyst-screens.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>StarkWare Unveils Quantum-Proof Bitcoin Lock</title>
@@ -272,15 +281,6 @@
     <pubDate>Thu, 16 Jul 2026 10:00:00 -0000</pubDate>
     <category>Phishing</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/magnifying-cryptic-codes.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Weaponized websites target AI agents</title>
-    <link>https://cyberbriefdaily.com/articles/weaponized-websites-target-ai-agents.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/weaponized-websites-target-ai-agents.html</guid>
-    <description></description>
-    <pubDate>Fri, 10 Jul 2026 10:00:00 -0000</pubDate>
-    <category>Agentic AI</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/hacker-smartphone-laptop.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
