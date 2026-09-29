@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 25 Sep 2026 14:16:13 -0000</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 16:08:58 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>2026 – the Year of Physical AI</title>
+    <link>https://cyberbriefdaily.com/articles/2026-the-year-of-physical-ai.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/2026-the-year-of-physical-ai.html</guid>
+    <description></description>
+    <pubDate>Tue, 29 Sep 2026 10:00:00 -0000</pubDate>
+    <category>Artificial Intelligence</category><category>Infrastructure</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>Exclusive: The Opportunities and Pitfalls of Agentic AI</title>
     <link>https://cyberbriefdaily.com/articles/opportunities-and-pitfalls-of-agentic-ai.html</link>
@@ -55,7 +64,7 @@
     <description></description>
     <pubDate>Sat, 12 Sep 2026 10:00:00 -0000</pubDate>
     <category>Government</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</title>
@@ -118,7 +127,7 @@
     <description></description>
     <pubDate>Tue, 25 Aug 2026 10:00:00 -0000</pubDate>
     <category>Critical Infrastructure</category><category>Cyber Attacks</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Medusa Ransomware Claims 500 Victim Organizations</title>
@@ -154,7 +163,7 @@
     <description></description>
     <pubDate>Mon, 17 Aug 2026 10:00:00 -0000</pubDate>
     <category>Ransomware</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Private Firms Enlisted to Fight US Cyber Wars</title>
@@ -272,15 +281,6 @@
     <pubDate>Thu, 23 Jul 2026 10:00:00 -0000</pubDate>
     <category>Phishing</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/vpn-smartphone-hands.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Senior executives blindsided by AI-powered phishing attacks</title>
-    <link>https://cyberbriefdaily.com/articles/senior-executives-blindsided-by-ai-powered-phishing-attacks.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/senior-executives-blindsided-by-ai-powered-phishing-attacks.html</guid>
-    <description></description>
-    <pubDate>Thu, 16 Jul 2026 10:00:00 -0000</pubDate>
-    <category>Phishing</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/magnifying-cryptic-codes.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
