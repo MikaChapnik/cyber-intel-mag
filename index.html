@@ -1,502 +1,1353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="gJX3E90C6oQEFAJsO88DzoVOkqECFYRSu3JZ3epLmj4">
 <title>Cybersecurity News &amp; Analysis | Cyber Brief Daily</title>
 <meta name="description" content="Breaking cybersecurity news, in-depth analysis, and expert interviews covering ransomware, data breaches, AI threats, and more. Updated daily.">
-<meta name="google-site-verification" content="gJX3E90C6oQEFAJsO88DzoVOkqECFYRSu3JZ3epLmj4">
-<link rel="alternate" type="application/rss+xml" title="Cyber Brief Daily" href="https://cyberbriefdaily.com/feed.xml">
-<link rel="canonical" href="https://cyberbriefdaily.com/">
+<link rel="canonical" href="https://cyberbriefdaily.com">
+<meta property="og:title" content="Cybersecurity News &amp; Analysis | Cyber Brief Daily">
+<meta property="og:description" content="Breaking cybersecurity news, in-depth analysis, and expert interviews covering ransomware, data breaches, AI threats, and more. Updated daily.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyberbriefdaily.com">
+<meta property="og:image" content="https://cyberbriefdaily.com/images/dark-hoodie.jpg">
+<meta property="og:site_name" content="Cyber Brief Daily">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cybersecurity News &amp; Analysis | Cyber Brief Daily">
+<meta name="twitter:description" content="Breaking cybersecurity news, in-depth analysis, and expert interviews covering ransomware, data breaches, AI threats, and more. Updated daily.">
+<meta name="twitter:image" content="https://cyberbriefdaily.com/images/dark-hoodie.jpg">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Cyber Brief Daily">
-<meta property="og:title" content="Cyber Brief Daily — Cybersecurity News &amp; Analysis">
-<meta property="og:description" content="Breaking cybersecurity news, in-depth analysis, and expert interviews covering ransomware, data breaches, AI threats, and more. Updated daily.">
-<meta property="og:url" content="https://cyberbriefdaily.com/">
-<meta property="og:image" content="https://cyberbriefdaily.com/images/person-binary-projection.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cyber Brief Daily — Cybersecurity News &amp; Analysis">
-<meta name="twitter:description" content="Breaking cybersecurity news, in-depth analysis, and expert interviews covering ransomware, data breaches, AI threats, and more. Updated daily.">
-<meta name="twitter:image" content="https://cyberbriefdaily.com/images/person-binary-projection.jpg">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="alternate" type="application/rss+xml" title="Cyber Brief Daily" href="https://cyberbriefdaily.com/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="https://cyberbriefdaily.com/images/person-binary-projection.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://cyberbriefdaily.com/#website", "url": "https://cyberbriefdaily.com/", "name": "Cyber Brief Daily", "description": "Breaking cybersecurity news, in-depth analysis, and expert interviews covering ransomware, data breaches, AI threats, and more. Updated daily.", "publisher": {"@id": "https://cyberbriefdaily.com/#org"}}, {"@type": "NewsMediaOrganization", "@id": "https://cyberbriefdaily.com/#org", "name": "Cyber Brief Daily", "url": "https://cyberbriefdaily.com/", "logo": "https://cyberbriefdaily.com/favicon.png", "email": "info@cyberbriefdaily.com", "sameAs": ["https://www.linkedin.com/company/cyberintel-media/"]}, {"@type": "ItemList", "name": "Latest", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://cyberbriefdaily.com/articles/agentic-ai-report.html", "name": "Full report: The opportunities and pitfalls of agentic AI"}, {"@type": "ListItem", "position": 2, "url": "https://cyberbriefdaily.com/articles/starkware-quantum-safe-bitcoin-lock.html", "name": "StarkWare unveils quantum-proof Bitcoin lock"}, {"@type": "ListItem", "position": 3, "url": "https://cyberbriefdaily.com/articles/fbi-unveils-new-cyber-strategy.html", "name": "The FBI unveils its new cyber strategy"}, {"@type": "ListItem", "position": 4, "url": "https://cyberbriefdaily.com/articles/uk-cyber-security-resilience-bill-lords-criticism.html", "name": "UK Cyber Security and Resilience Bill faces Lords criticism over AI gap"}, {"@type": "ListItem", "position": 5, "url": "https://cyberbriefdaily.com/articles/rogue-ai-agents-run-amok.html", "name": "Rogue AI agents run amok"}, {"@type": "ListItem", "position": 6, "url": "https://cyberbriefdaily.com/articles/china-russia-target-german-companies.html", "name": "China and Russia target German companies"}, {"@type": "ListItem", "position": 7, "url": "https://cyberbriefdaily.com/articles/iranian-cyber-attack-shuts-down-uk-power-plant.html", "name": "Iranian cyber-attack shuts down a UK power plant"}, {"@type": "ListItem", "position": 8, "url": "https://cyberbriefdaily.com/articles/medusa-ransomware-500-victim-organizations.html", "name": "Medusa ransomware claims 500 victim organisations"}]}]}</script>
-<style>
-body{margin:0;background:#f5f3ee;color:#17171a;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-a:hover{color:#b8321f}
-*{box-sizing:border-box}
-.tool-card:hover{background:#ece9e1}
-.filter{font-family:'Geist',sans-serif;font-size:13px;padding:6px 11px;border:1px solid #d6d2c8;background:transparent;color:#3a3935;cursor:pointer}
-.filter.is-active{border-color:#17171a;background:#17171a;color:#f5f3ee}
-article[hidden]{display:none!important}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Cyber Brief Daily",
+  "url": "https://cyberbriefdaily.com",
+  "description": "In-depth cybersecurity analysis, breaking news, and expert interviews.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cyber Brief Daily",
+    "url": "https://cyberbriefdaily.com"
+  }
+}
+</script>
 </head>
-<body><div id="top" style="font-family:'Geist',system-ui,sans-serif;background:#f5f3ee;min-height:100vh">
+<body>
 
-<!-- Utility bar -->
-<div style="background:#17171a;color:#e9e6df;font-family:'Geist Mono',monospace;font-size:11.5px;letter-spacing:0.04em;text-transform:uppercase">
-  <div style="max-width:1280px;margin:0 auto;padding:9px 32px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
-    <div style="display:flex;gap:20px;flex-wrap:wrap">
-      <span id="today"></span>
-      
-    </div>
-    <div style="display:flex;gap:20px;align-items:center">
-      <a href="https://www.linkedin.com/company/cyberintel-media/" style="color:#e9e6df">LinkedIn</a>
-      <a href="#newsletter" style="color:#e9e6df">Newsletter</a>
+<div class="accent-strip"></div>
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="header-left">
+        <button class="icon-btn search-btn" aria-label="Search" onclick="document.querySelector('.search-overlay').classList.toggle('open')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <a href="./index.html" class="site-logo">
+          <svg class="logo-shield" viewBox="0 0 60 68" width="52" height="59" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M30,3 C21,3 8,8.5 8,8.5 L8,34 C8,51 30,65 30,65 C30,65 52,51 52,34 L52,8.5 C52,8.5 39,3 30,3 Z" fill="#5589b0"/>
+            <text x="30" y="46" text-anchor="middle" font-size="31" font-weight="700" fill="white" font-family="Georgia,serif">C</text>
+            <circle cx="47" cy="13" r="6.5" fill="#c0392b"/>
+          </svg>
+          <div class="logo-wordmark">
+            <span class="logo-text"><span class="logo-accent">C</span>yber Brief Daily</span>
+            <div class="site-tagline">In-depth cybersecurity analysis &amp; breaking news</div>
+          </div>
+        </a>
+      </div>
+      <div class="header-right">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="icon-btn dark-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
     </div>
   </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="./categories/news.html" class="nav-link">News</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/analysis.html" class="nav-link">Analysis</a>
+      </div>
+      <div class="nav-item">
+        <a href="./categories/expert-opinions.html" class="nav-link">Expert Opinions</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Resources</a>
+        <div class="dropdown-menu"><a href="./conferences.html">Conferences</a>
+<a href="./glossary.html">Glossary of Terms</a>
+<a href="#">Awards</a>
+<a href="./ecosystem-map.html">Ecosystem Map</a>
 </div>
-
-<!-- Masthead -->
-<header style="max-width:1280px;margin:0 auto;padding:28px 32px 0">
-  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;padding-bottom:22px">
-    <a href="https://cyberbriefdaily.com/" style="display:flex;flex-direction:column;gap:6px;color:#17171a">
-      <span style="font-family:'Newsreader',serif;font-weight:600;font-size:clamp(40px,6vw,68px);line-height:0.9;letter-spacing:-0.025em">Cyber Brief <span style="font-style:italic;font-weight:400">Daily</span></span>
-      <span style="font-size:13.5px;color:#5c5a55;letter-spacing:0.01em">In-depth cybersecurity analysis &amp; breaking news</span>
-    </a>
-    <div style="display:flex;gap:10px;align-items:center">
-      <a href="#newsletter" style="font-size:13.5px;font-weight:500;padding:11px 18px;background:#b8321f;color:#fff;border:1px solid #b8321f">Get the weekly brief</a>
+      </div>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav .nav-inner').classList.toggle('open')">&#9776;</button>
+  </nav>
+  <div class="trending-bar">
+    <div class="trending-inner">
+      <span class="trending-label">Trending</span>
+      <div class="trending-tags"><a href="./categories/ransomware.html" class="trend-tag">Ransomware</a>
+<a href="./categories/ai.html" class="trend-tag">AI Threats</a>
+<a href="./categories/data-breaches.html" class="trend-tag">Data Breach</a>
+<a href="./categories/phishing.html" class="trend-tag">Phishing</a>
+<a href="./categories/cybercrime.html" class="trend-tag">Cybercrime</a>
+<a href="./categories/healthcare.html" class="trend-tag">Healthcare</a>
+<a href="./categories/geopolitics.html" class="trend-tag">Geopolitics</a>
+<a href="./categories/policy-and-regulation.html" class="trend-tag">Policy &amp; Regulation</a>
+<a href="./categories/insider-threats.html" class="trend-tag">Insider Threats</a>
+</div>
     </div>
   </div>
-  <nav style="border-top:3px solid #17171a;border-bottom:1px solid #17171a;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:0">
-    <div style="display:flex;gap:28px;flex-wrap:wrap;font-size:14.5px;font-weight:500;padding:13px 0">
-      <a href="https://cyberbriefdaily.com/categories/news.html">News</a>
-      <a href="https://cyberbriefdaily.com/categories/analysis.html">Analysis</a>
-      <a href="https://cyberbriefdaily.com/categories/expert-opinions.html">Expert Opinions</a>
-      <a href="https://cyberbriefdaily.com/articles/agentic-ai-report.html">Reports</a>
-      <a href="https://cyberbriefdaily.com/conferences.html">Conferences</a>
-      <a href="https://cyberbriefdaily.com/glossary.html">Glossary</a>
-      <a href="https://cyberbriefdaily.com/ecosystem-map.html">Ecosystem Map</a>
+  <div class="search-overlay">
+    <div class="search-box">
+      <input type="text" placeholder="Search articles..." id="searchInput" onkeyup="filterArticles(this.value)">
+      <button class="icon-btn" onclick="document.querySelector('.search-overlay').classList.remove('open')">&#10005;</button>
     </div>
-  </nav>
-  <div style="display:flex;gap:22px;flex-wrap:wrap;align-items:center;padding:12px 0;border-bottom:1px solid #d6d2c8;font-size:13px">
-    <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Tracking</span>
-    <a href="https://cyberbriefdaily.com/categories/ransomware.html" style="color:#3a3935">Ransomware</a>
-    <a href="https://cyberbriefdaily.com/categories/ai.html" style="color:#3a3935">AI threats</a>
-    <a href="https://cyberbriefdaily.com/categories/data-breaches.html" style="color:#3a3935">Data breaches</a>
-    <a href="https://cyberbriefdaily.com/categories/phishing.html" style="color:#3a3935">Phishing</a>
-    <a href="https://cyberbriefdaily.com/categories/geopolitics.html" style="color:#3a3935">Nation-state</a>
-    <a href="https://cyberbriefdaily.com/categories/healthcare.html" style="color:#3a3935">Healthcare</a>
-    <a href="https://cyberbriefdaily.com/categories/policy-and-regulation.html" style="color:#3a3935">Policy &amp; regulation</a>
-    <a href="https://cyberbriefdaily.com/categories/insider-threats.html" style="color:#3a3935">Insider threats</a>
   </div>
 </header>
-
-<main style="max-width:1280px;margin:0 auto;padding:0 32px">
-
-<!-- Front page -->
-<section data-screen-label="Front page" style="display:flex;flex-wrap:wrap;gap:0;padding:32px 0 40px;border-bottom:1px solid #17171a">
-
-  <article style="flex:2 1 520px;min-width:0;padding-right:32px;display:flex;flex-direction:column;gap:18px">
-    
-      <a href="https://cyberbriefdaily.com/articles/opportunities-and-pitfalls-of-agentic-ai.html" style="display:block;aspect-ratio:16/9;overflow:hidden;background:#e6e2d8"><img src="https://cyberbriefdaily.com/images/person-binary-projection.jpg" alt="The opportunities and pitfalls of agentic AI" style="width:100%;height:100%;object-fit:cover;display:block"></a>
-    
-    <div style="display:flex;gap:12px;align-items:center;font-family:'Geist Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:0.06em">
-      <span style="color:#b8321f;font-weight:500">Exclusive report</span>
-      <span style="color:#8d8a83">Agentic AI</span>
-    </div>
-    <h1 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:clamp(34px,4.2vw,52px);line-height:1.02;letter-spacing:-0.02em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/opportunities-and-pitfalls-of-agentic-ai.html">The opportunities and pitfalls of agentic AI</a></h1>
-    <p style="margin:0;font-family:'Newsreader',serif;font-size:20px;line-height:1.45;color:#3a3935;max-width:62ch;text-wrap:pretty">A 19-page investigation into how autonomous agents are already reshaping enterprise security — and the new attack surface they open for adversaries. Free to readers.</p>
-    <div style="display:flex;gap:10px;align-items:center;font-size:13px;color:#5c5a55">
-      <span style="color:#17171a;font-weight:500">Tony Glover</span><span>·</span><span>22 Sep 2026</span><span>·</span><span>3 min read</span>
-    </div>
-  </article>
-
-  <div style="flex:1 1 260px;min-width:0;padding:0 28px;border-left:1px solid #d6d2c8;display:flex;flex-direction:column">
-    <article style="padding-bottom:22px;border-bottom:1px solid #d6d2c8;display:flex;flex-direction:column;gap:10px">
-      <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Phishing</span>
-      <h2 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:25px;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/fake-government-request-compromises-revolut-customers.html">Fake government request compromises Revolut customers</a></h2>
-      <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843">High net-worth account holders exposed after a sophisticated impersonation of official authorities.</p>
-      <span style="font-size:12.5px;color:#5c5a55">Tony Glover · 17 Sep</span>
-    </article>
-    <article style="padding:22px 0;border-bottom:1px solid #d6d2c8;display:flex;flex-direction:column;gap:10px">
-      <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Government</span>
-      <h2 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:25px;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/fbi-unveils-new-cyber-strategy.html">The FBI unveils its first-ever cyber strategy</a></h2>
-      <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843">A new era of public–private cooperation and AI-assisted defence.</p>
-      <span style="font-size:12.5px;color:#5c5a55">John Wilkes · 12 Sep</span>
-    </article>
-    <article style="padding-top:22px;display:flex;flex-direction:column;gap:10px">
-      <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Cryptocurrency</span>
-      <h2 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:25px;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/starkware-quantum-safe-bitcoin-lock.html">StarkWare unveils a quantum-proof Bitcoin lock</a></h2>
-      <span style="font-size:12.5px;color:#5c5a55">Tony Glover · 17 Sep</span>
-    </article>
-  </div>
-
-  <aside style="flex:1 1 260px;min-width:0;padding-left:28px;border-left:1px solid #d6d2c8;display:flex;flex-direction:column;gap:18px">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid #17171a;padding-bottom:8px">
-      <span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;font-style:italic">The Brief</span>
-      <span style="font-family:'Geist Mono',monospace;font-size:11px;color:#5c5a55;text-transform:uppercase;letter-spacing:0.05em">Five to know</span>
-    </div>
-    <ol style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px">
-      <li style="display:grid;grid-template-columns:24px 1fr;gap:6px;font-size:14.5px;line-height:1.4"><span style="font-family:'Geist Mono',monospace;color:#b8321f;font-size:13px">01</span><a href="https://cyberbriefdaily.com/articles/uk-cyber-security-resilience-bill-lords-criticism.html">UK Resilience Bill criticised in the Lords over its AI gap</a></li>
-      <li style="display:grid;grid-template-columns:24px 1fr;gap:6px;font-size:14.5px;line-height:1.4"><span style="font-family:'Geist Mono',monospace;color:#b8321f;font-size:13px">02</span><a href="https://cyberbriefdaily.com/articles/rogue-ai-agents-run-amok.html">A swarm of AI agents hijacked a German website to coordinate tactics</a></li>
-      <li style="display:grid;grid-template-columns:24px 1fr;gap:6px;font-size:14.5px;line-height:1.4"><span style="font-family:'Geist Mono',monospace;color:#b8321f;font-size:13px">03</span><a href="https://cyberbriefdaily.com/articles/contactless-payments-the-tipping-point.html">Contactless payments reach the fraud tipping point</a></li>
-      <li style="display:grid;grid-template-columns:24px 1fr;gap:6px;font-size:14.5px;line-height:1.4"><span style="font-family:'Geist Mono',monospace;color:#b8321f;font-size:13px">04</span><a href="https://cyberbriefdaily.com/articles/china-russia-target-german-companies.html">China and Russia escalate attacks on German companies</a></li>
-      <li style="display:grid;grid-template-columns:24px 1fr;gap:6px;font-size:14.5px;line-height:1.4"><span style="font-family:'Geist Mono',monospace;color:#b8321f;font-size:13px">05</span><a href="https://cyberbriefdaily.com/articles/unsanctioned-ai-leaving-companies-vulnerable.html">Four in five AI tools run without IT oversight</a></li>
-    </ol>
-    <div id="newsletter" style="margin-top:auto;background:#17171a;color:#f5f3ee;padding:20px;display:flex;flex-direction:column;gap:12px">
-      <span style="font-family:'Newsreader',serif;font-size:20px;line-height:1.2">The weekly brief, in your inbox every Monday.</span>
-      <form action="mailto:info@cyberbriefdaily.com?subject=Subscribe%20to%20the%20weekly%20brief" method="post" enctype="text/plain" style="display:flex;border:1px solid #4a4843;margin:0">
-        <input name="email" type="email" required="" placeholder="Work email" style="flex:1;min-width:0;background:transparent;border:0;color:#f5f3ee;padding:11px 12px;font-family:'Geist',sans-serif;font-size:14px;outline:none">
-        <button style="background:#f5f3ee;color:#17171a;border:0;padding:0 14px;font-family:'Geist',sans-serif;font-weight:600;font-size:13.5px;cursor:pointer" type="submit">Subscribe</button>
-      </form>
-      <span style="font-size:12px;color:#a9a59c">Free. Trusted by professionals worldwide.</span>
-    </div>
-  </aside>
-</section>
-
-<!-- Report -->
-
-<section data-screen-label="Report" style="display:flex;flex-wrap:wrap;gap:36px;align-items:center;padding:36px 0;border-bottom:1px solid #d6d2c8">
-  <div style="flex:0 0 150px;aspect-ratio:3/4;overflow:hidden;background:#1f1f23;box-shadow:6px 6px 0 #d6d2c8"><img src="https://cyberbriefdaily.com/images/soc-analyst-screens.jpg" alt="Agentic AI report cover" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-  <div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:10px">
-    <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#5c5a55">Cyber Brief Daily Research · 19 pages · PDF</span>
-    <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:32px;line-height:1.1;letter-spacing:-0.015em">The Opportunities and Pitfalls of Agentic AI</h3>
-    <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:64ch">Produced in partnership with OBRELA. All analysis and editorial content is independent.</p>
-  </div>
-  <a href="https://cyberbriefdaily.com/articles/agentic-ai-report.html" style="flex:0 0 auto;font-size:14px;font-weight:500;padding:13px 20px;border:1px solid #17171a;color:#17171a">Read the report →</a>
-</section>
-
-
-<!-- Latest -->
-<section data-screen-label="Latest" style="display:flex;flex-wrap:wrap;gap:48px;padding:40px 0 48px;border-bottom:1px solid #17171a">
-  <div style="flex:3 1 560px;min-width:0">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;border-bottom:2px solid #17171a;padding-bottom:10px">
-      <h2 style="margin:0;font-family:'Newsreader',serif;font-weight:600;font-size:30px;letter-spacing:-0.015em">Latest</h2>
-      <div style="display:flex;gap:4px;flex-wrap:wrap">
-        <button type="button" class="filter is-active" data-filter="All">All</button>
-<button type="button" class="filter" data-filter="News">News</button>
-<button type="button" class="filter" data-filter="AI">AI</button>
-<button type="button" class="filter" data-filter="Ransomware">Ransomware</button>
-<button type="button" class="filter" data-filter="Data Breaches">Data Breaches</button>
-<button type="button" class="filter" data-filter="Cybercrime">Cybercrime</button>
-<button type="button" class="filter" data-filter="Geopolitics">Geopolitics</button>
-<button type="button" class="filter" data-filter="Policy">Policy</button>
+<section class="hero-feature" style="background-image:url('./images/person-binary-projection.jpg')">
+  <div class="hero-overlay">
+    <div class="hero-content hero-animate">
+      <span class="hero-cat-badge">AI</span>
+      <h1><a href="articles/opportunities-and-pitfalls-of-agentic-ai.html">Exclusive: The Opportunities and Pitfalls of Agentic AI</a></h1>
+      <p class="hero-excerpt">Cyberbriefdaily today publishes a new report: The Opportunities and Pitfalls of Agentic AI, free of charge for its readers. The 19-page report, sponsored by cybersecurity company, OBRELA, offers an extensive analysis of the current role AI agents are already p</p>
+      <div class="hero-meta">
+        <span class="author-avatar">T</span>
+        <span class="hero-author">Tony Glover</span>
+        <span class="sep">&middot;</span>
+        <span>September 22, 2026</span>
+        <span class="sep">&middot;</span><span>3 min read</span>
       </div>
     </div>
-    <div style="display:flex;flex-direction:column">
-      
-        <article data-desk="AI" data-rank="0" style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">22 Sep</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">AI</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/agentic-ai-report.html">Full report: The opportunities and pitfalls of agentic AI</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">Produced with OBRELA. All analysis and editorial content is independent.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Tony Glover</span>
-          </div>
-        </article>
-      
-        <article data-desk="News" data-rank="1" style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">17 Sep</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Cryptocurrency</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/starkware-quantum-safe-bitcoin-lock.html">StarkWare unveils quantum-proof Bitcoin lock</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">Fears grow that cryptocurrencies may be vulnerable to quantum attacks sooner than anticipated.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Tony Glover</span>
-          </div>
-        </article>
-      
-        <article data-desk="Policy" data-rank="2" style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">12 Sep</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Government</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/fbi-unveils-new-cyber-strategy.html">The FBI unveils its new cyber strategy</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">The Bureau’s first-ever cyber strategy signals a new era of public–private cooperation.</p>
-            <span style="font-size:12.5px;color:#5c5a55">John Wilkes</span>
-          </div>
-        </article>
-      
-        <article data-desk="Policy" data-rank="3" style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">09 Sep</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Legislation</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/uk-cyber-security-resilience-bill-lords-criticism.html">UK Cyber Security and Resilience Bill faces Lords criticism over AI gap</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">The bill came under sustained attack during line-by-line committee scrutiny in the House of Lords.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Hildegard Johnson</span>
-          </div>
-        </article>
-      
-        <article data-desk="AI" data-rank="4" style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">04 Sep</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Agentic AI</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/rogue-ai-agents-run-amok.html">Rogue AI agents run amok</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">A swarm of agents allegedly hijacked a German-language website, repurposing it as a covert bulletin board.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Cyber Brief Daily</span>
-          </div>
-        </article>
-      
-        <article data-desk="Geopolitics" data-rank="5" style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">01 Sep</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Nation-state</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/china-russia-target-german-companies.html">China and Russia target German companies</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">A sweeping survey of German businesses reveals a dramatic escalation in state-sponsored attacks.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Hildegard Johnson</span>
-          </div>
-        </article>
-      
-        <article data-desk="Geopolitics" data-rank="6" style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">25 Aug</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Critical infrastructure</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/iranian-cyber-attack-shuts-down-uk-power-plant.html">Iranian cyber-attack shuts down a UK power plant</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">State hackers reportedly took a British plant offline for four days in an unprecedented attack on UK soil.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Tony Glover</span>
-          </div>
-        </article>
-      
-        <article data-desk="Ransomware" data-rank="7" style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">21 Aug</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Ransomware</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/medusa-ransomware-500-victim-organizations.html">Medusa ransomware claims 500 victim organisations</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">The RaaS gang and its affiliates hit more than 500 organisations, according to a joint advisory.</p>
-            <span style="font-size:12.5px;color:#5c5a55">John Wilkes</span>
-          </div>
-        </article>
-      
-        <article data-desk="Ransomware" data-rank="8" hidden style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">17 Aug</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Ransomware</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/half-of-companies-pay-ransomware-demand.html">Half of companies pay the ransomware demand</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">48 per cent of companies whose data was encrypted chose to pay to recover it.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Alexis Hess</span>
-          </div>
-        </article>
-      
-        <article data-desk="Data Breaches" data-rank="9" hidden style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">11 Aug</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Data breaches</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/theres-hacking-and-theres-levis-hacking.html">There’s hacking — and there’s Levi’s hacking</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">The iconic US denim brand becomes the latest major retailer to suffer a breach.</p>
-            <span style="font-size:12.5px;color:#5c5a55">John Wilkes</span>
-          </div>
-        </article>
-      
-        <article data-desk="Data Breaches" data-rank="10" hidden style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">08 May</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Data breaches</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/international-education-company-suffers-a-cyber-breach.html">International education company suffers a cyber-breach</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">Instructure, the company behind Canvas, used by thousands of schools and universities, suffers a serious breach.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Tony Glover</span>
-          </div>
-        </article>
-      
-        <article data-desk="Cybercrime" data-rank="11" hidden style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">28 Jul</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Espionage</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/russians-hijack-international-hotel-wi-fi-networks.html">Russians hijack international hotel wi-fi networks</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">Hackers linked to Russian intelligence have found a way to take over hotel networks used by travellers.</p>
-            <span style="font-size:12.5px;color:#5c5a55">John Wilkes</span>
-          </div>
-        </article>
-      
-        <article data-desk="Cybercrime" data-rank="12" hidden style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">01 Aug</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Fraud</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/phone-farms-scale-up-scams.html">Phone farms scale up scams</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">Criminals can now industrialise a whole range of scams for under $3,000 a month.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Hildegard Johnson</span>
-          </div>
-        </article>
-      
-        <article data-desk="Policy" data-rank="13" hidden style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">02 Aug</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">AI regulation</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/eus-ai-act-is-now-in-force.html">The EU’s AI Act is now in force</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">Its powers reach far beyond the EU’s borders.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Tony Glover</span>
-          </div>
-        </article>
-      
-        <article data-desk="News" data-rank="14" hidden style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">24 Jul</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">News</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/sentenced-teen-hackers-tip-iceberg.html">Sentenced teen hackers are only the tip of a huge iceberg</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">Two teenagers jailed for five and a half years represent a far wider generation of young cybercriminals.</p>
-            <span style="font-size:12.5px;color:#5c5a55">Tony Glover</span>
-          </div>
-        </article>
-      
-        <article data-desk="News" data-rank="15" hidden style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #d6d2c8">
-          <div style="display:flex;flex-direction:column;gap:4px;font-family:'Geist Mono',monospace;font-size:11.5px;color:#5c5a55;padding-top:5px">
-            <span style="color:#17171a">16 Jun</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:7px">
-            <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Sports security</span>
-            <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:500;font-size:23px;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance"><a href="https://cyberbriefdaily.com/articles/hackers-target-fifa.html">Hackers target FIFA</a></h3>
-            <p style="margin:0;font-size:14.5px;line-height:1.5;color:#4a4843;max-width:68ch;text-wrap:pretty">This year’s World Cup has become a prime target for threat actors around the globe.</p>
-            <span style="font-size:12.5px;color:#5c5a55">John Wilkes</span>
-          </div>
-        </article>
-      
-    </div>
-    <a href="https://cyberbriefdaily.com/categories/news.html" style="display:inline-flex;margin-top:24px;font-size:14px;font-weight:500;padding:12px 18px;border:1px solid #17171a">Browse the full archive</a>
   </div>
-
-  <aside style="flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:36px">
-    <div style="display:flex;flex-direction:column;gap:14px">
-      <div style="border-bottom:2px solid #17171a;padding-bottom:8px;font-family:'Newsreader',serif;font-size:22px;font-weight:600;font-style:italic">Most read</div>
-      
-        <div style="display:grid;grid-template-columns:36px 1fr;gap:8px;padding-bottom:14px;border-bottom:1px solid #d6d2c8">
-          <span style="font-family:'Newsreader',serif;font-size:30px;line-height:0.9;color:#b8321f">1</span>
-          <a href="https://cyberbriefdaily.com/articles/iranian-cyber-attack-shuts-down-uk-power-plant.html" style="font-family:'Newsreader',serif;font-size:17px;line-height:1.25">Iranian cyber-attack shuts down a UK power plant</a>
-        </div>
-      
-        <div style="display:grid;grid-template-columns:36px 1fr;gap:8px;padding-bottom:14px;border-bottom:1px solid #d6d2c8">
-          <span style="font-family:'Newsreader',serif;font-size:30px;line-height:0.9;color:#b8321f">2</span>
-          <a href="https://cyberbriefdaily.com/articles/half-of-companies-pay-ransomware-demand.html" style="font-family:'Newsreader',serif;font-size:17px;line-height:1.25">Half of companies pay the ransomware demand</a>
-        </div>
-      
-        <div style="display:grid;grid-template-columns:36px 1fr;gap:8px;padding-bottom:14px;border-bottom:1px solid #d6d2c8">
-          <span style="font-family:'Newsreader',serif;font-size:30px;line-height:0.9;color:#b8321f">3</span>
-          <a href="https://cyberbriefdaily.com/articles/ai-agent-goes-rogue.html" style="font-family:'Newsreader',serif;font-size:17px;line-height:1.25">AI agent goes rogue</a>
-        </div>
-      
-        <div style="display:grid;grid-template-columns:36px 1fr;gap:8px;padding-bottom:14px;border-bottom:1px solid #d6d2c8">
-          <span style="font-family:'Newsreader',serif;font-size:30px;line-height:0.9;color:#b8321f">4</span>
-          <a href="https://cyberbriefdaily.com/articles/russians-hijack-international-hotel-wi-fi-networks.html" style="font-family:'Newsreader',serif;font-size:17px;line-height:1.25">Russians hijack international hotel wi-fi networks</a>
-        </div>
-      
-        <div style="display:grid;grid-template-columns:36px 1fr;gap:8px;padding-bottom:14px;border-bottom:1px solid #d6d2c8">
-          <span style="font-family:'Newsreader',serif;font-size:30px;line-height:0.9;color:#b8321f">5</span>
-          <a href="https://cyberbriefdaily.com/articles/iran-backed-attacks-target-us-water-systems.html" style="font-family:'Newsreader',serif;font-size:17px;line-height:1.25">Iran-backed attacks target US water systems</a>
-        </div>
-      
-    </div>
-    <div style="display:flex;flex-direction:column;gap:14px">
-      <div style="border-bottom:2px solid #17171a;padding-bottom:8px;font-family:'Newsreader',serif;font-size:22px;font-weight:600;font-style:italic">Desks</div>
-      <div style="display:flex;flex-direction:column">
-        
-          <a href="https://cyberbriefdaily.com/categories/news.html" style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #d6d2c8;font-size:14px"><span>News</span><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#5c5a55">337</span></a>
-        
-          <a href="https://cyberbriefdaily.com/categories/data-breaches.html" style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #d6d2c8;font-size:14px"><span>Data Breaches</span><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#5c5a55">95</span></a>
-        
-          <a href="https://cyberbriefdaily.com/categories/cybercrime.html" style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #d6d2c8;font-size:14px"><span>Cybercrime</span><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#5c5a55">88</span></a>
-        
-          <a href="https://cyberbriefdaily.com/categories/geopolitics.html" style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #d6d2c8;font-size:14px"><span>Geopolitics</span><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#5c5a55">61</span></a>
-        
-          <a href="https://cyberbriefdaily.com/categories/ai.html" style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #d6d2c8;font-size:14px"><span>AI</span><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#5c5a55">57</span></a>
-        
-          <a href="https://cyberbriefdaily.com/categories/ransomware.html" style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #d6d2c8;font-size:14px"><span>Ransomware</span><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#5c5a55">43</span></a>
-        
-          <a href="https://cyberbriefdaily.com/categories/policy-and-regulation.html" style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #d6d2c8;font-size:14px"><span>Policy &amp; Regulation</span><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#5c5a55">28</span></a>
-        
-          <a href="https://cyberbriefdaily.com/categories/healthcare.html" style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #d6d2c8;font-size:14px"><span>Healthcare</span><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#5c5a55">13</span></a>
-        
+</section>
+<main class="home">
+  <div class="home-layout">
+    <section class="main-content">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-accent"></span>Latest Articles</h2>
       </div>
-    </div>
-  </aside>
-</section>
-
-<!-- Resources -->
-<section data-screen-label="Resources" style="padding:40px 0 56px">
-  <h2 style="margin:0 0 20px;font-family:'Newsreader',serif;font-weight:600;font-size:30px;letter-spacing:-0.015em">Tools for practitioners</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));border-top:1px solid #17171a;border-left:1px solid #d6d2c8">
-    <a href="https://cyberbriefdaily.com/conferences.html" style="padding:22px;border-right:1px solid #d6d2c8;border-bottom:1px solid #d6d2c8;display:flex;flex-direction:column;gap:8px" class="tool-card">
-      <span style="font-family:'Geist Mono',monospace;font-size:11px;color:#b8321f;text-transform:uppercase;letter-spacing:0.06em">Calendar</span>
-      <span style="font-family:'Newsreader',serif;font-size:22px;font-weight:500">Conferences</span>
-      <span style="font-size:14px;color:#4a4843;line-height:1.45">Every major security event worldwide, dated and filterable.</span>
-    </a>
-    <a href="https://cyberbriefdaily.com/glossary.html" style="padding:22px;border-right:1px solid #d6d2c8;border-bottom:1px solid #d6d2c8;display:flex;flex-direction:column;gap:8px" class="tool-card">
-      <span style="font-family:'Geist Mono',monospace;font-size:11px;color:#b8321f;text-transform:uppercase;letter-spacing:0.06em">Reference</span>
-      <span style="font-family:'Newsreader',serif;font-size:22px;font-weight:500">Glossary of terms</span>
-      <span style="font-size:14px;color:#4a4843;line-height:1.45">Plain-English definitions, from APT to zero-day.</span>
-    </a>
-    <a href="https://cyberbriefdaily.com/ecosystem-map.html" style="padding:22px;border-right:1px solid #d6d2c8;border-bottom:1px solid #d6d2c8;display:flex;flex-direction:column;gap:8px" class="tool-card">
-      <span style="font-family:'Geist Mono',monospace;font-size:11px;color:#b8321f;text-transform:uppercase;letter-spacing:0.06em">Market</span>
-      <span style="font-family:'Newsreader',serif;font-size:22px;font-weight:500">Ecosystem map</span>
-      <span style="font-size:14px;color:#4a4843;line-height:1.45">Who's who across the security vendor landscape.</span>
-    </a>
+      <div class="filter-tabs"><button class="filter-tab active" data-cat="all">All</button><button class="filter-tab" data-cat="News">News</button><button class="filter-tab" data-cat="Data Breaches">Data Breaches</button><button class="filter-tab" data-cat="Cybercrime">Cybercrime</button><button class="filter-tab" data-cat="Geopolitics">Geopolitics</button><button class="filter-tab" data-cat="AI">AI</button><button class="filter-tab" data-cat="Ransomware">Ransomware</button><button class="filter-tab" data-cat="Policy &amp; Regulation">Policy &amp; Regulation</button><button class="filter-tab" data-cat="Industry">Industry</button></div>
+      <div class="grid" id="card-grid"><article class="card" data-category="AI Cybersecurity">
+      <a href="articles/agentic-ai-report.html">
+        <div class="card-thumb"><img src="./images/soc-analyst-screens.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Full Report: The Opportunities and Pitfalls of Agentic AI</h3>
+          <p class="card-excerpt">SPONSORED REPORT &amp;nbsp;·&amp;nbsp; Produced by Cyber Brief Daily in partnership with OBRELA. All analysis and editorial content is independent. &amp;nbsp;·&amp;nbsp; Read t</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>September 22, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cryptocurrency Security Quantum Computing">
+      <a href="articles/starkware-quantum-safe-bitcoin-lock.html">
+        <div class="card-thumb"><img src="./images/circuit-board.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cryptocurrency Security</span>
+          <h3>StarkWare Unveils Quantum-Proof Bitcoin Lock</h3>
+          <p class="card-excerpt">There are growing fears that cryptocurrencies such as Bitcoin may be vulnerable to quantum computing attacks sooner than previously anticipated — potentially en</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>September 17, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Phishing Data Breach Financial Security">
+      <a href="articles/fake-government-request-compromises-revolut-customers.html">
+        <div class="card-thumb"><img src="./images/phishing-scam-laptop.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Phishing</span>
+          <h3>Fake Government Request Compromises Revolut Customers</h3>
+          <p class="card-excerpt">UK-based multinational online bank Revolut is reported to have inadvertently exposed customer details of high net-worth account holders following a sophisticate</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>September 17, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Government News">
+      <a href="articles/fbi-unveils-new-cyber-strategy.html">
+        <div class="card-thumb"><img src="./images/ai-robot.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Government</span>
+          <h3>The FBI Unveils Its New Cyber Strategy</h3>
+          <p class="card-excerpt">The US Federal Bureau of Investigation (FBI) has published its first-ever cyber strategy document, signalling a new era of public-private cooperation, AI-assist</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>September 12, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Legislation News">
+      <a href="articles/uk-cyber-security-resilience-bill-lords-criticism.html">
+        <div class="card-thumb"><img src="./images/security-lock.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Legislation</span>
+          <h3>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</h3>
+          <p class="card-excerpt">The UK&#x27;s Cyber Security and Resilience (Network and Information Systems) Bill came under sustained attack during its line-by-line committee scrutiny in the Hous</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>September 09, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Agentic AI AI Security News">
+      <a href="articles/rogue-ai-agents-run-amok.html">
+        <div class="card-thumb"><img src="./images/ai-robot.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Agentic AI</span>
+          <h3>Rogue AI Agents Run Amok</h3>
+          <p class="card-excerpt">A swarm of OpenAI agents has allegedly hijacked a German-language website, repurposing it as a covert bulletin board where AI agents coordinated tactics, shared</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">C</span>
+              <span>Cyber Brief Daily</span>
+              <span class="sep">&middot;</span>
+              <span>September 04, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Fraud News">
+      <a href="articles/contactless-payments-the-tipping-point.html">
+        <div class="card-thumb"><img src="./images/fingerprint-scan.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Fraud</span>
+          <h3>Contactless Payments: The Tipping Point</h3>
+          <p class="card-excerpt">Contactless payments have crossed a critical threshold. What began two decades ago in the UK with a £10 spending cap and sparse merchant adoption has become the</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>September 03, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Artificial Intelligence Cybersecurity News">
+      <a href="articles/governments-companies-must-act-fast-defend-against-ai.html">
+        <div class="card-thumb"><img src="./images/ai-robot.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Artificial Intelligence</span>
+          <h3>Governments and companies must act fast to defend against AI</h3>
+          <p class="card-excerpt">More than a hundred major companies and technology organizations have signed an open letter warning governments and enterprises worldwide that AI-powered cyber-</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>September 01, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Nation-State Threats Cybersecurity News">
+      <a href="articles/china-russia-target-german-companies.html">
+        <div class="card-thumb"><img src="./images/cyber-spy-monitors.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Nation-State Threats</span>
+          <h3>China and Russia target German companies</h3>
+          <p class="card-excerpt">A sweeping new survey of German businesses reveals a dramatic escalation in state-sponsored cyber-attacks — and serves as a warning to Western countries that th</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>September 01, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Agentic AI News">
+      <a href="articles/unsanctioned-ai-leaving-companies-vulnerable.html">
+        <div class="card-thumb"><img src="./images/code-screen.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Agentic AI</span>
+          <h3>Unsanctioned AI is leaving companies vulnerable to attack</h3>
+          <p class="card-excerpt">Four out of five artificial intelligence (AI) tools operate without IT oversight. At small and medium-sized companies (SMEs), unsanctioned AI tools run at 414 p</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>August 29, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Critical Infrastructure Cyber Attacks News">
+      <a href="articles/iranian-cyber-attack-shuts-down-uk-power-plant.html">
+        <div class="card-thumb"><img src="./images/cyber-spy.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Critical Infrastructure</span>
+          <h3>Iranian Cyber-Attack Shuts Down a UK Power Plant</h3>
+          <p class="card-excerpt">Iranian state hackers are reported to have shut down a British power plant for four days in what is being seen as an unprecedented cyber-attack on UK soil. Acco</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>August 25, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Cybercrime News">
+      <a href="articles/medusa-ransomware-500-victim-organizations.html">
+        <div class="card-thumb"><img src="./images/dark-hoodie.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Medusa Ransomware Claims 500 Victim Organizations</h3>
+          <p class="card-excerpt">The Medusa ransomware-as-a-service (RaaS) gang and its affiliates attacked over 500 victim organizations between June 2021 and April 2025. According to a joint </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>August 21, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybersecurity Regulation News">
+      <a href="articles/eu-introduces-17-new-cybersecurity-standards.html">
+        <div class="card-thumb"><img src="./images/vpn-tablet-person.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybersecurity</span>
+          <h3>EU introduces 17 new cybersecurity standards</h3>
+          <p class="card-excerpt">The European Telecommunications Standards Institute (ETSI) has launched an approval process for 17 key cybersecurity standards that vendors will need to meet in</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>August 19, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Artificial Intelligence Legal News">
+      <a href="articles/sra-warns-lawyers-about-ai-hallucinations.html">
+        <div class="card-thumb"><img src="./images/robot-white.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Artificial Intelligence</span>
+          <h3>SRA warns lawyers about AI hallucinations</h3>
+          <p class="card-excerpt">The UK Solicitors Regulation Authority (SRA) has published a stark warning to the legal profession about the risks of AI, citing real-world cases of AI &quot;halluci</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>August 19, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware News">
+      <a href="articles/half-of-companies-pay-ransomware-demand.html">
+        <div class="card-thumb"><img src="./images/computer-monitor.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Half of Companies Pay the Ransomware Demand</h3>
+          <p class="card-excerpt">Almost half of companies — 48 per cent — whose data has been encrypted in a ransomware attack choose to pay the ransom to recover their critical data, according</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>Alexis Hess</span>
+              <span class="sep">&middot;</span>
+              <span>August 17, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Policy Cybercrime">
+      <a href="articles/private-firms-enlisted-to-fight-us-cyber-wars.html">
+        <div class="card-thumb"><img src="./images/security-camera-brick.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Policy</span>
+          <h3>Private Firms Enlisted to Fight US Cyber Wars</h3>
+          <p class="card-excerpt">President Trump has signed a presidential memorandum authorizing US federal law enforcement agencies to collaborate with vetted private cybersecurity firms in c</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>August 12, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware Threat Intelligence">
+      <a href="articles/ransomware-attacks-are-ramping-up.html">
+        <div class="card-thumb"><img src="./images/guy-fawkes-hacker.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Ransomware attacks are ramping up</h3>
+          <p class="card-excerpt">A total of 799 ransomware attacks were recorded in July 2026 — averaging 26 per day — representing a 19 per cent increase from June and the second-highest month</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>Alexis Hess</span>
+              <span class="sep">&middot;</span>
+              <span>August 12, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches News">
+      <a href="articles/theres-hacking-and-theres-levis-hacking.html">
+        <div class="card-thumb"><img src="./images/key-with-usb-drive.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>There&#x27;s hacking – and there&#x27;s Levi&#x27;s hacking</h3>
+          <p class="card-excerpt">Iconic US denim brand Levi Strauss &amp;amp; Co — whose most famous marketing slogan was &quot;There&#x27;s stitching… and there&#x27;s Levi&#x27;s stitching&quot; — has become the latest m</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>August 11, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Ransomware News">
+      <a href="articles/ransomware-gangs-target-middle-management.html">
+        <div class="card-thumb"><img src="./images/office-security.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Ransomware</span>
+          <h3>Ransomware gangs target middle management</h3>
+          <p class="card-excerpt">Ransomware actors are increasingly setting their sights on middle management rather than the C-suite. New research from Zscaler&#x27;s ThreatLabz unit found that nea</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>August 10, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Agentic AI News">
+      <a href="articles/increased-security-risk-for-agentic-ai.html">
+        <div class="card-thumb"><img src="./images/hacker-group-dark-room.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Agentic AI</span>
+          <h3>Increased security risk for agentic AI</h3>
+          <p class="card-excerpt">The UK&#x27;s AI Safety Institute (AISI) this week reported that agentic AI now represents a substantially increased security risk, following reports that agents bui</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>August 07, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics News">
+      <a href="articles/iran-backed-attacks-target-us-water-systems.html">
+        <div class="card-thumb"><img src="./images/surveillance-cameras-pole.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Iran-backed attacks target US water systems</h3>
+          <p class="card-excerpt">The US Cybersecurity and Infrastructure Agency (CISA) is urgently warning US organizations of cyberattacks on Operational Technology (OT) devices in water and w</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>Alexis Hess</span>
+              <span class="sep">&middot;</span>
+              <span>August 06, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI Security News">
+      <a href="articles/las-vegas-biggest-gamble.html">
+        <div class="card-thumb"><img src="./images/indoor-security-camera.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI Security</span>
+          <h3>Las Vegas&#x27;s biggest gamble</h3>
+          <p class="card-excerpt">This week, Las Vegas hosts three cyber conferences, the largest being Black Hat. Each year the local Vegas media generally decries attendees of cyber conference</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>August 06, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI Regulation News">
+      <a href="articles/eus-ai-act-is-now-in-force.html">
+        <div class="card-thumb"><img src="./images/digital-globe.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI Regulation</span>
+          <h3>The EU&#x27;s AI Act is now in force</h3>
+          <p class="card-excerpt">On August 2nd, the European Union (EU)&#x27;s Artificial Intelligence (AI) Act came into force, with powers reaching far beyond the EU&#x27;s borders. Companies in countr</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>August 02, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Fraud News">
+      <a href="articles/phone-farms-scale-up-scams.html">
+        <div class="card-thumb"><img src="./images/hacker-keyboard-tiles.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Fraud</span>
+          <h3>Phone farms scale up scams</h3>
+          <p class="card-excerpt">Cybercriminals are now able to scale up and industrialize a whole range of scams for less than $3,000 a month. According to new research from cybersecurity firm</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>August 01, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Espionage News">
+      <a href="articles/russians-hijack-international-hotel-wi-fi-networks.html">
+        <div class="card-thumb"><img src="./images/network-cables.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Espionage</span>
+          <h3>Russians hijack international hotel wi-fi networks</h3>
+          <p class="card-excerpt">Business and holiday travelling has just become even more risky as hackers believed to be connected to Russian intelligence have discovered a way to hijack wi-f</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>July 28, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="News Cybercrime">
+      <a href="articles/sentenced-teen-hackers-tip-iceberg.html">
+        <div class="card-thumb"><img src="./images/teen-hacker.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">News</span>
+          <h3>Sentenced teen hackers are only the tip of a huge iceberg</h3>
+          <p class="card-excerpt">The two teenage cybercriminals, Thalha Jubair, 19, and Owen Flowers, 18, who were recently sentenced to five years and six months imprisonment for a cyber-attac</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>July 24, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/ai-agent-goes-rogue.html">
+        <div class="card-thumb"><img src="./images/person-number-screen.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI Agent Goes Rogue</h3>
+          <p class="card-excerpt">One of the cybersecurity industry&#x27;s worst fears has now been realized, with concrete proof that AI agents, which are rapidly being deployed across all sectors, </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>Alexis Hess</span>
+              <span class="sep">&middot;</span>
+              <span>July 24, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Phishing News">
+      <a href="articles/vishing-as-a-service.html">
+        <div class="card-thumb"><img src="./images/vpn-smartphone-hands.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Phishing</span>
+          <h3>Vishing-as-a-service</h3>
+          <p class="card-excerpt">Cybercriminals are now using highly sophisticated off-the-shelf phishing kits, complete with easy-to-use dashboards, to enable highly effective vishing attacks,</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>Alexis Hess</span>
+              <span class="sep">&middot;</span>
+              <span>July 23, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Phishing News">
+      <a href="articles/senior-executives-blindsided-by-ai-powered-phishing-attacks.html">
+        <div class="card-thumb"><img src="./images/magnifying-cryptic-codes.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Phishing</span>
+          <h3>Senior executives blindsided by AI-powered phishing attacks</h3>
+          <p class="card-excerpt">Over three-quarters of 200 chief information security officers (CISOs) across Europe surveyed by cybersecurity company MetaCompliance say that senior executives</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>July 16, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Agentic AI News">
+      <a href="articles/weaponized-websites-target-ai-agents.html">
+        <div class="card-thumb"><img src="./images/hacker-smartphone-laptop.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Agentic AI</span>
+          <h3>Weaponized websites target AI agents</h3>
+          <p class="card-excerpt">Cybercriminals are now using sophisticated phishing attacks to compromise AI agents in a similar fashion to the way they compromise human targets. There is grow</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>July 10, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Agentic AI Compliance">
+      <a href="articles/compliance-in-the-age-of-agentic-ai.html">
+        <div class="card-thumb"><img src="./images/soc-analyst-screens.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Agentic AI</span>
+          <h3>Compliance in the Age of Agentic AI</h3>
+          <p class="card-excerpt">Speaking at the recent annual intergovernmental political and economic forum, G7, in the French Alps, the heads of leading AI companies urged Western government</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>July 01, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime News">
+      <a href="articles/ai-agents-represent-a-new-insider-threat.html">
+        <div class="card-thumb"><img src="./images/robot-pointing.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>AI agents represent a new insider threat</h3>
+          <p class="card-excerpt">The rapid adoption of AI agents across all commercial sectors is bringing with it a huge cyber risk that companies are currently ill-equipped to deal with. AI a</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>June 18, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime News">
+      <a href="articles/new-trojan-targets-android-banking-customers.html">
+        <div class="card-thumb"><img src="./images/hacker-laptop.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>New trojan targets Android banking customers</h3>
+          <p class="card-excerpt">The research arm of mobile cybersecurity firm Zimperium, zLabs, has discovered a new and particularly dangerous Android banking trojan in the wild. Named Rokaro</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>June 17, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Sports Security News">
+      <a href="articles/hackers-target-fifa.html">
+        <div class="card-thumb"><img src="./images/hoodie-hacker-white-room.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Sports Security</span>
+          <h3>Hackers Target FIFA</h3>
+          <p class="card-excerpt">This year&#x27;s FIFA World Cup has become a prime target for threat actors across the globe. Scheduled match fixtures and communications with many thousands of socc</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>June 16, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI Security News">
+      <a href="articles/agentic-ai-dominated-infosecurity-europe.html">
+        <div class="card-thumb"><img src="./images/neon-mask-tablet.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI Security</span>
+          <h3>Agentic AI dominated InfoSecurity Europe</h3>
+          <p class="card-excerpt">In retrospect it is easy to see how agentic AI dominated the InfoSecurity Europe conference in London at the start of this month. As organizations across all se</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>June 16, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/openai-plans-to-democratize-cybersecurity.html">
+        <div class="card-thumb"><img src="./images/programmer-laptop-code.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>OpenAI Plans to Democratize Cybersecurity</h3>
+          <p class="card-excerpt">OpenAI has released an action plan detailing their vision of &quot;Democratizing AI-Powered Cyber Defense.&quot; The plan details OpenAI&#x27;s belief that cyber defense tools</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>Alexis Hess</span>
+              <span class="sep">&middot;</span>
+              <span>May 15, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Geopolitics News">
+      <a href="articles/hacktivists-target-polands-water-supply.html">
+        <div class="card-thumb"><img src="./images/black-server-racks.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Geopolitics</span>
+          <h3>Hacktivists target Poland&#x27;s water supply</h3>
+          <p class="card-excerpt">Politically-motivated hacktivists are becoming increasingly adept at performing sophisticated cyber-attacks to cripple crucial national infrastructure. In what </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>May 12, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/identity-sprawl-is-creating-glaring-security-gaps.html">
+        <div class="card-thumb"><img src="./images/digital-lock.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Identity sprawl is creating glaring security gaps</h3>
+          <p class="card-excerpt">Nine out of ten (89 per cent) senior IT leaders report that managing the growing identity footprint is challenging, reflecting the scale and complexity of moder</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>May 12, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Data Breaches News">
+      <a href="articles/international-education-company-suffers-a-cyber-breach.html">
+        <div class="card-thumb"><img src="./images/usb-security-key-laptop.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Data Breaches</span>
+          <h3>International education company suffers a cyber-breach</h3>
+          <p class="card-excerpt">Instructure, the US-based company behind the learning tool Canvas, which is used by thousands of schools and universities in the US and UK, has suffered a serio</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>May 08, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Insider Threats News">
+      <a href="articles/the-rapidly-growing-danger-of-the-insider-threat.html">
+        <div class="card-thumb"><img src="./images/eye-biometric-scan.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Insider Threats</span>
+          <h3>The rapidly growing danger of the &#x27;insider threat&#x27;</h3>
+          <p class="card-excerpt">New findings point to the insider threat of rogue employees being a far greater threat than has hitherto been realized. According to the latest report from non-</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>May 07, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/ai-plays-a-growing-role-in-cybercrime.html">
+        <div class="card-thumb"><img src="./images/hackers-multiple-screens.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>AI plays a growing role in cybercrime</h3>
+          <p class="card-excerpt">IBM&#x27;s latest X-Force Threat Intelligence Index reveals how attackers are using AI to exploit security gaps. According to IBM, the rapid adoption of AI chatbot p</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>May 07, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime News">
+      <a href="articles/qr-code-attacks-doubled-in-the-first-quarter.html">
+        <div class="card-thumb"><img src="./images/phone-lock.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>QR code attacks doubled in the first quarter</h3>
+          <p class="card-excerpt">Microsoft Threat Intelligence detected approximately 8.3 billion email-based phishing threats during the first quarter of 2026 (January–March). QR code phishing</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>May 07, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime News">
+      <a href="articles/13000-organizations-targeted-in-multi-stage-phishing-campaign.html">
+        <div class="card-thumb"><img src="./images/phishing-scam-laptop.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>13,000 Organizations Targeted in Multi-stage Phishing Campaign</h3>
+          <p class="card-excerpt">Microsoft Defender Research has uncovered a large-scale phishing attack targeting users across more than 13,000 organizations worldwide. The threat actors were </p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">A</span>
+              <span>Alexis Hess</span>
+              <span class="sep">&middot;</span>
+              <span>May 07, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Healthcare News">
+      <a href="articles/cyber-attacks-on-medical-devices-are-on-the-rise.html">
+        <div class="card-thumb"><img src="./images/server-racks-datacenter.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Healthcare</span>
+          <h3>Cyber-attacks on medical devices are on the rise</h3>
+          <p class="card-excerpt">Cyberattacks on medical devices are endangering patients and may potentially cost lives. The 2026 Medical Device Cybersecurity Index from RunSafe Security repor</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>May 05, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="AI News">
+      <a href="articles/anthropic-releases-new-ai-cyber-defense-tool.html">
+        <div class="card-thumb"><img src="./images/shield-icon.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">AI</span>
+          <h3>Anthropic releases new AI cyber-defense tool</h3>
+          <p class="card-excerpt">AI company Anthropic has released a new security tool, Claude Code Security, in beta. It scans codebases for security vulnerabilities and suggests targeted soft</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>May 05, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime News">
+      <a href="articles/teenage-super-hackers-pose-major-new-threat.html">
+        <div class="card-thumb"><img src="./images/hoodie-smartphone-cyber.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>Teenage super-hackers pose major new threat</h3>
+          <p class="card-excerpt">A new generation of young cybercriminals has emerged as what is now perceived to be the main security threat to corporations on both sides of the Atlantic. As r</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">T</span>
+              <span>Tony Glover</span>
+              <span class="sep">&middot;</span>
+              <span>March 20, 2026</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Cybercrime Data Breaches News">
+      <a href="articles/cisa-and-fbi-release-iocs-associated-with-androxgh0st-malware-january-17th.html">
+        <div class="card-thumb"><img src="./images/hacking-code.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Cybercrime</span>
+          <h3>CISA and FBI Release IOCs Associated with Androxgh0st Malware – January 17th</h3>
+          <p class="card-excerpt">94% of Organizations Experienced Email Security Incidents in 2023 Egress revealed in a report that 94% of cybersecurity leaders disclosed that their organizatio</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">H</span>
+              <span>Hildegard Johnson</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+<article class="card" data-category="Industry News">
+      <a href="articles/cybersecurity-market-to-reach-478b-by-2030-november-13th.html">
+        <div class="card-thumb"><img src="./images/vpn-laptop-desk.jpg" alt="" loading="lazy"><div class="card-thumb-overlay"></div></div>
+        <div class="card-body">
+          <span class="cat-label">Industry</span>
+          <h3>Cybersecurity Market To Reach $478B by 2030 – November 13th</h3>
+          <p class="card-excerpt">Cybersecurity Market To Reach $478B by 2030 Despite recent talk of a tech slowdown that reaches cyber, Allied Market Research reported that the market is poised</p>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="author-avatar">J</span>
+              <span>John Wilkes</span>
+              <span class="sep">&middot;</span>
+              <span>October 06, 2025</span>
+            </div>
+            <span class="read-more">READ MORE</span>
+          </div>
+        </div>
+      </a>
+    </article>
+</div>
+      <div class="load-more-wrap">
+        <button class="load-more-btn" id="loadMoreBtn">Load More Articles</button>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <div class="widget">
+        <h3 class="widget-title">Categories</h3>
+        <ul class="cat-list"><li><a href="categories/news.html">News</a></li>
+<li><a href="categories/data-breaches.html">Data Breaches</a></li>
+<li><a href="categories/cybercrime.html">Cybercrime</a></li>
+<li><a href="categories/geopolitics.html">Geopolitics</a></li>
+<li><a href="categories/ai.html">AI</a></li>
+<li><a href="categories/ransomware.html">Ransomware</a></li>
+<li><a href="categories/policy-and-regulation.html">Policy &amp; Regulation</a></li>
+<li><a href="categories/industry.html">Industry</a></li>
+<li><a href="categories/healthcare.html">Healthcare</a></li>
+<li><a href="categories/cryptocurrency.html">Cryptocurrency</a></li>
+<li><a href="categories/insider-threats.html">Insider Threats</a></li>
+<li><a href="categories/cybersecurity.html">Cybersecurity</a></li>
+<li><a href="categories/workforce.html">Workforce</a></li>
+<li><a href="categories/agentic-ai.html">Agentic AI</a></li>
+<li><a href="categories/phishing.html">Phishing</a></li>
+</ul>
+      </div>
+      <div class="widget">
+        <h3 class="widget-title">Recent</h3>
+        <ul class="recent-list"><li class="recent-item">
+          <a href="articles/opportunities-and-pitfalls-of-agentic-ai.html">
+            <span class="recent-title">Exclusive: The Opportunities and Pitfalls of Agentic AI</span>
+            <span class="recent-date">September 22, 2026</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/agentic-ai-report.html">
+            <span class="recent-title">Full Report: The Opportunities and Pitfalls of Agentic AI</span>
+            <span class="recent-date">September 22, 2026</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/starkware-quantum-safe-bitcoin-lock.html">
+            <span class="recent-title">StarkWare Unveils Quantum-Proof Bitcoin Lock</span>
+            <span class="recent-date">September 17, 2026</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/fake-government-request-compromises-revolut-customers.html">
+            <span class="recent-title">Fake Government Request Compromises Revolut Customers</span>
+            <span class="recent-date">September 17, 2026</span>
+          </a>
+        </li>
+<li class="recent-item">
+          <a href="articles/fbi-unveils-new-cyber-strategy.html">
+            <span class="recent-title">The FBI Unveils Its New Cyber Strategy</span>
+            <span class="recent-date">September 12, 2026</span>
+          </a>
+        </li>
+</ul>
+      </div>
+    </aside>
   </div>
-</section>
+  <section class="browse-all-cta">
+    <div class="cta-inner">
+      <h2>Explore All Articles</h2>
+      <p>Explore our full archive by category</p>
+      <div class="cta-cat-grid"><a href="categories/news.html" class="cta-cat-link">News <span>(337)</span></a>
+<a href="categories/data-breaches.html" class="cta-cat-link">Data Breaches <span>(95)</span></a>
+<a href="categories/cybercrime.html" class="cta-cat-link">Cybercrime <span>(88)</span></a>
+<a href="categories/geopolitics.html" class="cta-cat-link">Geopolitics <span>(61)</span></a>
+<a href="categories/ai.html" class="cta-cat-link">AI <span>(57)</span></a>
+<a href="categories/ransomware.html" class="cta-cat-link">Ransomware <span>(43)</span></a>
+<a href="categories/policy-and-regulation.html" class="cta-cat-link">Policy &amp; Regulation <span>(28)</span></a>
+<a href="categories/industry.html" class="cta-cat-link">Industry <span>(18)</span></a>
+<a href="categories/healthcare.html" class="cta-cat-link">Healthcare <span>(13)</span></a>
+<a href="categories/cryptocurrency.html" class="cta-cat-link">Cryptocurrency <span>(13)</span></a>
+<a href="categories/insider-threats.html" class="cta-cat-link">Insider Threats <span>(8)</span></a>
+<a href="categories/cybersecurity.html" class="cta-cat-link">Cybersecurity <span>(7)</span></a>
+</div>
+    </div>
+  </section>
 </main>
-
-<footer style="background:#17171a;color:#d9d5cc">
-  <div style="max-width:1280px;margin:0 auto;padding:48px 32px 28px;display:flex;flex-direction:column;gap:36px">
-    <div style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">
-      <div style="flex:1 1 300px;display:flex;flex-direction:column;gap:12px;max-width:420px">
-        <span style="font-family:'Newsreader',serif;font-weight:600;font-size:34px;color:#f5f3ee;letter-spacing:-0.02em">Cyber Brief <span style="font-style:italic;font-weight:400">Daily</span></span>
-        <span style="font-size:14px;line-height:1.5;color:#a9a59c">In-depth analysis, breaking news and expert interviews covering the cybersecurity landscape.</span>
-      </div>
-      <div style="display:flex;gap:56px;flex-wrap:wrap;font-size:14px">
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#8d8a83">Sections</span>
-          <a href="https://cyberbriefdaily.com/categories/news.html">News</a><a href="https://cyberbriefdaily.com/categories/analysis.html">Analysis</a><a href="https://cyberbriefdaily.com/categories/expert-opinions.html">Expert Opinions</a><a href="https://cyberbriefdaily.com/categories/ransomware.html">Ransomware</a><a href="https://cyberbriefdaily.com/categories/cybercrime.html">Cybercrime</a>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#8d8a83">Resources</span>
-          <a href="https://cyberbriefdaily.com/conferences.html">Conferences</a><a href="https://cyberbriefdaily.com/glossary.html">Glossary</a><a href="https://cyberbriefdaily.com/ecosystem-map.html">Ecosystem Map</a>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#8d8a83">Company</span>
-          <a href="https://cyberbriefdaily.com/about.html">About</a><a href="mailto:info@cyberbriefdaily.com">Contact</a><a href="https://www.linkedin.com/company/cyberintel-media/">LinkedIn</a>
-        </div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><span class="logo-accent">C</span>yber Brief Daily</div>
+      <p class="footer-tagline">In-depth analysis, breaking news, and expert interviews covering the cybersecurity landscape. Trusted by professionals worldwide.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
       </div>
     </div>
-    <div style="border-top:1px solid #3a3935;padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:#8d8a83">
-      <span>© 2026 Cyber Brief Daily. All rights reserved.</span>
-      <a href="#top">Back to top ↑</a>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <a href="./categories/news.html">News</a>
+      <a href="./categories/analysis.html">Analysis</a>
+      <a href="./categories/expert-opinions.html">Expert Opinions</a>
+      <a href="./categories/ransomware.html">Ransomware</a>
+      <a href="./categories/cybercrime.html">Cybercrime</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="./conferences.html">Conferences</a>
+      <a href="./glossary.html">Glossary of Terms</a>
+      <a href="#">Awards</a>
+      <a href="./ecosystem-map.html">Ecosystem Map</a>
+    </div>
+    <div class="footer-col">
+      <h4>Stay Informed</h4>
+      <p class="footer-newsletter-text">Get the latest cybersecurity insights delivered to your inbox.</p>
+      <form class="footer-newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" aria-label="Email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-contact">
+        <a href="./about.html">About</a>
+        <a href="mailto:info@cyberbriefdaily.com">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>&copy; 2026 Cyber Brief Daily. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
     </div>
   </div>
 </footer>
-</div>
 <script>
-(function(){
-  var t=document.getElementById('today');
-  if(t) t.textContent=new Date().toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-  var btns=document.querySelectorAll('.filter'), rows=document.querySelectorAll('article[data-desk]');
-  btns.forEach(function(b){ b.addEventListener('click',function(){
-    var f=b.getAttribute('data-filter');
-    btns.forEach(function(x){ x.classList.toggle('is-active',x===b); });
-    rows.forEach(function(r){
-      r.hidden = f==='All' ? +r.getAttribute('data-rank')>=8 : r.getAttribute('data-desk')!==f;
+// Dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('ci-dark', document.body.classList.contains('dark') ? '1' : '0');
+}
+if (localStorage.getItem('ci-dark') === '1') document.body.classList.add('dark');
+
+// ── Dropdown click toggle (mobile + desktop) ──
+(function() {
+  document.querySelectorAll('.has-dropdown > .nav-link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var parent = this.parentNode;
+      var isOpen = parent.classList.contains('open');
+      // Close all dropdowns
+      document.querySelectorAll('.has-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      if (!isOpen) parent.classList.add('open');
     });
-  });});
+  });
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.has-dropdown')) {
+      document.querySelectorAll('.has-dropdown').forEach(function(d) { d.classList.remove('open'); });
+    }
+  });
+})();
+
+// Search filter (simple client-side)
+function filterArticles(q) {
+  if (!q) return;
+  q = q.toLowerCase();
+  document.querySelectorAll('.card').forEach(function(c) {
+    var t = c.textContent.toLowerCase();
+    c.style.display = t.includes(q) ? '' : 'none';
+  });
+}
+
+// ── Scroll-triggered card animations ──
+(function() {
+  var cards = document.querySelectorAll('.card');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var delay = Array.prototype.indexOf.call(
+          entry.target.parentNode.children, entry.target
+        ) % 3 * 100;
+        setTimeout(function() {
+          entry.target.classList.add('animate-in');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Hero entrance animation ──
+(function() {
+  var hero = document.querySelector('.hero-animate');
+  if (!hero) return;
+  var children = hero.children;
+  for (var i = 0; i < children.length; i++) {
+    (function(el, idx) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      setTimeout(function() {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, 200 + idx * 150);
+    })(children[i], i);
+  }
+})();
+
+// ── Category filter tabs ──
+(function() {
+  var tabs = document.querySelectorAll('.filter-tab');
+  if (!tabs.length) return;
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var cat = tab.getAttribute('data-cat');
+      var cards = document.querySelectorAll('#card-grid .card');
+      cards.forEach(function(c) {
+        if (cat === 'all') {
+          c.style.display = '';
+        } else {
+          var cats = (c.getAttribute('data-category') || '').toLowerCase();
+          c.style.display = cats.includes(cat.toLowerCase()) ? '' : 'none';
+        }
+      });
+      // Reset load-more visibility after filter
+      var btn = document.getElementById('loadMoreBtn');
+      if (btn) btn.style.display = '';
+    });
+  });
+})();
+
+// ── Load More button ──
+(function() {
+  var btn = document.getElementById('loadMoreBtn');
+  if (!btn) return;
+  var grid = document.getElementById('card-grid');
+  if (!grid) return;
+  var allCards = grid.querySelectorAll('.card');
+  var batchSize = 12;
+  var shown = batchSize;
+  // Hide cards beyond initial batch
+  for (var i = 0; i < allCards.length; i++) {
+    if (i >= batchSize) allCards[i].classList.add('hidden-card');
+  }
+  if (allCards.length <= batchSize) btn.style.display = 'none';
+  btn.addEventListener('click', function() {
+    var next = shown + batchSize;
+    for (var i = shown; i < next && i < allCards.length; i++) {
+      allCards[i].classList.remove('hidden-card');
+    }
+    shown = next;
+    if (shown >= allCards.length) btn.style.display = 'none';
+  });
+})();
+
+// ── Sidebar animated counters ──
+(function() {
+  var counters = document.querySelectorAll('.stat-counter');
+  if (!counters.length) return;
+  var animated = false;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        counters.forEach(function(counter) {
+          var target = parseInt(counter.getAttribute('data-target'), 10);
+          var numEl = counter.querySelector('.counter-num');
+          var start = 0;
+          var duration = 1500;
+          var startTime = null;
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            numEl.textContent = Math.floor(eased * target);
+            if (progress < 1) requestAnimationFrame(step);
+            else numEl.textContent = target;
+          }
+          requestAnimationFrame(step);
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  counters.forEach(function(c) { observer.observe(c); });
+})();
+
+// ── Reading progress bar (article pages) ──
+(function() {
+  var bar = document.getElementById('readingProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = pct + '%';
+  });
 })();
 </script>
 </body>

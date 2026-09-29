@@ -23,9 +23,8 @@
 <link rel="alternate" type="application/rss+xml" title="Cyber Brief Daily" href="https://cyberbriefdaily.com/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/theme-v2.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -56,54 +55,83 @@
 </head>
 <body>
 <div class="reading-progress" id="readingProgress"></div>
-<!-- cbd-v2:header --><div class="cbd-chrome" id="top" style="font-family:'Geist',system-ui,sans-serif"><!-- Utility bar -->
-<div style="background:#17171a;color:#e9e6df;font-family:'Geist Mono',monospace;font-size:11.5px;letter-spacing:0.04em;text-transform:uppercase">
-  <div style="max-width:1280px;margin:0 auto;padding:9px 32px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
-    <div style="display:flex;gap:20px;flex-wrap:wrap">
-      <span id="today"></span>
-      
-    </div>
-    <div style="display:flex;gap:20px;align-items:center">
-      <a href="https://www.linkedin.com/company/cyberintel-media/" style="color:#e9e6df">LinkedIn</a>
-      <a href="https://cyberbriefdaily.com/#newsletter" style="color:#e9e6df">Newsletter</a>
+<div class="accent-strip"></div>
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="header-left">
+        <button class="icon-btn search-btn" aria-label="Search" onclick="document.querySelector('.search-overlay').classList.toggle('open')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <a href="../index.html" class="site-logo">
+          <svg class="logo-shield" viewBox="0 0 60 68" width="52" height="59" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M30,3 C21,3 8,8.5 8,8.5 L8,34 C8,51 30,65 30,65 C30,65 52,51 52,34 L52,8.5 C52,8.5 39,3 30,3 Z" fill="#5589b0"/>
+            <text x="30" y="46" text-anchor="middle" font-size="31" font-weight="700" fill="white" font-family="Georgia,serif">C</text>
+            <circle cx="47" cy="13" r="6.5" fill="#c0392b"/>
+          </svg>
+          <div class="logo-wordmark">
+            <span class="logo-text"><span class="logo-accent">C</span>yber Brief Daily</span>
+            <div class="site-tagline">In-depth cybersecurity analysis &amp; breaking news</div>
+          </div>
+        </a>
+      </div>
+      <div class="header-right">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="icon-btn dark-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
     </div>
   </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="../categories/news.html" class="nav-link">News</a>
+      </div>
+      <div class="nav-item">
+        <a href="../categories/analysis.html" class="nav-link">Analysis</a>
+      </div>
+      <div class="nav-item">
+        <a href="../categories/expert-opinions.html" class="nav-link">Expert Opinions</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Resources</a>
+        <div class="dropdown-menu"><a href="../conferences.html">Conferences</a>
+<a href="../glossary.html">Glossary of Terms</a>
+<a href="#">Awards</a>
+<a href="../ecosystem-map.html">Ecosystem Map</a>
 </div>
-
-<!-- Masthead -->
-<header style="max-width:1280px;margin:0 auto;padding:28px 32px 0">
-  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;padding-bottom:22px">
-    <a href="https://cyberbriefdaily.com/" style="display:flex;flex-direction:column;gap:6px;color:#17171a">
-      <span style="font-family:'Newsreader',serif;font-weight:600;font-size:clamp(34px,4.6vw,52px);line-height:0.9;letter-spacing:-0.025em">Cyber Brief <span style="font-style:italic;font-weight:400">Daily</span></span>
-      <span style="font-size:13.5px;color:#5c5a55;letter-spacing:0.01em">In-depth cybersecurity analysis &amp; breaking news</span>
-    </a>
-    <div style="display:flex;gap:10px;align-items:center">
-      <a href="https://cyberbriefdaily.com/#newsletter" style="font-size:13.5px;font-weight:500;padding:11px 18px;background:#b8321f;color:#fff;border:1px solid #b8321f">Get the weekly brief</a>
+      </div>
     </div>
-  </div>
-  <nav style="border-top:3px solid #17171a;border-bottom:1px solid #17171a;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:0">
-    <div style="display:flex;gap:28px;flex-wrap:wrap;font-size:14.5px;font-weight:500;padding:13px 0">
-      <a href="https://cyberbriefdaily.com/categories/news.html">News</a>
-      <a href="https://cyberbriefdaily.com/categories/analysis.html">Analysis</a>
-      <a href="https://cyberbriefdaily.com/categories/expert-opinions.html">Expert Opinions</a>
-      <a href="https://cyberbriefdaily.com/articles/agentic-ai-report.html">Reports</a>
-      <a href="https://cyberbriefdaily.com/conferences.html">Conferences</a>
-      <a href="https://cyberbriefdaily.com/glossary.html">Glossary</a>
-      <a href="https://cyberbriefdaily.com/ecosystem-map.html">Ecosystem Map</a>
-    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav .nav-inner').classList.toggle('open')">&#9776;</button>
   </nav>
-  <div style="display:flex;gap:22px;flex-wrap:wrap;align-items:center;padding:12px 0;border-bottom:1px solid #d6d2c8;font-size:13px">
-    <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#b8321f">Tracking</span>
-    <a href="https://cyberbriefdaily.com/categories/ransomware.html" style="color:#3a3935">Ransomware</a>
-    <a href="https://cyberbriefdaily.com/categories/ai.html" style="color:#3a3935">AI threats</a>
-    <a href="https://cyberbriefdaily.com/categories/data-breaches.html" style="color:#3a3935">Data breaches</a>
-    <a href="https://cyberbriefdaily.com/categories/phishing.html" style="color:#3a3935">Phishing</a>
-    <a href="https://cyberbriefdaily.com/categories/geopolitics.html" style="color:#3a3935">Nation-state</a>
-    <a href="https://cyberbriefdaily.com/categories/healthcare.html" style="color:#3a3935">Healthcare</a>
-    <a href="https://cyberbriefdaily.com/categories/policy-and-regulation.html" style="color:#3a3935">Policy &amp; regulation</a>
-    <a href="https://cyberbriefdaily.com/categories/insider-threats.html" style="color:#3a3935">Insider threats</a>
+  <div class="trending-bar">
+    <div class="trending-inner">
+      <span class="trending-label">Trending</span>
+      <div class="trending-tags"><a href="../categories/ransomware.html" class="trend-tag">Ransomware</a>
+<a href="../categories/ai.html" class="trend-tag">AI Threats</a>
+<a href="../categories/data-breaches.html" class="trend-tag">Data Breach</a>
+<a href="../categories/phishing.html" class="trend-tag">Phishing</a>
+<a href="../categories/cybercrime.html" class="trend-tag">Cybercrime</a>
+<a href="../categories/healthcare.html" class="trend-tag">Healthcare</a>
+<a href="../categories/geopolitics.html" class="trend-tag">Geopolitics</a>
+<a href="../categories/policy-and-regulation.html" class="trend-tag">Policy &amp; Regulation</a>
+<a href="../categories/insider-threats.html" class="trend-tag">Insider Threats</a>
+</div>
+    </div>
   </div>
-</header></div><script>(function(){var t=document.getElementById('today');if(t)t.textContent=new Date().toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});})();</script><!-- /cbd-v2:header -->
+  <div class="search-overlay">
+    <div class="search-box">
+      <input type="text" placeholder="Search articles..." id="searchInput" onkeyup="filterArticles(this.value)">
+      <button class="icon-btn" onclick="document.querySelector('.search-overlay').classList.remove('open')">&#10005;</button>
+    </div>
+  </div>
+</header>
 <main class="article-page">
   <article class="article-single">
     <div class="article-header">
@@ -219,34 +247,52 @@
 </div>
 </section>
 </main>
-<!-- cbd-v2:footer --><div class="cbd-chrome" style="font-family:'Geist',system-ui,sans-serif;margin-top:56px"><footer style="background:#17171a;color:#d9d5cc">
-  <div style="max-width:1280px;margin:0 auto;padding:48px 32px 28px;display:flex;flex-direction:column;gap:36px">
-    <div style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">
-      <div style="flex:1 1 300px;display:flex;flex-direction:column;gap:12px;max-width:420px">
-        <span style="font-family:'Newsreader',serif;font-weight:600;font-size:34px;color:#f5f3ee;letter-spacing:-0.02em">Cyber Brief <span style="font-style:italic;font-weight:400">Daily</span></span>
-        <span style="font-size:14px;line-height:1.5;color:#a9a59c">In-depth analysis, breaking news and expert interviews covering the cybersecurity landscape.</span>
-      </div>
-      <div style="display:flex;gap:56px;flex-wrap:wrap;font-size:14px">
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#8d8a83">Sections</span>
-          <a href="https://cyberbriefdaily.com/categories/news.html">News</a><a href="https://cyberbriefdaily.com/categories/analysis.html">Analysis</a><a href="https://cyberbriefdaily.com/categories/expert-opinions.html">Expert Opinions</a><a href="https://cyberbriefdaily.com/categories/ransomware.html">Ransomware</a><a href="https://cyberbriefdaily.com/categories/cybercrime.html">Cybercrime</a>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#8d8a83">Resources</span>
-          <a href="https://cyberbriefdaily.com/conferences.html">Conferences</a><a href="https://cyberbriefdaily.com/glossary.html">Glossary</a><a href="https://cyberbriefdaily.com/ecosystem-map.html">Ecosystem Map</a>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <span style="font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#8d8a83">Company</span>
-          <a href="https://cyberbriefdaily.com/about.html">About</a><a href="mailto:info@cyberbriefdaily.com">Contact</a><a href="https://www.linkedin.com/company/cyberintel-media/">LinkedIn</a>
-        </div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><span class="logo-accent">C</span>yber Brief Daily</div>
+      <p class="footer-tagline">In-depth analysis, breaking news, and expert interviews covering the cybersecurity landscape. Trusted by professionals worldwide.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/cyberintel-media/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
       </div>
     </div>
-    <div style="border-top:1px solid #3a3935;padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:#8d8a83">
-      <span>© 2026 Cyber Brief Daily. All rights reserved.</span>
-      <a href="#top">Back to top ↑</a>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <a href="../categories/news.html">News</a>
+      <a href="../categories/analysis.html">Analysis</a>
+      <a href="../categories/expert-opinions.html">Expert Opinions</a>
+      <a href="../categories/ransomware.html">Ransomware</a>
+      <a href="../categories/cybercrime.html">Cybercrime</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="../conferences.html">Conferences</a>
+      <a href="../glossary.html">Glossary of Terms</a>
+      <a href="#">Awards</a>
+      <a href="../ecosystem-map.html">Ecosystem Map</a>
+    </div>
+    <div class="footer-col">
+      <h4>Stay Informed</h4>
+      <p class="footer-newsletter-text">Get the latest cybersecurity insights delivered to your inbox.</p>
+      <form class="footer-newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" aria-label="Email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-contact">
+        <a href="../about.html">About</a>
+        <a href="mailto:info@cyberbriefdaily.com">Contact</a>
+      </div>
     </div>
   </div>
-</footer></div><!-- /cbd-v2:footer -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>&copy; 2026 Cyber Brief Daily. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
 <script>
 // Dark mode
 function toggleDarkMode() {
