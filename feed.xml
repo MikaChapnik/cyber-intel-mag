@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 06 Oct 2026 14:45:19 -0000</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 14:48:11 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>Who Will Pay for AI&#x27;s $6 Trillion Future?</title>
+    <link>https://cyberbriefdaily.com/articles/who-will-pay-for-ais-6-trillion-future.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/who-will-pay-for-ais-6-trillion-future.html</guid>
+    <description></description>
+    <pubDate>Tue, 06 Oct 2026 10:00:00 -0000</pubDate>
+    <category>Artificial Intelligence</category><category>Industry</category>
+    <enclosure url="https://cyberbriefdaily.com/images/server-racks-datacenter.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>KillSec: 16-Year-Old UK Teen Arrested as Gang Leader in Operation KillSwitch</title>
     <link>https://cyberbriefdaily.com/articles/killsec-16-year-old-arrested-operation-killswitch.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Fri, 24 Jul 2026 10:00:00 -0000</pubDate>
     <category>News</category><category>Cybercrime</category>
     <enclosure url="https://cyberbriefdaily.com/images/teen-hacker.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>AI Agent Goes Rogue</title>
-    <link>https://cyberbriefdaily.com/articles/ai-agent-goes-rogue.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/ai-agent-goes-rogue.html</guid>
-    <description></description>
-    <pubDate>Fri, 24 Jul 2026 10:00:00 -0000</pubDate>
-    <category>AI</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/person-number-screen.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
