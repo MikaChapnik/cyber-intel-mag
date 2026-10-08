@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 06 Oct 2026 14:48:11 -0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 19:22:51 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>UK and Germany Join Forces to Face Russian Cyber-Threat</title>
+    <link>https://cyberbriefdaily.com/articles/uk-germany-join-forces-russian-cyber-threat.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/uk-germany-join-forces-russian-cyber-threat.html</guid>
+    <description></description>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 -0000</pubDate>
+    <category>Cyber Threats</category><category>Nation State</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>Who Will Pay for AI&#x27;s $6 Trillion Future?</title>
     <link>https://cyberbriefdaily.com/articles/who-will-pay-for-ais-6-trillion-future.html</link>
@@ -28,7 +37,7 @@
     <description></description>
     <pubDate>Mon, 05 Oct 2026 10:00:00 -0000</pubDate>
     <category>Cybercrime</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>2026 – the Year of Physical AI</title>
@@ -82,7 +91,7 @@
     <description></description>
     <pubDate>Sat, 12 Sep 2026 10:00:00 -0000</pubDate>
     <category>Government</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</title>
@@ -145,7 +154,7 @@
     <description></description>
     <pubDate>Tue, 25 Aug 2026 10:00:00 -0000</pubDate>
     <category>Critical Infrastructure</category><category>Cyber Attacks</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Medusa Ransomware Claims 500 Victim Organizations</title>
@@ -181,7 +190,7 @@
     <description></description>
     <pubDate>Mon, 17 Aug 2026 10:00:00 -0000</pubDate>
     <category>Ransomware</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Private Firms Enlisted to Fight US Cyber Wars</title>
@@ -272,15 +281,6 @@
     <pubDate>Tue, 28 Jul 2026 10:00:00 -0000</pubDate>
     <category>Espionage</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/network-cables.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Sentenced teen hackers are only the tip of a huge iceberg</title>
-    <link>https://cyberbriefdaily.com/articles/sentenced-teen-hackers-tip-iceberg.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/sentenced-teen-hackers-tip-iceberg.html</guid>
-    <description></description>
-    <pubDate>Fri, 24 Jul 2026 10:00:00 -0000</pubDate>
-    <category>News</category><category>Cybercrime</category>
-    <enclosure url="https://cyberbriefdaily.com/images/teen-hacker.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
