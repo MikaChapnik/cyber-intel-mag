@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Thu, 08 Oct 2026 19:23:42 -0000</lastBuildDate>
+  <lastBuildDate>Tue, 13 Oct 2026 09:05:13 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>AI breaks through industrial defenses with ease</title>
+    <link>https://cyberbriefdaily.com/articles/ai-breaks-through-industrial-defenses.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/ai-breaks-through-industrial-defenses.html</guid>
+    <description></description>
+    <pubDate>Tue, 13 Oct 2026 10:00:00 -0000</pubDate>
+    <category>Industrial Security</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/infrastructure-bridge-ai.png" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>UK and Germany Join Forces to Face Russian Cyber-Threat</title>
     <link>https://cyberbriefdaily.com/articles/uk-germany-join-forces-russian-cyber-threat.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Sat, 01 Aug 2026 10:00:00 -0000</pubDate>
     <category>Fraud</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/hacker-keyboard-tiles.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Russians hijack international hotel wi-fi networks</title>
-    <link>https://cyberbriefdaily.com/articles/russians-hijack-international-hotel-wi-fi-networks.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/russians-hijack-international-hotel-wi-fi-networks.html</guid>
-    <description></description>
-    <pubDate>Tue, 28 Jul 2026 10:00:00 -0000</pubDate>
-    <category>Espionage</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/network-cables.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
