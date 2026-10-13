@@ -5,7 +5,7 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 13 Oct 2026 13:35:20 -0000</lastBuildDate>
+  <lastBuildDate>Tue, 13 Oct 2026 13:38:15 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
@@ -19,15 +19,6 @@
     <description></description>
     <pubDate>Tue, 13 Oct 2026 10:00:00 -0000</pubDate>
     <category>Industrial Security</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/infrastructure-bridge-ai.png" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Physical AI&#x27;s Most Important Job Is Under Our Roads</title>
-    <link>https://cyberbriefdaily.com/articles/physical-ai-most-important-job-under-our-roads.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/physical-ai-most-important-job-under-our-roads.html</guid>
-    <description></description>
-    <pubDate>Tue, 13 Oct 2026 09:00:00 -0000</pubDate>
-    <category>Expert Opinion</category><category>Infrastructure</category>
     <enclosure url="https://cyberbriefdaily.com/images/infrastructure-bridge-ai.png" type="image/jpeg" length="0"/>
   </item>
   <item>
@@ -49,13 +40,13 @@
     <enclosure url="https://cyberbriefdaily.com/images/server-racks-datacenter.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
-    <title>KillSec: 16-Year-Old UK Teen Arrested as Gang Leader in Operation KillSwitch</title>
-    <link>https://cyberbriefdaily.com/articles/killsec-16-year-old-arrested-operation-killswitch.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/killsec-16-year-old-arrested-operation-killswitch.html</guid>
+    <title>Physical AI&#x27;s Most Important Job Is Under Our Roads</title>
+    <link>https://cyberbriefdaily.com/articles/physical-ai-most-important-job-under-our-roads.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/physical-ai-most-important-job-under-our-roads.html</guid>
     <description></description>
     <pubDate>Mon, 05 Oct 2026 10:00:00 -0000</pubDate>
-    <category>Cybercrime</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
+    <category>Expert Opinion</category><category>Infrastructure</category>
+    <enclosure url="https://cyberbriefdaily.com/images/infrastructure-bridge-ai.png" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>2026 – the Year of Physical AI</title>
@@ -109,7 +100,7 @@
     <description></description>
     <pubDate>Sat, 12 Sep 2026 10:00:00 -0000</pubDate>
     <category>Government</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</title>
@@ -172,7 +163,7 @@
     <description></description>
     <pubDate>Tue, 25 Aug 2026 10:00:00 -0000</pubDate>
     <category>Critical Infrastructure</category><category>Cyber Attacks</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Medusa Ransomware Claims 500 Victim Organizations</title>
@@ -208,7 +199,7 @@
     <description></description>
     <pubDate>Mon, 17 Aug 2026 10:00:00 -0000</pubDate>
     <category>Ransomware</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Private Firms Enlisted to Fight US Cyber Wars</title>
@@ -281,6 +272,15 @@
     <pubDate>Sun, 02 Aug 2026 10:00:00 -0000</pubDate>
     <category>AI Regulation</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/digital-globe.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Phone farms scale up scams</title>
+    <link>https://cyberbriefdaily.com/articles/phone-farms-scale-up-scams.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/phone-farms-scale-up-scams.html</guid>
+    <description></description>
+    <pubDate>Sat, 01 Aug 2026 10:00:00 -0000</pubDate>
+    <category>Fraud</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/hacker-keyboard-tiles.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
