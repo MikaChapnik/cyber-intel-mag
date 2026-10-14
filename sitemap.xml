@@ -5,6 +5,7 @@
   <url><loc>https://cyberbriefdaily.com/glossary.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/ecosystem-map.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/conferences.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cyberbriefdaily.com/articles/france-food-supplies-hit-by-cyber-attack.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/ai-breaks-through-industrial-defenses.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/uk-germany-join-forces-russian-cyber-threat.html</loc><lastmod>2026-10-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/who-will-pay-for-ais-6-trillion-future.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -382,6 +383,7 @@
   <url><loc>https://cyberbriefdaily.com/categories/artificial-intelligence.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/phishing.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/ai-security.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cyberbriefdaily.com/categories/critical-infrastructure.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/nation-state.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/expert-opinions.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/infrastructure.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -397,7 +399,6 @@
   <url><loc>https://cyberbriefdaily.com/categories/government.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/legislation.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/nation-state-threats.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://cyberbriefdaily.com/categories/critical-infrastructure.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/cyber-attacks.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/regulation.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/legal.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
