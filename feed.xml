@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 14 Oct 2026 16:26:44 -0000</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 16:57:23 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>AI agents have now become easy targets</title>
+    <link>https://cyberbriefdaily.com/articles/ai-agents-easy-targets.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/ai-agents-easy-targets.html</guid>
+    <description></description>
+    <pubDate>Fri, 16 Oct 2026 10:00:00 -0000</pubDate>
+    <category>Agentic AI</category><category>Malware</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>France&#x27;s food supplies hit by cyber-attack</title>
     <link>https://cyberbriefdaily.com/articles/france-food-supplies-hit-by-cyber-attack.html</link>
@@ -37,7 +46,7 @@
     <description></description>
     <pubDate>Thu, 08 Oct 2026 09:00:00 -0000</pubDate>
     <category>Cyber Threats</category><category>Nation State</category>
-    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Who Will Pay for AI&#x27;s $6 Trillion Future?</title>
@@ -109,7 +118,7 @@
     <description></description>
     <pubDate>Sat, 12 Sep 2026 10:00:00 -0000</pubDate>
     <category>Government</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</title>
@@ -172,7 +181,7 @@
     <description></description>
     <pubDate>Tue, 25 Aug 2026 10:00:00 -0000</pubDate>
     <category>Critical Infrastructure</category><category>Cyber Attacks</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Medusa Ransomware Claims 500 Victim Organizations</title>
@@ -208,7 +217,7 @@
     <description></description>
     <pubDate>Mon, 17 Aug 2026 10:00:00 -0000</pubDate>
     <category>Ransomware</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Private Firms Enlisted to Fight US Cyber Wars</title>
@@ -272,15 +281,6 @@
     <pubDate>Thu, 06 Aug 2026 10:00:00 -0000</pubDate>
     <category>AI Security</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/indoor-security-camera.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>The EU&#x27;s AI Act is now in force</title>
-    <link>https://cyberbriefdaily.com/articles/eus-ai-act-is-now-in-force.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/eus-ai-act-is-now-in-force.html</guid>
-    <description></description>
-    <pubDate>Sun, 02 Aug 2026 10:00:00 -0000</pubDate>
-    <category>AI Regulation</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/digital-globe.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
