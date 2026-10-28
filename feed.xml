@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 23 Oct 2026 20:54:26 -0000</lastBuildDate>
+  <lastBuildDate>Wed, 28 Oct 2026 11:07:30 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>Massive fallout expected worldwide from PHP flaws</title>
+    <link>https://cyberbriefdaily.com/articles/massive-fallout-expected-worldwide-from-php-flaws.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/massive-fallout-expected-worldwide-from-php-flaws.html</guid>
+    <description></description>
+    <pubDate>Wed, 28 Oct 2026 10:00:00 -0000</pubDate>
+    <category>Vulnerabilities</category><category>News</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>Rogue AI agent becomes a super criminal</title>
     <link>https://cyberbriefdaily.com/articles/rogue-ai-agent-becomes-super-criminal.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Mon, 10 Aug 2026 10:00:00 -0000</pubDate>
     <category>Ransomware</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/office-security.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Increased security risk for agentic AI</title>
-    <link>https://cyberbriefdaily.com/articles/increased-security-risk-for-agentic-ai.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/increased-security-risk-for-agentic-ai.html</guid>
-    <description></description>
-    <pubDate>Fri, 07 Aug 2026 10:00:00 -0000</pubDate>
-    <category>Agentic AI</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/hacker-group-dark-room.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
