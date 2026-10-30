@@ -5,7 +5,7 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 28 Oct 2026 11:07:30 -0000</lastBuildDate>
+  <lastBuildDate>Fri, 30 Oct 2026 16:56:17 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
@@ -13,13 +13,22 @@
     <link>https://cyberbriefdaily.com/</link>
   </image>
   <item>
+    <title>Crypto platform suffers the biggest hack in history</title>
+    <link>https://cyberbriefdaily.com/articles/crypto-platform-suffers-biggest-hack-in-history-october-30th.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/crypto-platform-suffers-biggest-hack-in-history-october-30th.html</guid>
+    <description></description>
+    <pubDate>Fri, 30 Oct 2026 10:00:00 -0000</pubDate>
+    <category>Cryptocurrency</category><category>Cybercrime</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
     <title>Massive fallout expected worldwide from PHP flaws</title>
     <link>https://cyberbriefdaily.com/articles/massive-fallout-expected-worldwide-from-php-flaws.html</link>
     <guid isPermaLink="true">https://cyberbriefdaily.com/articles/massive-fallout-expected-worldwide-from-php-flaws.html</guid>
     <description></description>
     <pubDate>Wed, 28 Oct 2026 10:00:00 -0000</pubDate>
     <category>Vulnerabilities</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Rogue AI agent becomes a super criminal</title>
@@ -46,7 +55,7 @@
     <description></description>
     <pubDate>Fri, 16 Oct 2026 10:00:00 -0000</pubDate>
     <category>Agentic AI</category><category>Malware</category>
-    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>France&#x27;s food supplies hit by cyber-attack</title>
@@ -73,7 +82,7 @@
     <description></description>
     <pubDate>Thu, 08 Oct 2026 09:00:00 -0000</pubDate>
     <category>Cyber Threats</category><category>Nation State</category>
-    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Who Will Pay for AI&#x27;s $6 Trillion Future?</title>
@@ -145,7 +154,7 @@
     <description></description>
     <pubDate>Sat, 12 Sep 2026 10:00:00 -0000</pubDate>
     <category>Government</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</title>
@@ -208,7 +217,7 @@
     <description></description>
     <pubDate>Tue, 25 Aug 2026 10:00:00 -0000</pubDate>
     <category>Critical Infrastructure</category><category>Cyber Attacks</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/hacking-code.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Medusa Ransomware Claims 500 Victim Organizations</title>
@@ -244,7 +253,7 @@
     <description></description>
     <pubDate>Mon, 17 Aug 2026 10:00:00 -0000</pubDate>
     <category>Ransomware</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/hacking-code.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/padlocks.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Private Firms Enlisted to Fight US Cyber Wars</title>
@@ -272,15 +281,6 @@
     <pubDate>Tue, 11 Aug 2026 10:00:00 -0000</pubDate>
     <category>Data Breaches</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/key-with-usb-drive.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Ransomware gangs target middle management</title>
-    <link>https://cyberbriefdaily.com/articles/ransomware-gangs-target-middle-management.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/ransomware-gangs-target-middle-management.html</guid>
-    <description></description>
-    <pubDate>Mon, 10 Aug 2026 10:00:00 -0000</pubDate>
-    <category>Ransomware</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/office-security.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>

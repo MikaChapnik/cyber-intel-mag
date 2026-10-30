@@ -5,6 +5,7 @@
   <url><loc>https://cyberbriefdaily.com/glossary.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/ecosystem-map.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/conferences.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cyberbriefdaily.com/articles/crypto-platform-suffers-biggest-hack-in-history-october-30th.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/massive-fallout-expected-worldwide-from-php-flaws.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/rogue-ai-agent-becomes-super-criminal.html</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyberbriefdaily.com/articles/ransomware-attacks-get-physical.html</loc><lastmod>2026-10-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -377,8 +378,8 @@
   <url><loc>https://cyberbriefdaily.com/categories/ransomware.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/policy-and-regulation.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/industry.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://cyberbriefdaily.com/categories/healthcare.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/cryptocurrency.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cyberbriefdaily.com/categories/healthcare.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/insider-threats.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/agentic-ai.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cyberbriefdaily.com/categories/cybersecurity.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
