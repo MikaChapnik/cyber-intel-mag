@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 04 Nov 2026 14:31:37 -0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 18:07:24 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>The cyber-Luddites are coming for AI</title>
+    <link>https://cyberbriefdaily.com/articles/cyber-luddites-coming-for-ai.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/cyber-luddites-coming-for-ai.html</guid>
+    <description></description>
+    <pubDate>Fri, 06 Nov 2026 10:00:00 -0000</pubDate>
+    <category>Artificial Intelligence</category><category>Data Centres</category>
+    <enclosure url="https://cyberbriefdaily.com/images/server-racks-datacenter.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>How to Deploy AI Agents Successfully</title>
     <link>https://cyberbriefdaily.com/articles/how-to-deploy-ai-agents-successfully.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Wed, 12 Aug 2026 10:00:00 -0000</pubDate>
     <category>Policy</category><category>Cybercrime</category>
     <enclosure url="https://cyberbriefdaily.com/images/security-camera-brick.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Ransomware attacks are ramping up</title>
-    <link>https://cyberbriefdaily.com/articles/ransomware-attacks-are-ramping-up.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/ransomware-attacks-are-ramping-up.html</guid>
-    <description></description>
-    <pubDate>Wed, 12 Aug 2026 10:00:00 -0000</pubDate>
-    <category>Ransomware</category><category>Threat Intelligence</category>
-    <enclosure url="https://cyberbriefdaily.com/images/guy-fawkes-hacker.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
