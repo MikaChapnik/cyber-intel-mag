@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 10 Nov 2026 11:19:22 -0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 10:53:18 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>Outage raises questions of over-reliance on MSN</title>
+    <link>https://cyberbriefdaily.com/articles/outage-raises-questions-of-over-reliance-on-msn.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/outage-raises-questions-of-over-reliance-on-msn.html</guid>
+    <description></description>
+    <pubDate>Mon, 16 Nov 2026 10:00:00 -0000</pubDate>
+    <category>Microsoft</category><category>Cloud Security</category>
+    <enclosure url="https://cyberbriefdaily.com/images/server-room.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>The cyber-Luddites are coming for AI</title>
     <link>https://cyberbriefdaily.com/articles/cyber-luddites-coming-for-ai.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Mon, 17 Aug 2026 10:00:00 -0000</pubDate>
     <category>Ransomware</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/padlocks.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Private Firms Enlisted to Fight US Cyber Wars</title>
-    <link>https://cyberbriefdaily.com/articles/private-firms-enlisted-to-fight-us-cyber-wars.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/private-firms-enlisted-to-fight-us-cyber-wars.html</guid>
-    <description></description>
-    <pubDate>Wed, 12 Aug 2026 10:00:00 -0000</pubDate>
-    <category>Policy</category><category>Cybercrime</category>
-    <enclosure url="https://cyberbriefdaily.com/images/security-camera-brick.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
