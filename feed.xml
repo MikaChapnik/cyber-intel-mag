@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Mon, 16 Nov 2026 10:53:18 -0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 12:06:47 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>Organizations warned to prepare for MSN brand phishing attacks</title>
+    <link>https://cyberbriefdaily.com/articles/organizations-warned-msn-brand-phishing-attacks.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/organizations-warned-msn-brand-phishing-attacks.html</guid>
+    <description></description>
+    <pubDate>Tue, 17 Nov 2026 10:00:00 -0000</pubDate>
+    <category>Phishing</category><category>Microsoft</category>
+    <enclosure url="https://cyberbriefdaily.com/images/phishing-scam-laptop.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>Outage raises questions of over-reliance on MSN</title>
     <link>https://cyberbriefdaily.com/articles/outage-raises-questions-of-over-reliance-on-msn.html</link>
@@ -272,15 +281,6 @@
     <pubDate>Wed, 19 Aug 2026 10:00:00 -0000</pubDate>
     <category>Artificial Intelligence</category><category>Legal</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/robot-white.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>Half of Companies Pay the Ransomware Demand</title>
-    <link>https://cyberbriefdaily.com/articles/half-of-companies-pay-ransomware-demand.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/half-of-companies-pay-ransomware-demand.html</guid>
-    <description></description>
-    <pubDate>Mon, 17 Aug 2026 10:00:00 -0000</pubDate>
-    <category>Ransomware</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/padlocks.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
