@@ -5,13 +5,22 @@
   <link>https://cyberbriefdaily.com/</link>
   <description>In-depth cybersecurity analysis, breaking news, and expert interviews.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 17 Nov 2026 12:06:47 -0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 11:08:49 -0000</lastBuildDate>
   <atom:link href="https://cyberbriefdaily.com/feed.xml" rel="self" type="application/rss+xml"/>
   <image>
     <url>https://cyberbriefdaily.com/images/dark-hoodie.jpg</url>
     <title>Cyber Brief Daily</title>
     <link>https://cyberbriefdaily.com/</link>
   </image>
+  <item>
+    <title>Java contains glaring security flaws</title>
+    <link>https://cyberbriefdaily.com/articles/java-contains-glaring-security-flaws.html</link>
+    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/java-contains-glaring-security-flaws.html</guid>
+    <description></description>
+    <pubDate>Fri, 20 Nov 2026 10:00:00 -0000</pubDate>
+    <category>Vulnerabilities</category><category>Java</category><category>CISA</category>
+    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+  </item>
   <item>
     <title>Organizations warned to prepare for MSN brand phishing attacks</title>
     <link>https://cyberbriefdaily.com/articles/organizations-warned-msn-brand-phishing-attacks.html</link>
@@ -55,7 +64,7 @@
     <description></description>
     <pubDate>Fri, 30 Oct 2026 10:00:00 -0000</pubDate>
     <category>Cryptocurrency</category><category>Cybercrime</category>
-    <enclosure url="https://cyberbriefdaily.com/images/ai-robot.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Massive fallout expected worldwide from PHP flaws</title>
@@ -64,7 +73,7 @@
     <description></description>
     <pubDate>Wed, 28 Oct 2026 10:00:00 -0000</pubDate>
     <category>Vulnerabilities</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/cyber-spy.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Rogue AI agent becomes a super criminal</title>
@@ -91,7 +100,7 @@
     <description></description>
     <pubDate>Fri, 16 Oct 2026 10:00:00 -0000</pubDate>
     <category>Agentic AI</category><category>Malware</category>
-    <enclosure url="https://cyberbriefdaily.com/images/computer-monitor.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>France&#x27;s food supplies hit by cyber-attack</title>
@@ -118,7 +127,7 @@
     <description></description>
     <pubDate>Thu, 08 Oct 2026 09:00:00 -0000</pubDate>
     <category>Cyber Threats</category><category>Nation State</category>
-    <enclosure url="https://cyberbriefdaily.com/images/robot-pointing.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Who Will Pay for AI&#x27;s $6 Trillion Future?</title>
@@ -190,7 +199,7 @@
     <description></description>
     <pubDate>Sat, 12 Sep 2026 10:00:00 -0000</pubDate>
     <category>Government</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/hacker-laptop.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/hacking-code.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>UK Cyber Security and Resilience Bill Faces Lords Criticism Over AI Gap</title>
@@ -253,7 +262,7 @@
     <description></description>
     <pubDate>Tue, 25 Aug 2026 10:00:00 -0000</pubDate>
     <category>Critical Infrastructure</category><category>Cyber Attacks</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/hacking-code.jpg" type="image/jpeg" length="0"/>
+    <enclosure url="https://cyberbriefdaily.com/images/padlocks.jpg" type="image/jpeg" length="0"/>
   </item>
   <item>
     <title>Medusa Ransomware Claims 500 Victim Organizations</title>
@@ -272,15 +281,6 @@
     <pubDate>Wed, 19 Aug 2026 11:00:00 -0000</pubDate>
     <category>Cybersecurity</category><category>Regulation</category><category>News</category>
     <enclosure url="https://cyberbriefdaily.com/images/vpn-tablet-person.jpg" type="image/jpeg" length="0"/>
-  </item>
-  <item>
-    <title>SRA warns lawyers about AI hallucinations</title>
-    <link>https://cyberbriefdaily.com/articles/sra-warns-lawyers-about-ai-hallucinations.html</link>
-    <guid isPermaLink="true">https://cyberbriefdaily.com/articles/sra-warns-lawyers-about-ai-hallucinations.html</guid>
-    <description></description>
-    <pubDate>Wed, 19 Aug 2026 10:00:00 -0000</pubDate>
-    <category>Artificial Intelligence</category><category>Legal</category><category>News</category>
-    <enclosure url="https://cyberbriefdaily.com/images/robot-white.jpg" type="image/jpeg" length="0"/>
   </item>
 </channel>
 </rss>
